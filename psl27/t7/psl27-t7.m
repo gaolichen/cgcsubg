@@ -1,10 +1,9 @@
 (* ::Package:: *)
 
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cgframework.m";
-<<"/users/gaolichen/gitroot/psl27cg/psl27-t7/t7cg.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/psl27-generators-t7.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cyclicnumber.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/psl27-common.m";
+LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
+LoadPackage["../psl27-common.m"];
+LoadPackage["t7cg.m"];
+LoadPackage["psl27-generators-t7.m"];
 
 VerifyGroupInfo[Psl27]
 

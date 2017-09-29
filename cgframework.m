@@ -1,7 +1,8 @@
 (* ::Package:: *)
 
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cyclicnumber.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/numerical.m";
+LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
+LoadPackage["cyclicnumber.m"];
+LoadPackage["numerical.m"];
 
 KeyIrr="Irr";
 KeyConjugateIrr="ConjugateIrr";

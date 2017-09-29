@@ -1,7 +1,8 @@
 (* ::Package:: *)
 
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cgframework.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/numerical.m";
+LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
+LoadPackage["numerical.m"];
+LoadPackage["cgframework.m"];
 
 MyWriteLine[os_, x___]:=WriteString[os,x, "\n"];
 
@@ -177,6 +178,7 @@ IsNegative[val_]:=Module[{str},
 ];
 
 b7Tolatex={b7-> Subscript[b,7],d7-> Subscript[
+
 
 
 

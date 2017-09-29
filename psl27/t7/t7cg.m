@@ -1,6 +1,7 @@
 (* ::Package:: *)
 
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cgframework.m";
+LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
+LoadPackage["../../cgframework.m"];
 
 ClearAll[T7Group];
 T7Group[KeyIrr]={{"1",1},{"1p",1,"1^{\\prime}"},{"1pb",1,"\\bar{1}^{\\prime}"},{"3",3},{"3b",3,"\\bar{3}"}};
