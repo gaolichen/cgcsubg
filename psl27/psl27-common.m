@@ -1,7 +1,8 @@
 (* ::Package:: *)
 
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/cgframework.m";
-<<"/users/gaolichen/gitroot/psl27cg/mpackage/numerical.m";
+LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
+LoadPackage["../numerical.m"];
+LoadPackage["../cgframework.m"];
 
 (* Returns a vector v such that Conjugate[v].v1 = Conjugate[v].v2 = 0. *)
 ClearAll[CrossProduct];
