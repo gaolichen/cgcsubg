@@ -1,0 +1,633 @@
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\makeatletter
+\newcommand{\rep}[1]{\mathbf{#1}}
+\newcommand{\repx}[2]{{}_{#2}\mathbf{#1}}
+\newcommand{\subcg}[3]{\big\{ \repx{#1}{x}\otimes\repx{#2}{y}\big\}^{}_{#3}}
+\makeatother
+\usepackage{babel}
+\begin{document}
+\paragraph*{\Large $\rep{3}\otimes\rep{3}\to\rep{6}_s+\rep{\bar{3}}_a$}
+\begin{itemize}
+\item $\repx{3}{x}\otimes\repx{3}{y}\to\rep{\bar{3}}_{a}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \text{CG26978}\subcg{3}{3}{\bar{3}_{a}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{3}{y}\to\rep{6}_{s}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG26979}\subcg{3}{3}{3}
+\\
+\rep{\bar{3}} &=& \text{CG26980}\subcg{3}{3}{\bar{3}_{s}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{3}\otimes\rep{\bar{3}}\to\rep{1}+\rep{8}$}
+\begin{itemize}
+\item $\repx{3}{x}\otimes\repx{\bar{3}}{y}\to\rep{1}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG26981}\subcg{3}{\bar{3}}{1}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{\bar{3}}{y}\to\rep{8}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG26982}\subcg{3}{\bar{3}}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG26983}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG26984}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG26985}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{3}\otimes\rep{6}\to\rep{\bar{3}}+\rep{7}+\rep{8}$}
+\begin{itemize}
+\item $\repx{3}{x}\otimes\repx{6}{y}\to\rep{\bar{3}}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \text{CG26986}\subcg{3}{3}{\bar{3}_{s}}+\text{CG26987}\subcg{3}{3}{\bar{3}_{a}}+\text{CG26988}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{6}{y}\to\rep{7}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG26989}\subcg{3}{\bar{3}}{1}
+\\
+\rep{3} &=& \text{CG26990}\subcg{3}{3}{3}+\text{CG26991}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG26992}\subcg{3}{3}{\bar{3}_{s}}+\text{CG26993}\subcg{3}{3}{\bar{3}_{a}}+\text{CG26994}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{6}{y}\to\rep{8}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG26995}\subcg{3}{\bar{3}}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG26996}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG26997}\subcg{3}{3}{3}+\text{CG26998}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG26999}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27000}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27001}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{3}\otimes\rep{7}\to\rep{6}+\rep{7}+\rep{8}$}
+\begin{itemize}
+\item $\repx{3}{x}\otimes\repx{7}{y}\to\rep{6}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27002}\subcg{3}{1}{3}+\text{CG27003}\subcg{3}{3}{3}+\text{CG27004}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27005}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27006}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27007}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{7}{y}\to\rep{7}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27008}\subcg{3}{\bar{3}}{1}
+\\
+\rep{3} &=& \text{CG27009}\subcg{3}{1}{3}+\text{CG27010}\subcg{3}{3}{3}+\text{CG27011}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27012}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27013}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27014}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{7}{y}\to\rep{8}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27015}\subcg{3}{\bar{3}}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27016}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27017}\subcg{3}{1}{3}+\text{CG27018}\subcg{3}{3}{3}+\text{CG27019}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27020}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27021}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27022}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{3}\otimes\rep{8}\to\rep{3}+\rep{6}+\rep{7}+\rep{8}$}
+\begin{itemize}
+\item $\repx{3}{x}\otimes\repx{8}{y}\to\rep{3}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27023}\subcg{3}{1^{\prime}}{3}+\text{CG27024}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27025}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27026}\subcg{3}{\bar{3}}{3}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{8}{y}\to\rep{6}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27027}\subcg{3}{1^{\prime}}{3}+\text{CG27028}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27029}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27030}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27031}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27032}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27033}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{8}{y}\to\rep{7}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27034}\subcg{3}{\bar{3}}{1}
+\\
+\rep{3} &=& \text{CG27035}\subcg{3}{1^{\prime}}{3}+\text{CG27036}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27037}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27038}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27039}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27040}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27041}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{3}{x}\otimes\repx{8}{y}\to\rep{8}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27042}\subcg{3}{\bar{3}}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27043}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27044}\subcg{3}{1^{\prime}}{3}+\text{CG27045}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27046}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27047}\subcg{3}{\bar{3}}{3}
+\\
+\rep{\bar{3}} &=& \text{CG27048}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27049}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27050}\subcg{3}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{6}\otimes\rep{6}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{8}\right)_s+\left(\rep{7}+\rep{8}\right)_a$}
+\begin{itemize}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{1}_{s}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27119}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}+\subcg{\bar{3}}{3}{1}\right)
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{6}_{s}^{(1)}$:
+\begin{eqnarray*}
+\rep{3} &=& \sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcg{3}{3}{3}+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right) \\ 
+ & & -\sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& -\sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\subcg{3}{3}{\bar{3}_{s}}+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{6}_{s}^{(2)}$:
+\begin{eqnarray*}
+\rep{3} &=& i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcg{3}{3}{3}-i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right) \\ 
+ & & -i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\subcg{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & & -i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{8}_{s}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \frac{\text{CG27132}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}+\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \frac{\text{CG27133}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \text{CG27134}\subcg{3}{3}{3}+\frac{\text{CG27135}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right) \\ 
+ & & +\text{CG27136}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \text{CG27137}\subcg{3}{3}{\bar{3}_{s}}+\frac{\text{CG27138}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & & +\text{CG27139}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{7}_{a}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27140}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}-\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27141}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27142}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27143}\subcg{3}{3}{\bar{3}_{a}}+\frac{\text{CG27144}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{6}{y}\to\rep{8}_{a}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \frac{\text{CG27145}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}-\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \frac{\text{CG27146}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}-\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27147}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27148}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27149}\subcg{3}{3}{\bar{3}_{a}}+\frac{\text{CG27150}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{6}\otimes\rep{7}\to\rep{3}+\rep{\bar{3}}+\rep{6}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
+\begin{itemize}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{3}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27151}\subcg{3}{1}{3}+\text{CG27152}\subcg{3}{3}{3}+\text{CG27153}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27154}\subcg{\bar{3}}{3}{3}+\text{CG27155}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27156}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{\bar{3}}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \text{CG27157}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27158}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27159}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27160}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27161}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27162}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{6}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27163}\subcg{3}{1}{3}+\text{CG27164}\subcg{3}{3}{3}+\text{CG27165}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27166}\subcg{\bar{3}}{3}{3}+\text{CG27167}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27168}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27169}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27170}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27171}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27172}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27173}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27174}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{7}^{(1)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27175}\subcg{3}{\bar{3}}{1}+\text{CG27176}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27177}\subcg{3}{1}{3}+\text{CG27178}\subcg{3}{3}{3}+\text{CG27179}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27180}\subcg{\bar{3}}{3}{3}+\text{CG27181}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27182}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27183}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27184}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27185}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27186}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27187}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27188}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{7}^{(2)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27189}\subcg{3}{\bar{3}}{1}+\text{CG27190}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27191}\subcg{3}{1}{3}+\text{CG27192}\subcg{3}{3}{3}+\text{CG27193}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27194}\subcg{\bar{3}}{3}{3}+\text{CG27195}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27196}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27197}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27198}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27199}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27200}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27201}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27202}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{8}^{(1)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27203}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27204}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27205}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27206}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27207}\subcg{3}{1}{3}+\text{CG27208}\subcg{3}{3}{3}+\text{CG27209}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27210}\subcg{\bar{3}}{3}{3}+\text{CG27211}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27212}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27213}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27214}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27215}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27216}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27217}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27218}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{7}{y}\to\rep{8}^{(2)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27219}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27220}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27221}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27222}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27223}\subcg{3}{1}{3}+\text{CG27224}\subcg{3}{3}{3}+\text{CG27225}\subcg{3}{\bar{3}}{3} \\ 
+ & & +\text{CG27226}\subcg{\bar{3}}{3}{3}+\text{CG27227}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27228}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27229}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27230}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27231}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27232}\subcg{\bar{3}}{1}{\bar{3}}+\text{CG27233}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27234}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{6}\otimes\rep{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
+\begin{itemize}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{3}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27235}\subcg{3}{1^{\prime}}{3}+\text{CG27236}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27237}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27238}\subcg{3}{\bar{3}}{3}+\text{CG27239}\subcg{\bar{3}}{3}{3}+\text{CG27240}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27241}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{\bar{3}}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \text{CG27242}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27243}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27244}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27245}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27246}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27247}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27248}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{6}^{(1)}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27249}\subcg{3}{1^{\prime}}{3}+\text{CG27250}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27251}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27252}\subcg{3}{\bar{3}}{3}+\text{CG27253}\subcg{\bar{3}}{3}{3}+\text{CG27254}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27255}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27256}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27257}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27258}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27259}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27260}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27261}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27262}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{6}^{(2)}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27263}\subcg{3}{1^{\prime}}{3}+\text{CG27264}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27265}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27266}\subcg{3}{\bar{3}}{3}+\text{CG27267}\subcg{\bar{3}}{3}{3}+\text{CG27268}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27269}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27270}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27271}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27272}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27273}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27274}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27275}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27276}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{7}^{(1)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27277}\subcg{3}{\bar{3}}{1}+\text{CG27278}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27279}\subcg{3}{1^{\prime}}{3}+\text{CG27280}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27281}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27282}\subcg{3}{\bar{3}}{3}+\text{CG27283}\subcg{\bar{3}}{3}{3}+\text{CG27284}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27285}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27286}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27287}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27288}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27289}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27290}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27291}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27292}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{7}^{(2)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27293}\subcg{3}{\bar{3}}{1}+\text{CG27294}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27295}\subcg{3}{1^{\prime}}{3}+\text{CG27296}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27297}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27298}\subcg{3}{\bar{3}}{3}+\text{CG27299}\subcg{\bar{3}}{3}{3}+\text{CG27300}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27301}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27302}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27303}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27304}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27305}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27306}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27307}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27308}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{8}^{(1)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27309}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27310}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27311}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27312}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27313}\subcg{3}{1^{\prime}}{3}+\text{CG27314}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27315}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27316}\subcg{3}{\bar{3}}{3}+\text{CG27317}\subcg{\bar{3}}{3}{3}+\text{CG27318}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27319}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27320}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27321}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27322}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27323}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27324}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27325}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27326}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{6}{x}\otimes\repx{8}{y}\to\rep{8}^{(2)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27327}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27328}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27329}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27330}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27331}\subcg{3}{1^{\prime}}{3}+\text{CG27332}\subcg{3}{\bar{1}^{\prime}}{3}+\text{CG27333}\subcg{3}{3}{3} \\ 
+ & & +\text{CG27334}\subcg{3}{\bar{3}}{3}+\text{CG27335}\subcg{\bar{3}}{3}{3}+\text{CG27336}\subcg{\bar{3}}{\bar{3}}{3_{s}} \\ 
+ & & +\text{CG27337}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27338}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27339}\subcg{3}{3}{\bar{3}_{a}}+\text{CG27340}\subcg{3}{\bar{3}}{\bar{3}} \\ 
+ & & +\text{CG27341}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27342}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\text{CG27343}\subcg{\bar{3}}{3}{\bar{3}} \\ 
+ & & +\text{CG27344}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{7}\otimes\rep{7}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}+\rep{8}\right)_a$}
+\begin{itemize}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{1}_{s}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27345}\subcg{1}{1}{1}+\frac{\text{CG27346}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}+\subcg{\bar{3}}{3}{1}\right)
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{6}_{s}^{(1)}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27347}}{\sqrt{2}}\left(\subcg{1}{3}{3}+\subcg{3}{1}{3}\right)+\text{CG27348}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27349}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27350}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27351}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27352}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27353}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27354}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{6}_{s}^{(2)}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27355}}{\sqrt{2}}\left(\subcg{1}{3}{3}+\subcg{3}{1}{3}\right)+\text{CG27356}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27357}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27358}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27359}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27360}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27361}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27362}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{7}_{s}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27363}\subcg{1}{1}{1}+\frac{\text{CG27364}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}+\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27365}}{\sqrt{2}}\left(\subcg{1}{3}{3}+\subcg{3}{1}{3}\right)+\text{CG27366}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27367}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27368}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27369}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27370}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27371}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27372}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{8}_{s}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \frac{\text{CG27373}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}+\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \frac{\text{CG27374}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27375}}{\sqrt{2}}\left(\subcg{1}{3}{3}+\subcg{3}{1}{3}\right)+\text{CG27376}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27377}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27378}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27379}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27380}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27381}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27382}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{3}_{a}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27383}}{\sqrt{2}}\left(\subcg{1}{3}{3}-\subcg{3}{1}{3}\right) \\ 
+ & & +\frac{\text{CG27384}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27385}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{\bar{3}}_{a}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \frac{\text{CG27386}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27387}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27388}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{7}_{a}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27389}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}-\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27390}}{\sqrt{2}}\left(\subcg{1}{3}{3}-\subcg{3}{1}{3}\right) \\ 
+ & & +\frac{\text{CG27391}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27392}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27393}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27394}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27395}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{7}{y}\to\rep{8}_{a}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \frac{\text{CG27396}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}-\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \frac{\text{CG27397}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}-\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27398}}{\sqrt{2}}\left(\subcg{1}{3}{3}-\subcg{3}{1}{3}\right) \\ 
+ & & +\frac{\text{CG27399}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27400}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27401}}{\sqrt{2}}\left(\subcg{1}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1}{\bar{3}}\right)+\text{CG27402}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27403}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{7}\otimes\rep{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}+\rep{8}^{(3)}$}
+\begin{itemize}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{3}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27404}\subcg{1}{3}{3}+\text{CG27405}\subcg{3}{1^{\prime}}{3}+\text{CG27406}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27407}\subcg{3}{3}{3}+\text{CG27408}\subcg{3}{\bar{3}}{3}+\text{CG27409}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27410}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27411}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{\bar{3}}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \text{CG27412}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27413}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27414}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27415}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27416}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27417}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27418}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27419}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{6}^{(1)}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27420}\subcg{1}{3}{3}+\text{CG27421}\subcg{3}{1^{\prime}}{3}+\text{CG27422}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27423}\subcg{3}{3}{3}+\text{CG27424}\subcg{3}{\bar{3}}{3}+\text{CG27425}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27426}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27427}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27428}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27429}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27430}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27431}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27432}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27433}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27434}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27435}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{6}^{(2)}$:
+\begin{eqnarray*}
+\rep{3} &=& \text{CG27436}\subcg{1}{3}{3}+\text{CG27437}\subcg{3}{1^{\prime}}{3}+\text{CG27438}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27439}\subcg{3}{3}{3}+\text{CG27440}\subcg{3}{\bar{3}}{3}+\text{CG27441}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27442}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27443}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27444}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27445}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27446}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27447}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27448}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27449}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27450}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27451}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{7}^{(1)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27452}\subcg{3}{\bar{3}}{1}+\text{CG27453}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27454}\subcg{1}{3}{3}+\text{CG27455}\subcg{3}{1^{\prime}}{3}+\text{CG27456}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27457}\subcg{3}{3}{3}+\text{CG27458}\subcg{3}{\bar{3}}{3}+\text{CG27459}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27460}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27461}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27462}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27463}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27464}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27465}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27466}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27467}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27468}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27469}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{7}^{(2)}$:
+\begin{eqnarray*}
+\rep{1} &=& \text{CG27470}\subcg{3}{\bar{3}}{1}+\text{CG27471}\subcg{\bar{3}}{3}{1}
+\\
+\rep{3} &=& \text{CG27472}\subcg{1}{3}{3}+\text{CG27473}\subcg{3}{1^{\prime}}{3}+\text{CG27474}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27475}\subcg{3}{3}{3}+\text{CG27476}\subcg{3}{\bar{3}}{3}+\text{CG27477}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27478}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27479}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27480}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27481}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27482}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27483}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27484}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27485}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27486}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27487}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{8}^{(1)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27488}\subcg{1}{1^{\prime}}{1^{\prime}}+\text{CG27489}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27490}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27491}\subcg{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}+\text{CG27492}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27493}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27494}\subcg{1}{3}{3}+\text{CG27495}\subcg{3}{1^{\prime}}{3}+\text{CG27496}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27497}\subcg{3}{3}{3}+\text{CG27498}\subcg{3}{\bar{3}}{3}+\text{CG27499}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27500}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27501}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27502}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27503}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27504}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27505}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27506}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27507}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27508}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27509}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{8}^{(2)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27510}\subcg{1}{1^{\prime}}{1^{\prime}}+\text{CG27511}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27512}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27513}\subcg{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}+\text{CG27514}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27515}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27516}\subcg{1}{3}{3}+\text{CG27517}\subcg{3}{1^{\prime}}{3}+\text{CG27518}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27519}\subcg{3}{3}{3}+\text{CG27520}\subcg{3}{\bar{3}}{3}+\text{CG27521}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27522}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27523}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27524}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27525}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27526}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27527}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27528}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27529}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27530}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27531}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{7}{x}\otimes\repx{8}{y}\to\rep{8}^{(3)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27532}\subcg{1}{1^{\prime}}{1^{\prime}}+\text{CG27533}\subcg{3}{\bar{3}}{1^{\prime}}+\text{CG27534}\subcg{\bar{3}}{3}{1^{\prime}}
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27535}\subcg{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}+\text{CG27536}\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\text{CG27537}\subcg{\bar{3}}{3}{\bar{1}^{\prime}}
+\\
+\rep{3} &=& \text{CG27538}\subcg{1}{3}{3}+\text{CG27539}\subcg{3}{1^{\prime}}{3}+\text{CG27540}\subcg{3}{\bar{1}^{\prime}}{3} \\ 
+ & & +\text{CG27541}\subcg{3}{3}{3}+\text{CG27542}\subcg{3}{\bar{3}}{3}+\text{CG27543}\subcg{\bar{3}}{3}{3} \\ 
+ & & +\text{CG27544}\subcg{\bar{3}}{\bar{3}}{3_{s}}+\text{CG27545}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \text{CG27546}\subcg{1}{\bar{3}}{\bar{3}}+\text{CG27547}\subcg{3}{3}{\bar{3}_{s}}+\text{CG27548}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\text{CG27549}\subcg{3}{\bar{3}}{\bar{3}}+\text{CG27550}\subcg{\bar{3}}{1^{\prime}}{\bar{3}}+\text{CG27551}\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & & +\text{CG27552}\subcg{\bar{3}}{3}{\bar{3}}+\text{CG27553}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\end{itemize}
+\paragraph*{\Large $\rep{8}\otimes\rep{8}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}^{(1)}+\rep{8}^{(2)}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}\right)_a$}
+\begin{itemize}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{1}_{s}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27554}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{1}^{\prime}}{1}+\subcg{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
+ & & +\frac{\text{CG27555}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}+\subcg{\bar{3}}{3}{1}\right)
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{6}_{s}^{(1)}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27556}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}+\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27557}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}+\subcg{3}{\bar{1}^{\prime}}{3}\right)+\text{CG27558}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27559}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27560}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27561}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27562}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27563}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27564}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27565}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{6}_{s}^{(2)}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27566}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}+\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27567}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}+\subcg{3}{\bar{1}^{\prime}}{3}\right)+\text{CG27568}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27569}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27570}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27571}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27572}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27573}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27574}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27575}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{7}_{s}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27576}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{1}^{\prime}}{1}+\subcg{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
+ & & +\frac{\text{CG27577}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}+\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27578}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}+\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27579}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}+\subcg{3}{\bar{1}^{\prime}}{3}\right)+\text{CG27580}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27581}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27582}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27583}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27584}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27585}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27586}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27587}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{8}_{s}^{(1)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27588}\subcg{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}}+\frac{\text{CG27589}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}+\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27590}\subcg{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}}+\frac{\text{CG27591}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27592}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}+\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27593}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}+\subcg{3}{\bar{1}^{\prime}}{3}\right)+\text{CG27594}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27595}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27596}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27597}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27598}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27599}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27600}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27601}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{8}_{s}^{(2)}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \text{CG27602}\subcg{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}}+\frac{\text{CG27603}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}+\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \text{CG27604}\subcg{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}}+\frac{\text{CG27605}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}+\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27606}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}+\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27607}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}+\subcg{3}{\bar{1}^{\prime}}{3}\right)+\text{CG27608}\subcg{3}{3}{3} \\ 
+ & & +\frac{\text{CG27609}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}+\subcg{\bar{3}}{3}{3}\right)+\text{CG27610}\subcg{\bar{3}}{\bar{3}}{3_{s}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27611}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27612}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27613}\subcg{3}{3}{\bar{3}_{s}} \\ 
+ & & +\frac{\text{CG27614}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}+\subcg{\bar{3}}{3}{\bar{3}}\right)+\text{CG27615}\subcg{\bar{3}}{\bar{3}}{\bar{3}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{3}_{a}$:
+\begin{eqnarray*}
+\rep{3} &=& \frac{\text{CG27616}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}-\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27617}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}-\subcg{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27618}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27619}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{\bar{3}}_{a}$:
+\begin{eqnarray*}
+\rep{\bar{3}} &=& \frac{\text{CG27620}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27621}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27622}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27623}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{7}_{a}^{(1)}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27624}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{1}^{\prime}}{1}-\subcg{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
+ & & +\frac{\text{CG27625}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}-\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27626}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}-\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27627}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}-\subcg{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27628}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27629}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27630}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27631}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27632}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27633}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{7}_{a}^{(2)}$:
+\begin{eqnarray*}
+\rep{1} &=& \frac{\text{CG27634}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{1}^{\prime}}{1}-\subcg{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
+ & & +\frac{\text{CG27635}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1}-\subcg{\bar{3}}{3}{1}\right)
+\\
+\rep{3} &=& \frac{\text{CG27636}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}-\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27637}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}-\subcg{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27638}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27639}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27640}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27641}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27642}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27643}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\item $\repx{8}{x}\otimes\repx{8}{y}\to\rep{8}_{a}$:
+\begin{eqnarray*}
+\rep{1^{\prime}} &=& \frac{\text{CG27644}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{1^{\prime}}-\subcg{\bar{3}}{3}{1^{\prime}}\right)
+\\
+\rep{\bar{1}^{\prime}} &=& \frac{\text{CG27645}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{1}^{\prime}}-\subcg{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\\
+\rep{3} &=& \frac{\text{CG27646}}{\sqrt{2}}\left(\subcg{1^{\prime}}{3}{3}-\subcg{3}{1^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27647}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{3}{3}-\subcg{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & & +\frac{\text{CG27648}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{3}-\subcg{\bar{3}}{3}{3}\right)+\text{CG27649}\subcg{\bar{3}}{\bar{3}}{3_{a}}
+\\
+\rep{\bar{3}} &=& \frac{\text{CG27650}}{\sqrt{2}}\left(\subcg{1^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & & +\frac{\text{CG27651}}{\sqrt{2}}\left(\subcg{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\text{CG27652}\subcg{3}{3}{\bar{3}_{a}} \\ 
+ & & +\frac{\text{CG27653}}{\sqrt{2}}\left(\subcg{3}{\bar{3}}{\bar{3}}-\subcg{\bar{3}}{3}{\bar{3}}\right)
+\end{eqnarray*}
+\end{itemize}
+\end{document}
