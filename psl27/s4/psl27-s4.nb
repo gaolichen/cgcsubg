@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24661,        469]
-NotebookOptionsPosition[     24347,        454]
-NotebookOutlinePosition[     24681,        469]
-CellTagsIndexPosition[     24638,        466]
+NotebookDataLength[     24947,        476]
+NotebookOptionsPosition[     24632,        461]
+NotebookOutlinePosition[     24966,        476]
+CellTagsIndexPosition[     24923,        473]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,6 +34,13 @@ Cell[BoxData[
      RowBox[{"FileNameJoin", "[", 
       RowBox[{"{", 
        RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<S4.m\>\""}], "}"}],
+       "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Get", "[", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
         RowBox[{"NotebookDirectory", "[", "]"}], ",", 
         "\"\<psl27-generators.m\>\""}], "}"}], "]"}], "]"}], 
     ";"}]}]}]], "Input",
@@ -41,7 +48,7 @@ Cell[BoxData[
   3.699457238184126*^9, 3.699457252081276*^9}, {3.699465458725263*^9, 
   3.699465465403256*^9}, {3.70406055394831*^9, 3.704060555350844*^9}, {
   3.70829932114787*^9, 3.708299334620494*^9}, {3.715944959094503*^9, 
-  3.715944974421392*^9}}],
+  3.715944974421392*^9}, {3.715959810829166*^9, 3.715959815590136*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -452,7 +459,7 @@ Cell[BoxData[
    3.7093968408726387`*^9}, {3.709396913713071*^9, 3.709396916505624*^9}, {
    3.7093969670801277`*^9, 3.709396982372857*^9}}]
 },
-WindowSize->{1280, 948},
+WindowSize->{1278, 947},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.1 for Linux x86 (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
@@ -468,9 +475,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 873, 23, 77, "Input"],
-Cell[1434, 45, 5437, 133, 825, "Input"],
-Cell[6874, 180, 17469, 272, 442, "Input"]
+Cell[558, 20, 1158, 30, 99, "Input"],
+Cell[1719, 52, 5437, 133, 825, "Input"],
+Cell[7159, 187, 17469, 272, 385, "Input"]
 }
 ]
 *)

@@ -190,3 +190,281 @@ Assert[TestConjugateTransform[GS4B["3_1"], s4ct3]==ConstantArray[0,{3,3}]]
 
 Assert[TestConjugateTransform[GS4A["3_2"], s4ct3]==ConstantArray[0,{3,3}]]
 Assert[TestConjugateTransform[GS4B["3_2"], s4ct3]==ConstantArray[0,{3,3}]]
+
+
+
+RepS4ToA4[x_]:={};
+RepS4ToA4["1_0"]:={"1_0"};
+RepS4ToA4["1_1"]:={"1_0"};
+RepS4ToA4["2"]:={"1_1", "1_2"};
+RepS4ToA4["3_1"]:={"3"};
+RepS4ToA4["3_2"]:={"3"};
+
+(* S4 Group Info.*)
+ClearAll[S4Group];
+S4Group[KeyIrr]:={{"1_0",1},{"1_1",1},{"2",2},{"3_1",3},{"3_2",3}};
+
+S4Kronecker[x_,y_]:=DefaultKronecker[S4Group,x,y];
+S4Kronecker["3_1","3_1"]:={"1_0:+","2:+","3_1:+","3_2:-"};
+S4Kronecker["3_2","3_2"]:={"1_0:+","2:+","3_1:+","3_2:-"};
+S4Kronecker["3_1","3_2"]:={"1_1","2","3_1","3_2"};
+S4Kronecker["2","3_1"]:={"3_1","3_2"};
+S4Kronecker["2","3_2"]:={"3_1","3_2"};
+S4Kronecker["2","2"]:={"1_0:+","2:+", "1_1:-"};
+S4Kronecker["1_1","3_1"]:={"3_2"};
+S4Kronecker["1_1","3_2"]:={"3_1"};
+S4Kronecker["1_1","2"]:={"2"};
+S4Kronecker["1_1","1_1"]:={"1_0:+"};
+S4Group[KeyKronecker]:=S4Kronecker;
+S4Group[KeyConjugateIrr]:={};
+S4Group[KeyDotFunction]:=DotS4;
+KeyConjugateTransform="ConjugateTransform";
+S4Group[KeyConjugateTransform,"1_0"]:={{1}};
+S4Group[KeyConjugateTransform,"1_1"]:={{1}};
+S4Group[KeyConjugateTransform,"2"]:={{0,1},{1,0}};
+S4Group[KeyConjugateTransform,"3_1"]:={{1,0,0},{0,0,1},{0,1,0}};
+S4Group[KeyConjugateTransform,"3_2"]:={{1,0,0},{0,0,1},{0,1,0}};
+
+ClearAll[S4CG];
+S4CG[r1_,r2_,r3_]:={};
+
+(*3_1 * 3_1 \[Rule] 3_1 + 3_2 + 2 + 1*)
+S4CG["3_1","3_1","3_1:+"]:={
+	{"3","3","3:+"}
+};
+
+S4CG["3_1","3_1","3_2:-"]:={
+	{"3","3","3:-",I}
+};
+
+S4CG["3_1","3_1","2:+"]:={
+	{"3","3","1_1"},
+	{"3","3","1_2"}
+};
+
+S4CG["3_1","3_1","1_0:+"]:={
+	{"3","3","1_0"}
+};
+
+(*3_2 * 3_2 \[Rule] 3_1 + 3_2 + 2 + 1*)
+S4CG["3_2","3_2","3_1:+"]:={
+	{"3","3","3:+"}
+};
+
+S4CG["3_2","3_2","3_2:-"]:={
+	{"3","3","3:-",I}
+};
+
+S4CG["3_2","3_2","2:+"]:={
+	{"3","3","1_1"},
+	{"3","3","1_2"}
+};
+
+S4CG["3_2","3_2","1_0:+"]:={
+	{"3","3","1_0"}
+};
+
+(*3_1 * 3_2 \[Rule] 3_1 + 3_2 + 2 + 1_1*)
+S4CG["3_1","3_2","3_1"]:={
+	{"3","3","3:-",I}
+};
+
+S4CG["3_1","3_2","3_2"]:={
+	{"3","3","3:+"}
+};
+
+S4CG["3_1","3_2","2"]:={
+	{"3","3","1_1",I},
+	{"3","3","1_2",-I}
+};
+
+S4CG["3_1","3_2","1_1"]:={
+	{"3","3","1_0"}
+};
+
+(*3_1 * 2 \[Rule] 3_1 + 3_2 *)
+S4CG["3_1","2","3_1"]:={
+	{"3","1_1","3",1/Sqrt[2]},
+	{"3","1_2","3",1/Sqrt[2]}
+};
+
+S4CG["3_1","2","3_2"]:={
+	{"3","1_1","3",I/Sqrt[2]},
+	{"3","1_2","3",-I/Sqrt[2]}
+};
+
+(*3_2 * 2 \[Rule] 3_1 + 3_2 *)
+S4CG["3_2","2","3_1"]:={
+	{"3","1_1","3",I/Sqrt[2]},
+	{"3","1_2","3",-I/Sqrt[2]}
+};
+
+S4CG["3_2","2","3_2"]:={
+	{"3","1_1","3",1/Sqrt[2]},
+	{"3","1_2","3",1/Sqrt[2]}
+};
+
+(* 2 * 2 \[Rule] 1_0 + 2 + 1_1 *)
+S4CG["2","2","2:+"]:={
+	{"1_2","1_2","1_1"},
+	{"1_1","1_1","1_2"}
+};
+
+S4CG["2","2","1_0:+"]:={
+	{"1_1","1_2","1_0",1/Sqrt[2]},
+	{"1_2","1_1","1_0",1/Sqrt[2]}
+};
+
+S4CG["2","2","1_1:-"]:={
+	{"1_1","1_2","1_0",I/Sqrt[2]},
+	{"1_2","1_1","1_0",-I/Sqrt[2]}
+};
+
+(* Subscript[3, 1]*Subscript[1, 1]\[Rule] Subscript[3, 2]*)
+S4CG["3_1","1_1","3_2"]:={
+	{"3","1_0","3"}
+};
+
+(* Subscript[3, 2]*Subscript[1, 1]\[Rule] Subscript[3, 1]*)
+S4CG["3_2","1_1","3_1"]:={
+	{"3","1_0","3"}
+};
+
+(* 2*Subscript[1, 1]\[Rule] 2*)
+S4CG["2","1_1","2"]:={
+	{"1_1","1_0","1_1",I},
+	{"1_2","1_0","1_2",-I}
+};
+
+(* Subscript[1, 1]*Subscript[1, 1]\[Rule] 1_0 *)
+S4CG["1_1","1_1","1_0:+"]:={
+	{"1_0","1_0","1_0:+"}
+};
+
+ClearAll[S4ToA4];
+S4ToA4[v_, r_,subr_]:=Module[{reps,pos=1,i},
+	Assert[GetDimensionByRep[S4Group,r]==Length[v]];
+	reps=RepS4ToA4[r];
+	If[MemberQ[reps, subr]==False, Return[{}]];
+
+	For[i=1,i<= Length[reps],i++,
+		If[reps[[i]]== subr, Break[]];
+		pos += GetDimensionByRep[A4Group,reps[[i]]];
+	];
+
+	Return[v[[pos;;pos+GetDimensionByRep[A4Group,subr]-1]]]
+];
+
+ClearAll[DotS4];
+DotS4[a_,b_,ra_,rb_,rc_]:=Module[
+	{cg,i,j,ret,reps,list,v,v1,v2,r1,r2,r3,tmp},
+
+	ret=DefaultDotFunction[S4Group, a,b,ra,rb,rc];
+	If[Length[ret]>0, Return[ret]];
+
+	cg=S4CG[ra,rb,rc];
+	If[Length[cg]==0 && ra != rb,
+		cg = S4CG[rb,ra,rc];
+		(*swap first and second elements of each cg*)
+		Do[tmp=cg[[i,1]];
+			cg[[i,1]]=cg[[i,2]];
+			cg[[i,2]]=tmp,
+			{i,1,Length[cg]}
+		];
+	];
+
+	(*Print["cg=", cg];*)
+	If[Length[cg]==0, 
+		Message[DefaultDotFunction::NoCGFound, ra,rb,rc];
+		Return[$Failed]
+	];
+
+	reps=RepS4ToA4[GetRepName[rc]];
+	(*Print["rc=",GetRepName[rc], ",reps=",reps];*)
+	ret={};
+
+	For[i=1,i<=Length[reps],i++,
+		list=Select[cg, GetRepName[#[[3]]]== reps[[i]] &];
+		(*Print["list=", list];*)
+		v=ConstantArray[0,GetDimensionByRep[A4Group,reps[[i]]]];
+		(*Print["v=",v];*)
+		For[j=1,j<= Length[list],j++,
+			r1=list[[j,1]];
+			r2=list[[j,2]];
+			v1=S4ToA4[a,ra,r1];
+			v2=S4ToA4[b,rb,r2];
+			If[Length[list[[j]]]>= 4,
+				v+= list[[j,4]]*DotA4[v1, v2, r1, r2, list[[j,3]]],
+				v+= DotA4[v1, v2, r1, r2, list[[j,3]]]
+			];
+		];
+
+		ret = Join[ret, v]
+	];
+
+	Return[ret]
+];
+
+ClearAll[S4GCDiff];
+S4GCDiff[a_,b_,ra_,rb_,r_]:=Module[{res1,res2,ops,i},
+	res1=DotS4[a,b,ra,rb,r];
+	(*Print["res1=",res1, ", ra=",ra, ", rb=", rb, ", r=",r];*)
+	ops={GS4A,GS4B};
+	For[i=1,i<= Length[ops],i++,
+		res2=Simplify[DotS4[ops[[i]][ra].a,ops[[i]][rb].b,ra,rb,r]];
+		(*Print["res2=",res2, ", res1=",Simplify[ops[[i]][r].res1]];*)
+		Print[Simplify[ops[[i]][r].res1-res2]]
+	];
+];
+
+ClearAll[VerifyS4GC];
+VerifyS4GC[ra_,rb_,r_]:=Module[{res1,res2,ops,i,a,b,mata,matb,matc},
+	a={x1,y1,z1}[[1;;GetDimensionByRep[S4Group,ra]]];
+	b={x2,y2,z2}[[1;;GetDimensionByRep[S4Group,rb]]];
+	(*Print["ra=",ra,",rb=",rb,",r=",r];*)
+	res1=DotS4[a,b,ra,rb,r];
+	ops={GS4A,GS4B};
+	For[i=1,i<= Length[ops],i++,
+		res2=Simplify[DotS4[ops[[i]][ra].a,ops[[i]][rb].b,ra,rb,r]];
+		(*Print["res2=",res2, ", res1=",Simplify[ops[[i]][GetRepName[r]].res1]];*)
+		If[SameQ[Simplify[ops[[i]][GetRepName[r]].res1-res2],ConstantArray[0,Length[res2]]]==False,
+			Return[False]
+		];
+	];
+
+	mata=S4Group[KeyConjugateTransform,GetRepName[ra]];
+	matb=S4Group[KeyConjugateTransform,GetRepName[rb]];
+	matc=S4Group[KeyConjugateTransform,GetRepName[r]];
+
+	res2=DotS4[mata.a,matb.b,ToConjugateRep[S4Group,ra],ToConjugateRep[S4Group,rb],ToConjugateRep[S4Group,r]];
+	If[SameQ[Simplify[matc.ComplexExpand[Conjugate[res1]]-res2],ConstantArray[0,Length[res2]]]==False,
+		Print["res1=",matc.ComplexExpand[Conjugate[res1]],",res2=",res2];
+		Return[False]
+	];
+	Return[True];
+];
+
+(* Verify all S4 CGs*)
+ClearAll[VerifyS4CGAll]
+VerifyS4CGAll[]:=Module[{i,j,k,reps,allirr},
+	allirr=S4Group[KeyIrr][[All,1]];
+	For[i=1,i<= Length[allirr],i++,
+		For[j=1,j<= Length[allirr],j++,
+			reps=Kronecker[S4Group,allirr[[i]],allirr[[j]]];
+			For[k=1,k<=Length[reps],k++,
+				If[VerifyS4GC[allirr[[i]], allirr[[j]], reps[[k]]]==False,
+					Print["VerifyS4GC Failed: ", allirr[[i]], "*",allirr[[j]],"->",reps[[k]]];
+					Return[False]
+				];
+			];
+		];
+	];
+
+	Return[True]
+];
+
+(* verify S4CG.*)
+On[Assert]
+VerifyS4CGAll[];
+Assert[VerifyGroupInfo[S4Group,VerifyDotFunction->True]]
+Clear[tmp1,tmp2,tmp3,tmp4,tmp5,tmp6,a2,a32,a31];
