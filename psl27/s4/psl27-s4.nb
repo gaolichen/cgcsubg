@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24655,        468]
-NotebookOptionsPosition[     24338,        453]
-NotebookOutlinePosition[     24674,        468]
-CellTagsIndexPosition[     24631,        465]
+NotebookDataLength[     24661,        469]
+NotebookOptionsPosition[     24347,        454]
+NotebookOutlinePosition[     24681,        469]
+CellTagsIndexPosition[     24638,        466]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,25 +22,26 @@ Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{
-    "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/cgframework.m\>\""}],
-     ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Get", "[", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+        "\"\<../psl27-common.m\>\""}], "}"}], "]"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{
-    "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/psl27-generators.m\>\
-\""}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{
-    "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/cyclicnumber.m\>\""}]\
-, ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{
-    "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/psl27-common.m\>\""}]\
-, ";"}]}]}]], "Input",
+    RowBox[{"Get", "[", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+        "\"\<psl27-generators.m\>\""}], "}"}], "]"}], "]"}], 
+    ";"}]}]}]], "Input",
  CellChangeTimes->{{3.699283753884763*^9, 3.6992837549183283`*^9}, {
   3.699457238184126*^9, 3.699457252081276*^9}, {3.699465458725263*^9, 
   3.699465465403256*^9}, {3.70406055394831*^9, 3.704060555350844*^9}, {
-  3.70829932114787*^9, 3.708299334620494*^9}}],
+  3.70829932114787*^9, 3.708299334620494*^9}, {3.715944959094503*^9, 
+  3.715944974421392*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -451,8 +452,8 @@ Cell[BoxData[
    3.7093968408726387`*^9}, {3.709396913713071*^9, 3.709396916505624*^9}, {
    3.7093969670801277`*^9, 3.709396982372857*^9}}]
 },
-WindowSize->{1278, 750},
-WindowMargins->{{8, Automatic}, {-12, Automatic}},
+WindowSize->{1280, 948},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.1 for Linux x86 (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -467,9 +468,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 864, 22, 107, "Input"],
-Cell[1425, 44, 5437, 133, 722, "Input"],
-Cell[6865, 179, 17469, 272, 336, "Input"]
+Cell[558, 20, 873, 23, 77, "Input"],
+Cell[1434, 45, 5437, 133, 825, "Input"],
+Cell[6874, 180, 17469, 272, 442, "Input"]
 }
 ]
 *)

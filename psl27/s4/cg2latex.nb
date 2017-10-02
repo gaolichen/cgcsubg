@@ -10,26 +10,34 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      4835,        153]
-NotebookOptionsPosition[      4384,        132]
-NotebookOutlinePosition[      4718,        147]
-CellTagsIndexPosition[      4675,        144]
+NotebookDataLength[      5363,        169]
+NotebookOptionsPosition[      4912,        148]
+NotebookOutlinePosition[      5246,        163]
+CellTagsIndexPosition[      5203,        160]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{
-  "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/cg2latex.m\>\""}], 
+  RowBox[{"Get", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<../../cg2latex.m\>\""}], "}"}], "]"}], "]"}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-  "<<", "\"\</users/gaolichen/gitroot/psl27cg/mpackage/numerical.m\>\""}], 
+  RowBox[{"Get", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<../../numerical.m\>\""}], "}"}], "]"}], "]"}], 
   ";"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.7104603139075527`*^9, 3.710460315083158*^9}, {
   3.7104603836526003`*^9, 3.7104603891346607`*^9}, {3.7106139788925943`*^9, 
-  3.710613983848824*^9}}],
+  3.710613983848824*^9}, {3.7159475407292433`*^9, 3.715947566225698*^9}}],
 
 Cell[CellGroupData[{
 
@@ -76,8 +84,13 @@ Cell[BoxData[
     RowBox[{"BuildPhaseMap", "[", 
      RowBox[{"tph", ",", " ", "tname"}], "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"filepath", "=", "\"\<~/gitroot/psl27cg/psl27-s4-cg.tex\>\""}], 
-    ";"}], "\[IndentingNewLine]", 
+    RowBox[{"filepath", "=", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+        "\"\<psl27-s4-cg.tex\>\""}], "}"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"prodList", "=", 
      RowBox[{"{", 
@@ -115,18 +128,21 @@ Cell[BoxData[
    3.649595567593964*^9}, {3.67106001844228*^9, 3.671060045673604*^9}, 
    3.6713167716732187`*^9, {3.705085773832025*^9, 3.705085791363472*^9}, {
    3.7105031135343733`*^9, 3.7105032297334623`*^9}, {3.7106140034388227`*^9, 
-   3.710614010928692*^9}}],
+   3.710614010928692*^9}, {3.7159475854024982`*^9, 3.71594760905591*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Writing header\"\>"], "Print",
- CellChangeTimes->{3.71061437873428*^9, 3.710614534326983*^9}],
+ CellChangeTimes->{3.71061437873428*^9, 3.710614534326983*^9, 
+  3.715947617151847*^9}],
 
 Cell[BoxData["\<\"Writing body\"\>"], "Print",
- CellChangeTimes->{3.71061437873428*^9, 3.710614534331119*^9}],
+ CellChangeTimes->{3.71061437873428*^9, 3.710614534326983*^9, 
+  3.715947617187131*^9}],
 
 Cell[BoxData["\<\"Writing tail\"\>"], "Print",
- CellChangeTimes->{3.71061437873428*^9, 3.710614540210343*^9}]
+ CellChangeTimes->{3.71061437873428*^9, 3.710614534326983*^9, 
+  3.715947620731308*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -146,13 +162,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 455, 11, 77, "Input"],
+Cell[557, 20, 729, 19, 77, "Input"],
 Cell[CellGroupData[{
-Cell[1037, 35, 2959, 82, 253, "Input"],
+Cell[1311, 43, 3138, 87, 253, "Input"],
 Cell[CellGroupData[{
-Cell[4021, 121, 111, 1, 23, "Print"],
-Cell[4135, 124, 109, 1, 23, "Print"],
-Cell[4247, 127, 109, 1, 23, "Print"]
+Cell[4474, 134, 136, 2, 23, "Print"],
+Cell[4613, 138, 134, 2, 23, "Print"],
+Cell[4750, 142, 134, 2, 23, "Print"]
 }, Open  ]]
 }, Open  ]]
 }
