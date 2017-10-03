@@ -116,22 +116,6 @@ VerifyPsl27Generator[A_,B_]:=Module[{AB,n,zero,ABc},
 	Return[True];
 ];
 
-(* Transpose[LeftDiag[Y]].Y.RightDiag[Y] = diagonal matrix *)
-LeftDiag[Y_]:=Module[{mat,res,ret},
-	mat = Y.ConjugateTranspose[Y];
-	res = Eigensystem[mat];
-	ret = ConjugateTranspose[res[[2]]];
-	Return[ret];
-];
-
-RightDiag[Y_]:=Module[{mat,res,ret},
-	mat = ConjugateTranspose[Y].Y;
-	res = Eigensystem[mat];
-	ret = Transpose[res[[2]]];
-
-	Return[ret];
-];
-
 ClearAll[ExtractOverallPhase];
 ExtractOverallPhase/:ExtractOverallPhase[expr_, phases_]:=Module[
 	{i, e, ret = 1, expr2, rep1, rep2, diff},
