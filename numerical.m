@@ -83,7 +83,7 @@ ToExactPhase[ph_,opts:OptionsPattern[]]:=Module[{vb7,vd7,i,j,k,v,vomega,a,diff,b
 
 ClearAll[ToExp];
 SetAttributes[ToExp,Listable]
-Options[ToExp]=Join[{},Options[ToExactPhase]];
+Options[ToExp]=Join[{SimplifyNorm -> False},Options[ToExactPhase]];
 ToExp[a_,opts:OptionsPattern[]]:=Module[{r,c,i,ph},
 	If[Im[a]==0, Return[Re[a]]];
 	c=Arg[a];
@@ -91,8 +91,13 @@ ToExp[a_,opts:OptionsPattern[]]:=Module[{r,c,i,ph},
 	ph=ToExactPhase[c,FilterRules[{opts},Options[ToExactPhase]]];
 	If[SameQ[ph, Infinity], 
 		Return[a],
-		Return[Simplify[Abs[a]]ph]
-	]
+		If[OptionValue[SimplifyNorm],
+			r = SimplifyNum2[Abs[a]];
+			Return[r*ph],
+			Return[Simplify[Abs[a]]ph]
+		];
+		
+	];
 ];
 
 ClearAll[N2Exact];
