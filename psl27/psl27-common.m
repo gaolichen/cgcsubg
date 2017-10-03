@@ -356,41 +356,6 @@ NormalizeCG[r1_,r2_,r3_,cgList_,embed_]:=Module[{vv,ncg,eigen,tmp,Dmhalf,ret,lg,
 	(*Print["ncg=",ncg];*)
 	ret=GramSchmid2[ncg];
 	Return[NormalizeVectors[ret,Sqrt[Length[embed[GetRepName[r3]]]]]];
-
-(*	vv=SimplifyNum2[ncg.ConjugateTranspose[ncg]];
-
-	(*Print["vv=",MatrixForm[vv]];*)
-	eigen=Eigensystem[vv];
-	eigen[[1]]=SimplifyNum2[eigen[[1]]];
-	eigen[[2]]=SimplifyNum2[eigen[[2]]];
-	eigen[[2]]=Table[eigen[[2,i]]/Norm[eigen[[2,i]]],{i,1,Length[eigen[[2]]]}];
-	eigen[[2]]=Simplify[eigen[[2]]];
-	Dmhalf=DiagonalMatrix[ToRadicals[SqrtComplex[Reciprocal[eigen[[1]]]]]];
-	(*Print["NormalizeCG eigen=", eigen, ", dmhalf=", Dmhalf];*)
-	ret = Dmhalf.Conjugate[eigen[[2]]];
-	(*Print["NormalizeCG ret1=", ret];*)
-		
-	matM = SimplifyNum2[ret.ncg];	
-	matM = SimplifyNum2[matM.gamma.Transpose[matM]];
-	eigen=Eigensystem[matM];
-	(*Print["eigen=",eigen];*)
-	eigen[[1]]=SimplifyNum2[eigen[[1]]];
-	eigen[[2]]=SimplifyNum2[eigen[[2]]];
-	(*Print["eigen2=",eigen];*)
-	eigen[[2]]=Table[eigen[[2,i]]/Norm[eigen[[2,i]]],{i,1,Length[eigen[[2]]]}];
-	matO=Transpose[eigen[[2]]];
-		
-	Pmhalf=DiagonalMatrix[SqrtComplex[Reciprocal[eigen[[1]]]]];
-	(*Print["matM=", matM, ", eigen=", eigen, ", Pmhalf=",Pmhalf];*)
-	(*tmp = SimplifyNum2[Pmhalf.ConjugateTranspose[matO]];*)
-	ret = SimplifyNum2[Pmhalf.ConjugateTranspose[matO].ret];
-	(*Print["NormalizeCG ret2=", ret];*)
-
-	(*Print["ret.ncg=",Simplify[ret.ncg]];*)
-	ret = SimplifyNum2[ret.ncg];
-	(*Print["NormalizeCG ret3=", ret];*)
-	
-	Return[ret*Sqrt[Length[embed[GetRepName[r3]]]]];*)
 ];
 
 (* find the index of free parameter. The fp argument has the form: r1*r2\[Rule]r3 *)
@@ -494,5 +459,4 @@ b7ToNum={b7->(-1+I*Sqrt[7])/(2Sqrt[2]),d7->(-1-I*Sqrt[7])/(2Sqrt[2])};
 b7ToEt={b7->(et+et^2+et^4)/Sqrt[2],d7->(et^6+et^5+et^3)/Sqrt[2]};
 et4ToB7={et^4-> Sqrt[2]*b7-et-et^2};
 sq7Tob7={Sqrt[7]->-2I*Sqrt[2]b7-I};
-(*latexTob7={Subscript[b,7]->b7,Subscript[Overscript[b, _], 7]->d7};*)
 et2Num={et->Exp[2Pi*I/7]};

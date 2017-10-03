@@ -640,21 +640,6 @@ OrthnormalizeCG[r1_,r2_,r3_,coefsList_,embed_]:=Module[
 		(* If there are more than one set of CG coefficients, we need to do orthnormalization.*)
 		Assert[Length[coefsList]>1];
 		ret=GramSchmid[coefsList, et,7];
-		(*Print["ret=",ret];*)
-		(*mat=ConstantArray[0,{Length[subcoefs],Length[subcoefs]}];
-		For[i=1,i\[LessEqual] Length[mat],i++,
-		For[j=1,j\[LessEqual] Length[mat],j++,
-		mat[[i,j]]= Conjugate[subcoefs[[i]]].subcoefs[[j]];
-		]
-		];
-		(*Print["mat=",Simplify[mat]];*)
-
-		(* orthogonalize. *)
-		ret={};
-		eigenV=Eigenvectors[mat];
-		For[i=1,i\[LessEqual] Length[eigenV],i++,
-		AppendTo[ret,Sum[eigenV[[i,j]]*coefsList[[j]],{j,1,Length[eigenV]}]]
-		];*)
 	];
 
 	(* normalize. *)
