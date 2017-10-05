@@ -132,8 +132,8 @@ ExtractOverallPhase/:ExtractOverallPhase[expr_, phases_]:=Module[
 	rep1 = Table[phases[[i]]->1, {i,Length[phases]}];
 	rep2 = Table[phases[[i]]->2, {i,Length[phases]}];
 	diff = Simplify[(expr/.rep1) * (ret/.rep2) - (expr/.rep2)];
-	If[SameQ[diff, 0] == False, 
-		Print["ret=", ret, ", diff=", diff];
+	If[NumberQ[diff]==False || SameQ[Chop[diff], 0] == False, 
+		Print["ret=", ret, ", diff=", Chop[diff]];
 		Print["ExtractOverallPhase: not overall phase, expr = ", expr];
 		Throw[$Failed];
 	];

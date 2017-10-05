@@ -36,7 +36,12 @@ CGT7["3","1p","3"]:={
 
 CGT7["3","1pb","3"]:={{{1},{0},{0}},{{0},{omg^2},{0}},{{0},{0},{omg}}};
 
-CGT7["3","3","3:+"]:={{{0,0,0},{0,0,0},{0,0,1}},{{1,0,0},{0,0,0},{0,0,0}},{{0,0,0},{0,1,0},{0,0,0}}};
+(* for test purpose, set Ph333 to a nontrial value, the matrix of PSL27 generators should not change, 
+but phases of CG coefficients for subgroup contraction 3*3\[Rule]3:+ change by a conjugate phase. *)
+(*Ph333=Exp[2I*Pi/3];*)
+Ph333=1;
+
+CGT7["3","3","3:+"]:=Ph333{{{0,0,0},{0,0,0},{0,0,1}},{{1,0,0},{0,0,0},{0,0,0}},{{0,0,0},{0,1,0},{0,0,0}}};
 
 CGT7["3","3","3b:+"]:={1/Sqrt[2]{{0,0,0},{0,0,1},{0,1,0}},1/Sqrt[2]{{0,0,1},{0,0,0},{1,0,0}},1/Sqrt[2]{{0,1,0},{1,0,0},{0,0,0}}};
 
@@ -123,4 +128,7 @@ VerifyT7CG[]:=Module[{irr,i,j,k,gi,res},
 Print["VerifyGroupInfo: ", VerifyGroupInfo[T7Group,VerifyDotFunction->True]];
 Print["VerifyGroupInfo:", VerifyT7Generators[]];
 Print["VerifyT7CG:", VerifyT7CG[]];
+
+
+
 
