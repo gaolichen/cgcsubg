@@ -178,10 +178,6 @@ IsNegative[val_]:=Module[{str},
 ];
 
 b7Tolatex={b7-> Subscript[b,7],d7-> Subscript[
-
-
-
-
 \!\(\*OverscriptBox[\(b\), \(_\)]\), 7]};
 
 ClearAll[CGTermList2TeX];
@@ -202,7 +198,7 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 		If[Length[cgterms[[i]]]>=4, val = val /Sqrt[2];terminc = 2, terminc = 1];
 		If[terms + terminc > 3, 
 			(* new line if more than 4 terms. *)
-			exp=exp<> " \\\\ \n & & "; terms = terminc, 
+			exp=exp<> " \\\\ \n & "; terms = terminc, 
 			terms = terms + terminc
 		];
 
@@ -220,7 +216,7 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 	];
 
 	If[align,
-		Return[Rep2TeX[subG,to]<>" &=& "<>exp],
+		Return[Rep2TeX[subG,to]<>" & = "<>exp],
 		Return[Rep2TeX[subG,to]<>"="<>exp]
 	];
 ];
@@ -228,7 +224,7 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 (* Save the for r1*r2\[Rule]r3 *)
 SaveCG[os_, embed_,r1_, r2_,r3_]:=Module[{i,j, align = True,subreps,terms, coefs,pos},
 	(*If[Length[cg]>1,MyWriteLine[os, "\\begin{eqnarray*}"]; align = True, MyWriteLine[os, "\\["]];*)
-	MyWriteLine[os, "\\begin{eqnarray*}"];
+	MyWriteLine[os, "\\begin{align*}"];
 	(*Print["r1=",r1,",r2=",r2,",r3=",r3];*)
 	terms=embed[r1,r2,GetRepWithSym[r3],KeyCGTerms];
 	coefs=embed[r1,r2,r3,KeyCGCoefficient];
@@ -242,7 +238,7 @@ SaveCG[os_, embed_,r1_, r2_,r3_]:=Module[{i,j, align = True,subreps,terms, coefs
 		MyWriteLine[os,CGTermList2TeX[embed,coefs[[pos]],terms[[pos]],r1,r2, align]];
 		If[align && i < Length[subreps], MyWriteLine[os, "\\\\"]]
 	];
-	MyWriteLine[os, "\\end{eqnarray*}"];
+	MyWriteLine[os, "\\end{align*}"];
 	(*If[Length[cg]>1,MyWriteLine[os, "\\end{eqnarray*}"], MyWriteLine[os, "\\]"]];*)
 ];
 
@@ -277,6 +273,7 @@ WriteHeader[os_]:=Module[{},
 	MyWriteLine[os, "\\documentclass[english]{article}"];
 	MyWriteLine[os, "\\usepackage[T1]{fontenc}"];
 	MyWriteLine[os, "\\usepackage[latin9]{inputenc}"];
+	MyWriteLine[os, "\\usepackage{amsmath}"];
 	MyWriteLine[os];
 
 	MyWriteLine[os, "\\makeatletter"];
