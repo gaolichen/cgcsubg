@@ -656,6 +656,194 @@ OrthnormalizeCG[r1_,r2_,r3_,coefsList_,embed_]:=Module[
 	Return[Simplify[ret]]
 ];
 
+TestCG[r1_,r2_,r3_,embed_,op_,cgList_]:=Module[{i,rr3,ret=True},
+	For[i=1,i<= Length[cgList],i++,
+		If[Length[cgList]==1,
+			rr3=r3, rr3=SetRepMultiplicity[r3, i]
+		];
+		(*rr3=SetRepMultiplicity[r3, i];*)
+		SetCG[r1,r2,rr3,embed,N[cgList[[i]]/.{et->Exp[I*2Pi/7]}]];
+		If[VerifyCG[r1,r2,rr3,embed,op,b7ToNum]==False,
+			Print["TestCG: failed for CG " <> r1 <> "*" <> r2 <>"->"<>rr3];
+			ret = False
+			(*,Print["VerifyCG succeed:", cgList[[i]]]*)
+		];
+		ResetCG[r1,r2,rr3,embed];
+	];
+
+	Return[ret]
+];
+
+(* find orghogonal basis *)
+ClearAll[GramSchmid2];
+GramSchmid2[vList_List]:=Module[{ret={},i,j,vvl,inv,dot},
+	If[Length[vList]==1,Return[vList]];
+	vvl=vList;
+	For[i=1,i<= Length[vvl],i++,
+		If[vvl[[i]]=== ConstantArray[0,Length[vvl[[i]]]], Continue[]];
+		AppendTo[ret,vvl[[i]]];
+		inv=SimplifyNum2[1/(Conjugate[vvl[[i]]].vvl[[i]])];
+		For[j=i+1,j<= Length[vvl],j++,
+			vvl[[j]] = SimplifyNum2[vvl[[j]]-Conjugate[vvl[[i]]].vvl[[j]]*inv*vvl[[i]]];
+		];
+	];
+
+	Return[ret]
+];
+
+ClearAll[NormalizeVectors];
+NormalizeVectors[vList_List,factor_]:=Module[{i,ret={},norm},
+	For[i=1,i<=Length[vList],i++,
+		norm=SimplifyNum2[Sqrt[Conjugate[vList[[i]]].vList[[i]]]];
+		AppendTo[ret, SimplifyNum2[vList[[i]]/norm*factor]]
+	];
+
+	Return[ret]
+];
+
+ClearAll[SolveConjugateConstraints];
+SolveConjugateConstraints[cgc_,gamma_]:=Module[
+	{reVarList,imVarList, i, cg1, cg2, cg1parts, cg2parts, root, allzero, ret={}, v},
+
+	reVarList=Table[Unique["cgRe"],{i,1,Length[cgc]}];
+	imVarList=Table[Unique["cgIm"],{i,1,Length[cgc]}];
+	cg1 = Sum[(reVarList[[i]]+imVarList[[i]]*I)*cgc[[i]],{i,1,Length[cgc]}];
+	cg2 = gamma.ComplexExpand[Conjugate[cg1]];
+	cg1parts = ComplexExpand[Join[Re[cg1],Im[cg1]]];
+	cg2parts = ComplexExpand[Join[Re[cg2],Im[cg2]]];
+
+	Quiet[root=Solve[cg1parts==cg2parts, Join[reVarList, imVarList]],{Solve::svars}];
+	If[Length[root]==0, 
+		Print["SolveConjugateConstraints: No solution found."];
+		Throw[$Failed];
+	];
+
+	root = First[root];
+	cg1=Simplify[cg1/.root];
+	(*Print["root=",root, ", cg1=",cg1];*)
+	
+	allzero=Join[Table[reVarList[[i]]->0,{i,1,Length[reVarList]}],
+		Table[imVarList[[i]]->0,{i,1,Length[reVarList]}]];
+
+	For[i=1, i <= Length[reVarList], i++,
+		v=Simplify[cg1/.{reVarList[[i]]->1}];
+		v= Simplify[v/.allzero];
+		If[SameQ[v,ConstantArray[0,Length[cg1]]]==False, AppendTo[ret,v]];
+
+		v=Simplify[cg1/.{imVarList[[i]]->1}];
+		v=Simplify[v/.allzero];
+		If[SameQ[v,ConstantArray[0,Length[cg1]]]==False, AppendTo[ret,v]];
+	];
+
+	Return[ret]
+];
+
+NormalizeCG[r1_,r2_,r3_,cgList_,embed_]:=Module[{vv,ncg,eigen,tmp,Dmhalf,ret,lg,matM,gamma,svd,matO,Pmhalf,i},
+	ncg = cgList/.b7ToNum/.et2Num;
+
+	lg = embed[KeyLargeGroup];
+	(* If any of r1, r2, r3 are complex, we simply use GramSchmid algorithm to find orthogonal basis.*)
+	If[IsRealRep[lg, r1]==False || IsRealRep[lg, r2]==False || IsRealRep[lg, r3]==False,
+		ret=GramSchmid2[ncg];
+		Return[NormalizeVectors[ret,Sqrt[Length[embed[GetRepName[r3]]]]]]
+	];
+
+	(* If r1, r2, r3 are real reps, we need to make the *)
+	gamma = CGConjugateMat[r1,r2,r3,embed];
+	If[gamma == IdentityMatrix[Length[ncg[[1]]]],
+		Do[ncg[[i]]=FixCGPhase[ncg[[i]], gamma], {i,1,Length[ncg]}],
+		ncg=SolveConjugateConstraints[cgList, gamma]
+	];
+
+	(*Print["ncg=",ncg];*)
+	ret=GramSchmid2[ncg];
+	Return[NormalizeVectors[ret,Sqrt[Length[embed[GetRepName[r3]]]]]];
+];
+
+(* find the index of free parameter. The fp argument has the form: r1*r2\[Rule]r3 *)
+ClearAll[FreeParameterToIndex]
+SetAttributes[FreeParameterToIndex,Listable]
+FreeParameterToIndex[r1_String,r2_String, r3_String, fp_String, embed_]:=Module[{term,tmp,tlist,ret,i},
+	term = StringSplit[fp, {"*","->","\[Rule]"," "}];
+	If[Length[term]!= 3, Print["Invalid free parameter input: ", fp]; Throw[$Failed]];
+
+	tmp=term[[3]];
+	term[[3]]=term[[2]];
+	term[[2]]=term[[1]];
+	term[[1]]=tmp;
+	
+	tlist = embed[r1,r2,r3,KeyCGTerms];
+	ret = -1;
+	For[i = 1, i <= Length[tlist], i++,
+		If[Length[tlist[[i]]]==3 && tlist[[i]] == term, ret=i; Break[]]
+		If[Length[tlist[[i]]]==4 && tlist[[i,1]]==term[[1]], 
+			If[(tlist[[i,2]]==term[[2]] && tlist[[i,3]]==term[[3]])
+				|| tlist[[i,3]]==term[[2]] && tlist[[i,2]]==term[[3]], ret=i; Break[]];
+		];
+	];
+	
+	If[ret == -1, 
+		Print["Failed to find free parameter ", fp, " for ", r1, "*", r2, "->", r3];
+		Throw[$Failed];
+	];
+
+	Return[ret]
+];
+
+Options[FinalizeCG]={FreeParameters->{},EquationSolver->Null};
+FinalizeCG[r1_,r2_,r3_,cgEqs_,embed_,opts:OptionsPattern[]]:=Module[
+{coefsList,i,j,mat,nmat,mat2,evlist,cgmat,res,u,w,v,diag,fplist,solver=OptionValue[EquationSolver]},
+	If[solver === Null,
+		Print["FinalizeCG: EquationSolver is null."];
+		Throw[$Failed];
+	];
+
+	fplist = OptionValue[FreeParameters];
+	If[Length[fplist]>0, 
+		coefsList=solver[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
+		coefsList=solver[cgEqs]
+		(*coefsList=SolveCGEquations[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
+		coefsList=SolveCGEquations[cgEqs]*)
+	];
+
+	(* If there is only one cg term, then we manually set the CG coefficients to 1. *)
+	If[Length[coefsList]==0 && Length[embed[r1,r2,r3,KeyCGTerms]]==1,
+		coefsList={{1}};
+	];
+	(*Print["coefsList=",coefsList];*)
+
+	If[TestCG[r1,r2,r3,embed,PslGenB,coefsList/.b7ToNum]==False, 
+		Return[{}]
+	];
+
+	coefsList=NormalizeCG[r1,r2,r3,coefsList,embed];
+	Return[ToRadicals[coefsList]];
+];
+
+
+ClearAll[CalculateCG];
+Options[CalculateCG]=Join[{},Options[FinalizeCG]];
+CalculateCG[r1_String,r2_String,r3_String,embed_, input_,opList_,opts:OptionsPattern[]]:=
+Module[{eqs,res,i,rr3,repName,repDec,m,largeG},
+	largeG=embed[KeyLargeGroup];
+	m=GetCGMultiplicity[largeG,r1,r2,r3];
+	If[m>1,rr3=SetRepMultiplicity[r3,1],rr3=r3];
+	ResetCG[r1,r2,rr3,embed];
+	(*Print["GetCG=",GetCG[r1,r2,rr3,embed]];*)
+	eqs=CgcEquations[input, r1,r2,rr3,embed, opList];
+	(*Print["eqs=",eqs];*)
+	res=FinalizeCG[r1,r2,GetRepWithSym[r3],eqs, embed, FilterRules[{opts},Options[FinalizeCG]]];
+	(*Print["res=",res];*)
+	For[i=1,i<= Length[res],i++,
+		If[Length[res]==1,
+			rr3=r3, rr3=SetRepMultiplicity[r3, i]
+		];
+		SetCG[r1,r2,rr3,embed,res[[i]]];
+	];
+
+	Return[ToExp[res]]
+];
+
 
 ClearAll[PrintCG];
 PrintCG[r1_,r2_,r3_, embed_]:=Module[{cg,cgterms,term,row,i,isFirst=True,c},
