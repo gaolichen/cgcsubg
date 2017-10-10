@@ -488,7 +488,7 @@ DotDifference[v1_List,v2_List,r1_String,r2_String,r3_String,embed_Symbol,op_Symb
 ];
 
 ClearAll[VerifyCG];
-VerifyCG[r1_String,r2_String,r3_String,embed_Symbol,op_Symbol,rep_]:=Module[
+VerifyCG[r1_String,r2_String,r3_String,embed_Symbol,op_Symbol,rep_:{}]:=Module[
 	{v1,v2,lg,res,i,j,coef,d3,expect},
 
 	lg=embed[KeyLargeGroup];
@@ -496,7 +496,11 @@ VerifyCG[r1_String,r2_String,r3_String,embed_Symbol,op_Symbol,rep_]:=Module[
 	v2=Table[Unique["y"],{i,1,GetDimensionByRep[lg, r2]}];
 	d3=GetDimensionByRep[lg, r3];
 	expect=ConstantArray[0,d3];
-	res=N[DotDifference[v1,v2,r1,r2,r3,embed,op]/.rep];
+	If[Length[rep]>0,
+		res=N[DotDifference[v1,v2,r1,r2,r3,embed,op]/.rep],
+		res=N[DotDifference[v1,v2,r1,r2,r3,embed,op]];
+	];
+	
 	For[i=1,i<= Length[v1],i++,
 		For[j=1,j<= Length[v2],j++,
 			If[Chop[Coefficient[res,v1[[i]]*v2[[j]]]]!= expect, 
@@ -616,54 +620,14 @@ FixCGPhase[coefs_,conjMat_]:=Module[
 	Return[Simplify[coefs*Exp[-I*(arg1+arg2)/2]]]
 ];
 
-(* orthogonalize CG coefficients. *)
-ClearAll[OrthnormalizeCG];
-OrthnormalizeCG[r1_,r2_,r3_,coefsList_,embed_]:=Module[
-	{cgterms,pos={},i,j,subterm,subcoefs={},mat,ret,eigenV,norm},
-
-	cgterms=embed[r1,r2,r3,KeyCGTerms];
-	subterm = GetRepName[cgterms[[1,1]]];
-	For[i=1,i<= Length[cgterms],i++,
-		If[GetRepName[cgterms[[i,1]]]==subterm, AppendTo[pos, i]]
-	];
-
-	For[i=1,i<= Length[coefsList],i++,
-		AppendTo[subcoefs,coefsList[[i]][[pos]]];
-	];
-
-	(*Print["subcoefs=",subcoefs];*)
-
-	If[Length[coefsList]==1,
-		(* If there is one set of CG coefficients, we do not need to do orthnormalization.*)
-		ret=coefsList,
-
-		(* If there are more than one set of CG coefficients, we need to do orthnormalization.*)
-		Assert[Length[coefsList]>1];
-		ret=GramSchmid[coefsList, et,7];
-	];
-
-	(* normalize. *)
-	For[i=1,i<= Length[ret],i++,
-		norm=Simplify[ToConjugateCN[ret[[i,pos]],et,7].ret[[i,pos]]];
-		norm=SimplifyCN[norm,et,7];
-		(*Print["norm=",norm];*)
-		norm=Simplify[Sqrt[norm]];
-		ret[[i]]/=norm;
-		ret[[i]]=SimplifyCN[ret[[i]],et,7];
-		(*Print["ret[[i]]=",ret];*)
-	];
-
-	Return[Simplify[ret]]
-];
-
 TestCG[r1_,r2_,r3_,embed_,op_,cgList_]:=Module[{i,rr3,ret=True},
 	For[i=1,i<= Length[cgList],i++,
 		If[Length[cgList]==1,
 			rr3=r3, rr3=SetRepMultiplicity[r3, i]
 		];
 		(*rr3=SetRepMultiplicity[r3, i];*)
-		SetCG[r1,r2,rr3,embed,N[cgList[[i]]/.{et->Exp[I*2Pi/7]}]];
-		If[VerifyCG[r1,r2,rr3,embed,op,b7ToNum]==False,
+		SetCG[r1,r2,rr3,embed,N[cgList[[i]]]];
+		If[VerifyCG[r1,r2,rr3,embed,op]==False,
 			Print["TestCG: failed for CG " <> r1 <> "*" <> r2 <>"->"<>rr3];
 			ret = False
 			(*,Print["VerifyCG succeed:", cgList[[i]]]*)
