@@ -40,8 +40,10 @@ BuildCGTermsAll[Psl27ToT7]
 
 ClearAll[ClaculateAndPrintPslT7CG];
 Options[ClaculateAndPrintPslT7CG]=Join[{},Options[CalculateCG]];
-ClaculateAndPrintPslT7CG[r1_,r2_,r3_, input_,opts:OptionsPattern[]]:=Module[{m,i,rr3},
-	CalculateCG[r1,r2,r3,Psl27ToT7,input,{PslGenA},FilterRules[{opts}, Options[CalculateCG]]];
+ClaculateAndPrintPslT7CG[r1_,r2_,r3_, input_,opts:OptionsPattern[]]:=Module[{m,i,rr3,rules},
+	rules = FilterRules[{opts}, Options[CalculateCG]];
+	rules = Join[rules, {EquationSolver -> SolveCGEquations}];
+	CalculateCG[r1,r2,r3,Psl27ToT7,input,{PslGenA}, rules];
 	m=GetCGMultiplicity[Psl27,r1,r2,r3];
 	If[m==1,
 		PrintCG[r1,r2,r3,Psl27ToT7],

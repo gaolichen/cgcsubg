@@ -372,13 +372,20 @@ FreeParameterToIndex[r1_String,r2_String, r3_String, fp_String, embed_]:=Module[
 	Return[ret]
 ];
 
-Options[FinalizeCG]={FreeParameters->{}};
+Options[FinalizeCG]={FreeParameters->{},EquationSolver->Null};
 FinalizeCG[r1_,r2_,r3_,cgEqs_,embed_,opts:OptionsPattern[]]:=Module[
-{coefsList,i,j,mat,nmat,mat2,evlist,cgmat,res,u,w,v,diag,fplist},
+{coefsList,i,j,mat,nmat,mat2,evlist,cgmat,res,u,w,v,diag,fplist,solver=OptionValue[EquationSolver]},
+	If[solver === Null,
+		Print["FinalizeCG: EquationSolver is null."];
+		Throw[$Failed];
+	];
+
 	fplist = OptionValue[FreeParameters];
 	If[Length[fplist]>0, 
-		coefsList=SolveCGEquations[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
-		coefsList=SolveCGEquations[cgEqs]
+		coefsList=solver[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
+		coefsList=solver[cgEqs]
+		(*coefsList=SolveCGEquations[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
+		coefsList=SolveCGEquations[cgEqs]*)
 	];
 
 	(* If there is only one cg term, then we manually set the CG coefficients to 1. *)
