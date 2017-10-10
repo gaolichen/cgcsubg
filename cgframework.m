@@ -1,8 +1,13 @@
 (* ::Package:: *)
 
+(* This package file implements the framework for Subgroup-basis Clebsch-Gordan coeffcients calculation. *)
+
 LoadPackage[file_]:= Get[FileNameJoin[{DirectoryName[$InputFileName],file}]];
 LoadPackage["cyclicnumber.m"];
 LoadPackage["numerical.m"];
+
+
+(* This cell implements the data structures used in the framework. *)
 
 KeyIrr="Irr";
 KeyConjugateIrr="ConjugateIrr";
@@ -12,6 +17,8 @@ KeyLargeGroup="LargeGroup";
 KeySubGroup="SubGroup";
 KeyTransformMatrix="TransformMatrix";
 KeyCGImplicitSymmetric="SubCGImplicitSymmetric";
+KeyCGTerms="CGTerms";
+KeyCGCoefficient="CGCoefficient";
 
 (* 
 Gets the name of representation from given string. 
@@ -144,50 +151,6 @@ GetCGMultiplicity[gi_,r1_String,r2_String,r3_String]:=
 	Return[ret]
 ];
 
-ClearAll[VerifyGroupInfo];
-Options[VerifyGroupInfo]={VerifyDotFunction->False};
-VerifyGroupInfo[gi_, opt:OptionsPattern[]]:=Module[{irr,i,j,k, tot,res,res2,fun,tmp1,tmp2},
-	irr=AllIrrs[gi];
-	For[i=1,i<= Length[irr],i++,
-		For[j=i,j<= Length[irr],j++,
-			res=Kronecker[gi, irr[[i]], irr[[j]]];
-			res2=Kronecker[gi, ToConjugateRep[gi,irr[[i]]], ToConjugateRep[gi,irr[[j]]]];
-			res2=ToConjugateRep[gi,res2];
-			res=Sort[res];
-			res2=Sort[res2];
-			If[res!= res2,
-				Print["res=",res, ", res2=",res2];Return[False]
-			];
-
-			tot = Sum[GetDimensionByRep[gi, res[[k]]],{k,1,Length[res]}];
-			If[tot!=GetDimensionByRep[gi, irr[[i]]] * GetDimensionByRep[gi,irr[[j]]],
-				Print["tot=",tot, ", r1=",  GetDimensionByRep[gi, irr[[i]]] , ", r2=",  GetDimensionByRep[gi, irr[[j]]] ];
-				Return[False]
-			];
-		];
-	];
-
-	If[OptionValue[VerifyDotFunction]==False, Return[True]];
-	fun=gi[KeyDotFunction];
-	For[i=1,i<= Length[irr],i++,
-		tmp1=Table[RandomInteger[],{k,1,GetDimensionByRep[gi, irr[[i]]]}];
-		For[j=i,j<= Length[irr],j++,
-			tmp2=Table[RandomInteger[],{k,1,GetDimensionByRep[gi, irr[[j]]]}];
-			res=Kronecker[gi, irr[[i]], irr[[j]]];
-			(*Print["res=",res];*)
-			For[k=1,k<= Length[res],k++,
-				res2=fun[tmp1,tmp2,irr[[i]],irr[[j]],res[[k]]];
-				If[SameQ[Length[res2],GetDimensionByRep[gi, res[[k]]]]==False,
-					Print["ri=",irr[[i]],", rj=",irr[[j]],", rk=",res[[k]],", expect size=", GetDimensionByRep[gi, res[[k]]], ", returned=",Length[res2]];
-					Return[False]
-				];
-			];
-		];
-	];
-
-	Return[True]
-];
-
 ClearAll[DefaultEmbed];
 DefaultEmbed[r_String,largeG_,subG_]:=
 If[r== SingletRepresentation[largeG], {SingletRepresentation[subG]}, 
@@ -256,26 +219,6 @@ DotByTable[gi_,tab_,a_,b_,ra_,rb_,rc_]:=Module[{cg,res,rab,rbb,rcb},
 	Return[Table[a.cg[[i]].b, {i,1,Length[cg]}]];
 ];
 
-ClearAll[VerifyEmbed];
-VerifyEmbed[embed_]:=Module[{g,subg,irrs,list,i,j, conj,list2},
-	g=embed[KeyLargeGroup];
-	subg=embed[KeySubGroup];
-	irrs=AllIrrs[g];
-
-	For[i=2,i<= Length[irrs],i++,
-		list=embed[irrs[[i]]];
-		Assert[GetDimensionByRep[g,irrs[[i]]]== Sum[GetDimensionByRep[subg,list[[j]]],{j,1,Length[list]}]];
-		conj=ToConjugateRep[g, irrs[[i]]];
-		If[conj == irrs[[i]], Continue[]];
-
-		list2=embed[conj];
-		list2=ToConjugateRep[subg, list2];
-		list2=Sort[list2];
-		list = Sort[list];
-		Assert[list==list2];
-	];
-];
-
 ClearAll[ToSubRep];
 ToSubRep[v_List,r_String,subr_String,embed_]:=Module[
 	{tmat,res, allsubr,i,subg,index=1},
@@ -326,6 +269,98 @@ ToLargeRep[r_String,vlist_List,embed_]:=Module[{allsubr,i,ret={},tmat},
 ];
 
 
+ClearAll[GetCG];
+GetCG[r1_String,r2_String,r3_String,embed_]:=embed[r1,r2,r3,KeyCGCoefficient];
+
+ClearAll[SetCG];
+SetCG[r1_String,r2_String,r3_String,embed_, coefs_]:=Module[{lg,klist},
+	lg = embed[KeyLargeGroup];
+	klist = Kronecker[lg, r1,r2];
+	If[MemberQ[klist, r3]!= True, 
+		Print["SetCG failed: cannot find the Kronecker product ", r1, "*",r2,"->",r3];
+		Return[]
+	];
+
+	embed[r1,r2,r3,KeyCGCoefficient]=coefs;
+];
+
+ClearAll[ResetCG];
+ResetCG[r1_String,r2_String,r3_String, embed_]:=Module[{cgterms},
+	cgterms=embed[r1,r2,GetRepWithSym[r3],KeyCGTerms];
+	embed[r1,r2,r3,KeyCGCoefficient]=Table[Unique["CG"],{h,1,Length[cgterms]}];
+];
+
+
+(* functions to test data structures. *)
+
+ClearAll[VerifyGroupInfo];
+Options[VerifyGroupInfo]={VerifyDotFunction->False};
+VerifyGroupInfo[gi_, opt:OptionsPattern[]]:=Module[{irr,i,j,k, tot,res,res2,fun,tmp1,tmp2},
+	irr=AllIrrs[gi];
+	For[i=1,i<= Length[irr],i++,
+		For[j=i,j<= Length[irr],j++,
+			res=Kronecker[gi, irr[[i]], irr[[j]]];
+			res2=Kronecker[gi, ToConjugateRep[gi,irr[[i]]], ToConjugateRep[gi,irr[[j]]]];
+			res2=ToConjugateRep[gi,res2];
+			res=Sort[res];
+			res2=Sort[res2];
+			If[res!= res2,
+				Print["res=",res, ", res2=",res2];Return[False]
+			];
+
+			tot = Sum[GetDimensionByRep[gi, res[[k]]],{k,1,Length[res]}];
+			If[tot!=GetDimensionByRep[gi, irr[[i]]] * GetDimensionByRep[gi,irr[[j]]],
+				Print["tot=",tot, ", r1=",  GetDimensionByRep[gi, irr[[i]]] , ", r2=",  GetDimensionByRep[gi, irr[[j]]] ];
+				Return[False]
+			];
+		];
+	];
+
+	If[OptionValue[VerifyDotFunction]==False, Return[True]];
+	fun=gi[KeyDotFunction];
+	For[i=1,i<= Length[irr],i++,
+		tmp1=Table[RandomInteger[],{k,1,GetDimensionByRep[gi, irr[[i]]]}];
+		For[j=i,j<= Length[irr],j++,
+			tmp2=Table[RandomInteger[],{k,1,GetDimensionByRep[gi, irr[[j]]]}];
+			res=Kronecker[gi, irr[[i]], irr[[j]]];
+			(*Print["res=",res];*)
+			For[k=1,k<= Length[res],k++,
+				res2=fun[tmp1,tmp2,irr[[i]],irr[[j]],res[[k]]];
+				If[SameQ[Length[res2],GetDimensionByRep[gi, res[[k]]]]==False,
+					Print["ri=",irr[[i]],", rj=",irr[[j]],", rk=",res[[k]],", expect size=", GetDimensionByRep[gi, res[[k]]], ", returned=",Length[res2]];
+					Return[False]
+				];
+			];
+		];
+	];
+
+	Return[True]
+];
+
+ClearAll[VerifyEmbed];
+VerifyEmbed[embed_]:=Module[{g,subg,irrs,list,i,j, conj,list2},
+	g=embed[KeyLargeGroup];
+	subg=embed[KeySubGroup];
+	irrs=AllIrrs[g];
+
+	For[i=2,i<= Length[irrs],i++,
+		list=embed[irrs[[i]]];
+		Assert[GetDimensionByRep[g,irrs[[i]]]== Sum[GetDimensionByRep[subg,list[[j]]],{j,1,Length[list]}]];
+		conj=ToConjugateRep[g, irrs[[i]]];
+		If[conj == irrs[[i]], Continue[]];
+
+		list2=embed[conj];
+		list2=ToConjugateRep[subg, list2];
+		list2=Sort[list2];
+		list = Sort[list];
+		Assert[list==list2];
+	];
+];
+
+
+
+(* functions to build CG coefficients and setup equations with respect to CG coefficients. *)
+
 ClearAll[BuildCGTermsSub];
 BuildCGTermsSub[r1_String,r2_String,subr_String,embed_]:=Module[
 	{subg,subr1,subr2,i,j,k,list,res,dec,rn},
@@ -372,30 +407,6 @@ BuildCGTerms[r1_String,r2_String,r3_String,embed_]:=Module[
 	];
 
 	Return[res]
-];
-
-KeyCGTerms="CGTerms";
-KeyCGCoefficient="CGCoefficient";
-
-ClearAll[GetCG];
-GetCG[r1_String,r2_String,r3_String,embed_]:=embed[r1,r2,r3,KeyCGCoefficient];
-
-ClearAll[SetCG];
-SetCG[r1_String,r2_String,r3_String,embed_, coefs_]:=Module[{lg,klist},
-	lg = embed[KeyLargeGroup];
-	klist = Kronecker[lg, r1,r2];
-	If[MemberQ[klist, r3]!= True, 
-		Print["SetCG failed: cannot find the Kronecker product ", r1, "*",r2,"->",r3];
-		Return[]
-	];
-
-	embed[r1,r2,r3,KeyCGCoefficient]=coefs;
-];
-
-ClearAll[ResetCG];
-ResetCG[r1_String,r2_String,r3_String, embed_]:=Module[{cgterms},
-	cgterms=embed[r1,r2,GetRepWithSym[r3],KeyCGTerms];
-	embed[r1,r2,r3,KeyCGCoefficient]=Table[Unique["CG"],{h,1,Length[cgterms]}];
 ];
 
 ClearAll[BuildCGTermsAll];
@@ -469,15 +480,6 @@ DotRep[v1_List,v2_List,r1_String,r2_String,r3_String,embed_]:=Module[
 	Return[ToLargeRep[r3,vlist,embed]]
 ];
 
-ClearAll[SimpleList,TwoSimpleList];
-SimpleList[n_Integer,m_Integer]:=Module[{ret},
-	ret=ConstantArray[0,n];
-	ret[[m]]=1;
-	Return[ret]
-];
-
-TwoSimpleList[n1_Integer,n2_Integer,list_List]:=Table[{SimpleList[n1,list[[i,1]]],SimpleList[n2,list[[i,2]]]},{i,1,Length[list]}];
-
 ClearAll[DotDifference];
 DotDifference[v1_List,v2_List,r1_String,r2_String,r3_String,embed_Symbol,op_Symbol]:=Module[{res1,res2,res3,v3,v4},
 	res1=op[GetRepName[r3]].DotRep[v1,v2,r1,r2,r3,embed];
@@ -513,8 +515,8 @@ VerifyCG[r1_String,r2_String,r3_String,embed_Symbol,op_Symbol,rep_:{}]:=Module[
 	Return[True]
 ];
 
-ClearAll[CgcEquations]
-CgcEquations[input_List,r1_String,r2_String,r3_String,embed_Symbol,opList_List]:=Module[{mat,vars,res,diff={},i,j},
+ClearAll[SetupCgcEquations]
+SetupCgcEquations[input_List,r1_String,r2_String,r3_String,embed_Symbol,opList_List]:=Module[{mat,vars,res,diff={},i,j},
 	vars =embed[r1,r2,r3,KeyCGCoefficient];
 	For[i=1,i<= Length[opList],i++,
 		For[j=1,j<= Length[input],j++,
@@ -525,6 +527,10 @@ CgcEquations[input_List,r1_String,r2_String,r3_String,embed_Symbol,opList_List]:
 	mat=Table[Coefficient[diff, vars[[i]]], {i,1,Length[vars]}];
 	Return[Transpose[mat]]
 ];
+
+
+
+(* function to solve equations built by SetupCgcEquations *)
 
 ClearAll[SolveLinearEquation];
 Options[SolveLinearEquation]={FreeCoefficients->{},Numeric->False};
@@ -575,6 +581,58 @@ SolveLinearEquation[cMat_List, opts:OptionsPattern[]]:=Module[
 	];
 ];
 
+(* find the index of free parameter. The fp argument has the form: r1*r2\[Rule]r3 *)
+ClearAll[FreeParameterToIndex]
+SetAttributes[FreeParameterToIndex,Listable]
+FreeParameterToIndex[r1_String,r2_String, r3_String, fp_String, embed_]:=Module[{term,tmp,tlist,ret,i},
+	term = StringSplit[fp, {"*","->","\[Rule]"," "}];
+	If[Length[term]!= 3, Print["Invalid free parameter input: ", fp]; Throw[$Failed]];
+
+	tmp=term[[3]];
+	term[[3]]=term[[2]];
+	term[[2]]=term[[1]];
+	term[[1]]=tmp;
+	
+	tlist = embed[r1,r2,r3,KeyCGTerms];
+	ret = -1;
+	For[i = 1, i <= Length[tlist], i++,
+		If[Length[tlist[[i]]]==3 && tlist[[i]] == term, ret=i; Break[]]
+		If[Length[tlist[[i]]]==4 && tlist[[i,1]]==term[[1]], 
+			If[(tlist[[i,2]]==term[[2]] && tlist[[i,3]]==term[[3]])
+				|| tlist[[i,3]]==term[[2]] && tlist[[i,2]]==term[[3]], ret=i; Break[]];
+		];
+	];
+	
+	If[ret == -1, 
+		Print["Failed to find free parameter ", fp, " for ", r1, "*", r2, "->", r3];
+		Throw[$Failed];
+	];
+
+	Return[ret]
+];
+
+TestCG[r1_,r2_,r3_,embed_,op_,cgList_]:=Module[{i,rr3,ret=True},
+	For[i=1,i<= Length[cgList],i++,
+		If[Length[cgList]==1,
+			rr3=r3, rr3=SetRepMultiplicity[r3, i]
+		];
+		(*rr3=SetRepMultiplicity[r3, i];*)
+		SetCG[r1,r2,rr3,embed,N[cgList[[i]]]];
+		If[VerifyCG[r1,r2,rr3,embed,op]==False,
+			Print["TestCG: failed for CG " <> r1 <> "*" <> r2 <>"->"<>rr3];
+			ret = False
+			(*,Print["VerifyCG succeed:", cgList[[i]]]*)
+		];
+		ResetCG[r1,r2,rr3,embed];
+	];
+
+	Return[ret]
+];
+
+
+
+(* function to solve CP constraints and orthonormalize CG coefficients. *)
+
 ClearAll[CGConjugateMat];
 CGConjugateMat[r1_,r2_,r3_,embed_]:=Module[{cgterms,subG,conj,conj2,i,j,ret,index},
 	cgterms=embed[r1,r2,r3,KeyCGTerms];
@@ -599,44 +657,6 @@ CGConjugateMat[r1_,r2_,r3_,embed_]:=Module[{cgterms,subG,conj,conj2,i,j,ret,inde
 	Return[ret];
 ];
 
-ClearAll[FixCGPhase];
-FixCGPhase[coefs_,conjMat_]:=Module[
-	{i,index,arg1,arg2},
-	For[i=1,i<=Length[coefs],i++, 
-		If[coefs[[i]]!= 0, Break[]]
-	];
-
-	If[i>Length[coefs], Print["FixCGPhase invalid input: coefs =", coefs]; Throw[$Failed]];
-
-	For[index=1,index < Length[conjMat[[i]]],index++,
-		If[conjMat[[i,index]]!=0, Break[]]
-	];
-
-	If[index>Length[coefs], Print["FixCGPhase invalid input: conjMat =", conjMat]; Throw[$Failed]];
-	arg1=Arg[coefs[[i]]];
-	arg2=Arg[coefs[[index]]];
-
-	If[IntegerQ[(arg1+arg2)/(2*Pi)], Return[coefs]];
-	Return[Simplify[coefs*Exp[-I*(arg1+arg2)/2]]]
-];
-
-TestCG[r1_,r2_,r3_,embed_,op_,cgList_]:=Module[{i,rr3,ret=True},
-	For[i=1,i<= Length[cgList],i++,
-		If[Length[cgList]==1,
-			rr3=r3, rr3=SetRepMultiplicity[r3, i]
-		];
-		(*rr3=SetRepMultiplicity[r3, i];*)
-		SetCG[r1,r2,rr3,embed,N[cgList[[i]]]];
-		If[VerifyCG[r1,r2,rr3,embed,op]==False,
-			Print["TestCG: failed for CG " <> r1 <> "*" <> r2 <>"->"<>rr3];
-			ret = False
-			(*,Print["VerifyCG succeed:", cgList[[i]]]*)
-		];
-		ResetCG[r1,r2,rr3,embed];
-	];
-
-	Return[ret]
-];
 
 (* find orghogonal basis *)
 ClearAll[GramSchmid2];
@@ -712,47 +732,18 @@ NormalizeCG[r1_,r2_,r3_,cgList_,embed_]:=Module[{vv,ncg,eigen,tmp,Dmhalf,ret,lg,
 		Return[NormalizeVectors[ret,Sqrt[Length[embed[GetRepName[r3]]]]]]
 	];
 
-	(* If r1, r2, r3 are real reps, we need to make the *)
+	(* If r1, r2, r3 are real reps, we need to solve the CP constraints to make each set of CG real*)
 	gamma = CGConjugateMat[r1,r2,r3,embed];
-	If[gamma == IdentityMatrix[Length[ncg[[1]]]],
-		Do[ncg[[i]]=FixCGPhase[ncg[[i]], gamma], {i,1,Length[ncg]}],
-		ncg=SolveConjugateConstraints[cgList, gamma]
-	];
+	ncg=SolveConjugateConstraints[cgList, gamma];
 
 	(*Print["ncg=",ncg];*)
 	ret=GramSchmid2[ncg];
 	Return[NormalizeVectors[ret,Sqrt[Length[embed[GetRepName[r3]]]]]];
 ];
 
-(* find the index of free parameter. The fp argument has the form: r1*r2\[Rule]r3 *)
-ClearAll[FreeParameterToIndex]
-SetAttributes[FreeParameterToIndex,Listable]
-FreeParameterToIndex[r1_String,r2_String, r3_String, fp_String, embed_]:=Module[{term,tmp,tlist,ret,i},
-	term = StringSplit[fp, {"*","->","\[Rule]"," "}];
-	If[Length[term]!= 3, Print["Invalid free parameter input: ", fp]; Throw[$Failed]];
 
-	tmp=term[[3]];
-	term[[3]]=term[[2]];
-	term[[2]]=term[[1]];
-	term[[1]]=tmp;
-	
-	tlist = embed[r1,r2,r3,KeyCGTerms];
-	ret = -1;
-	For[i = 1, i <= Length[tlist], i++,
-		If[Length[tlist[[i]]]==3 && tlist[[i]] == term, ret=i; Break[]]
-		If[Length[tlist[[i]]]==4 && tlist[[i,1]]==term[[1]], 
-			If[(tlist[[i,2]]==term[[2]] && tlist[[i,3]]==term[[3]])
-				|| tlist[[i,3]]==term[[2]] && tlist[[i,2]]==term[[3]], ret=i; Break[]];
-		];
-	];
-	
-	If[ret == -1, 
-		Print["Failed to find free parameter ", fp, " for ", r1, "*", r2, "->", r3];
-		Throw[$Failed];
-	];
 
-	Return[ret]
-];
+(* main function to calculate CG coefficients. *)
 
 Options[FinalizeCG]={FreeParameters->{},EquationSolver->Null};
 FinalizeCG[r1_,r2_,r3_,cgEqs_,embed_,opts:OptionsPattern[]]:=Module[
@@ -766,8 +757,6 @@ FinalizeCG[r1_,r2_,r3_,cgEqs_,embed_,opts:OptionsPattern[]]:=Module[
 	If[Length[fplist]>0, 
 		coefsList=solver[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
 		coefsList=solver[cgEqs]
-		(*coefsList=SolveCGEquations[cgEqs,FreeParameterToIndex[r1,r2,r3,fplist,embed]],
-		coefsList=SolveCGEquations[cgEqs]*)
 	];
 
 	(* If there is only one cg term, then we manually set the CG coefficients to 1. *)
@@ -784,7 +773,6 @@ FinalizeCG[r1_,r2_,r3_,cgEqs_,embed_,opts:OptionsPattern[]]:=Module[
 	Return[ToRadicals[coefsList]];
 ];
 
-
 ClearAll[CalculateCG];
 Options[CalculateCG]=Join[{},Options[FinalizeCG]];
 CalculateCG[r1_String,r2_String,r3_String,embed_, input_,opList_,opts:OptionsPattern[]]:=
@@ -794,7 +782,7 @@ Module[{eqs,res,i,rr3,repName,repDec,m,largeG},
 	If[m>1,rr3=SetRepMultiplicity[r3,1],rr3=r3];
 	ResetCG[r1,r2,rr3,embed];
 	(*Print["GetCG=",GetCG[r1,r2,rr3,embed]];*)
-	eqs=CgcEquations[input, r1,r2,rr3,embed, opList];
+	eqs=SetupCgcEquations[input, r1,r2,rr3,embed, opList];
 	(*Print["eqs=",eqs];*)
 	res=FinalizeCG[r1,r2,GetRepWithSym[r3],eqs, embed, FilterRules[{opts},Options[FinalizeCG]]];
 	(*Print["res=",res];*)
@@ -808,6 +796,8 @@ Module[{eqs,res,i,rr3,repName,repDec,m,largeG},
 	Return[ToExp[res]]
 ];
 
+
+(* utility functions *)
 
 ClearAll[PrintCG];
 PrintCG[r1_,r2_,r3_, embed_]:=Module[{cg,cgterms,term,row,i,isFirst=True,c},
@@ -834,4 +824,13 @@ PrintCG[r1_,r2_,r3_, embed_]:=Module[{cg,cgterms,term,row,i,isFirst=True,c},
 
 	Print[Row[row]];
 ];
+
+ClearAll[SimpleList,TwoSimpleList];
+SimpleList[n_Integer,m_Integer]:=Module[{ret},
+	ret=ConstantArray[0,n];
+	ret[[m]]=1;
+	Return[ret]
+];
+
+TwoSimpleList[n1_Integer,n2_Integer,list_List]:=Table[{SimpleList[n1,list[[i,1]]],SimpleList[n2,list[[i,2]]]},{i,1,Length[list]}];
 
