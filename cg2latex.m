@@ -110,7 +110,7 @@ KroneckerEquation2TeX[ gi_,r1_,r2_]:=Module[
 		res = RepSum2TeX[gi,r1,r2, kronecker];
 	];
 
-	Return["\\paragraph*{\\Large $\\tsprod{" <> RepTexName[gi,r1] <> "}{" <> RepTexName[gi,r2]<> "}\\to"<> res<>"$}"];
+	Return["\\paragraph*{\\cgEqFontsize $\\tsprod{" <> RepTexName[gi,r1] <> "}{" <> RepTexName[gi,r2]<> "}\\to"<> res<>"$}"];
 ];
 
 EqsToTeX[gi_,r1_, r2_, r3_]:=Module[{primed = False},
@@ -281,6 +281,7 @@ WriteHeader[os_]:=Module[{},
 	MyWriteLine[os];
 
 	MyWriteLine[os, "\\makeatletter"];
+	MyWriteLine[os, "\\newcommand{\\cgEqFontsize}{\\large}"];
 	MyWriteLine[os, "\\newcommand{\\rep}[1]{\\mathbf{#1}}"];
 	MyWriteLine[os, "\\newcommand{\\repx}[2]{{}_{#2}\\mathbf{#1}}"];
 	MyWriteLine[os, "\\newcommand{\\tsprod}[2]{\\rep{#1}\\otimes\\rep{#2}}"];
