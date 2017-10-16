@@ -110,12 +110,13 @@ KroneckerEquation2TeX[ gi_,r1_,r2_]:=Module[
 		res = RepSum2TeX[gi,r1,r2, kronecker];
 	];
 
-	Return["\\paragraph*{\\Large $"<> Rep2TeX[gi,r1]<> "\\otimes"<> Rep2TeX[gi,r2]<> "\\to"<> res<>"$}"];
+	Return["\\paragraph*{\\Large $\\tsprod{" <> RepTexName[gi,r1] <> "}{" <> RepTexName[gi,r2]<> "}\\to"<> res<>"$}"];
 ];
 
 EqsToTeX[gi_,r1_, r2_, r3_]:=Module[{primed = False},
 	If[r1==r2,primed=True];
-	Return[Rep2TeX[gi,r1,VarName->"x"]<>"\\otimes"<>Rep2TeX[gi,r2, (*Primed->primed,*)VarName->"y"]<>"\\to"<>Rep2TeX[gi,r3]];
+	Return["\\tsprodx{" <> RepTexName[gi,r1] <> "}{" <> RepTexName[gi,r2]<>"}\\to"<>Rep2TeX[gi,r3]];
+	(*Return[Rep2TeX[gi,r1,VarName->"x"]<>"\\otimes"<>Rep2TeX[gi,r2, (*Primed->primed,*)VarName->"y"]<>"\\to"<>Rep2TeX[gi,r3]];*)
 ];
 
 ClearAll[SubRep2TeX];
@@ -149,8 +150,10 @@ Dot2TeX[embed_,subr1_,subr2_,r1_,r2_, to_]:=Module[{primed, sym, to2, withSym = 
 	Print["embed=",embed,",subr2=",subr2,", r2=",r2];
 	Print["SubRep2Tex=",SubRep2TeX[embed,subr1,r1]];
 	Print["SubRep2Tex=",SubRep2TeX[embed,subr2,r2,primed]];*)
-	(*Return["\\subcg{" <> SubRep2TeX[embed,subr1,r1] <> "}{" <> SubRep2TeX[embed,subr2,r2, primed] <>  "}{" <> Rep2TeX[subG,to, WithSymmetry->withSym] <> "}" ];*)
-	Return["\\subcg{" <> RepTexName[subG,subr1] <> "}{" <> RepTexName[subG,subr2] <>  "}{" <> RepTexName[subG,to, WithSymmetry->withSym] <> "}" ];
+	(*Return["\\"<>$ContractionTag<>"{" <> SubRep2TeX[embed,subr1,r1] <> "}{" <> SubRep2TeX[embed,subr2,r2, primed] <>  "}{" <> Rep2TeX[subG,to, WithSymmetry->withSym] <> "}" ];*)
+	Return["\\" <> $ContractionTag <> "{" <> RepTexName[subG,subr1] <> "}{" <> RepTexName[subG,subr2] 
+			<>  "}{" <> RepTexName[subG,to, WithSymmetry->withSym] <> "}" 
+	];
 ];
 
 ClearAll[CGTerm2TeX];
@@ -178,6 +181,7 @@ IsNegative[val_]:=Module[{str},
 ];
 
 b7Tolatex={b7-> Subscript[b,7],d7-> Subscript[
+
 \!\(\*OverscriptBox[\(b\), \(_\)]\), 7]};
 
 ClearAll[CGTermList2TeX];
@@ -279,8 +283,10 @@ WriteHeader[os_]:=Module[{},
 	MyWriteLine[os, "\\makeatletter"];
 	MyWriteLine[os, "\\newcommand{\\rep}[1]{\\mathbf{#1}}"];
 	MyWriteLine[os, "\\newcommand{\\repx}[2]{{}_{#2}\\mathbf{#1}}"];
-	(*MyWriteLine[os, "\\newcommand{\\subcg}[3]{\\big\\{ {#1}\\otimes{#2}\\big\\}^{}_{#3}}"];*)
-	MyWriteLine[os, "\\newcommand{\\subcg}[3]{\\big\\{ \\repx{#1}{x}\\otimes\\repx{#2}{y}\\big\\}^{}_{#3}}"];
+	MyWriteLine[os, "\\newcommand{\\tsprod}[2]{\\rep{#1}\\otimes\\rep{#2}}"];
+	(*MyWriteLine[os, "\\newcommand{\\" <> $ContractionTag <> "}[3]{\\big\\{ {#1}\\otimes{#2}\\big\\}^{}_{#3}}"];*)
+	MyWriteLine[os, "\\newcommand{\\tsprodx}[2]{\\repx{#1}{x}\\otimes\\repx{#2}{y}}"];
+	MyWriteLine[os, "\\newcommand{\\" <> $ContractionTag <> "}[3]{\\big\\{ \\tsprodx{#1}{#2}\\big\\}^{}_{#3}}"];
 	
 	MyWriteLine[os, "\\makeatother"];
 	MyWriteLine[os, "\\usepackage{babel}"];
@@ -298,8 +304,10 @@ WriteBody[os_, prodList_, embed_,opts:OptionsPattern[]]:=Module[{i},
 ];
 
 ClearAll[SaveToTexFile];
-Options[SaveToTexFile]=Join[{},Options[WriteBody]];
+Options[SaveToTexFile]=Join[{ContractionTag->"subcg"},Options[WriteBody]];
 SaveToTexFile[file_, prodList_, embed_,opts:OptionsPattern[]]:=Module[{os},
+	Clear[$ContractionTag];
+	$ContractionTag=OptionValue[ContractionTag];
 	os = OpenWrite[file];
 	Print["Writing header"];
 	WriteHeader[os];
