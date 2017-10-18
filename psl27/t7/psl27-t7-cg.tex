@@ -2,6 +2,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{amsmath}
+\usepackage{nccmath}
 
 \makeatletter
 \newcommand{\cgEqFontsize}{\large}
@@ -16,603 +17,948 @@
 \paragraph*{\cgEqFontsize $\tsprod{3}{3}\to\rep{6}_s+\rep{\bar{3}}_a$}
 \begin{itemize}
 \item $\tsprodx{3}{3}\to\rep{\bar{3}}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{\bar{3}} & = \subcgt{3}{3}{\bar{3}_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{3}\to\rep{6}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{3} & = \subcgt{3}{3}{3}
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = \subcgt{3}{3}{\bar{3}_{s}}
 \end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{\bar{3}}\to\rep{1}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{\bar{3}}\to\rep{1}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \subcgt{3}{\bar{3}}{1}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{\bar{3}}\to\rep{8}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \subcgt{3}{\bar{3}}{1^{\prime}}
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{1}^{\prime}} & = \subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = \subcgt{3}{\bar{3}}{3}
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = \subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{6}\to\rep{\bar{3}}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{6}\to\rep{\bar{3}}$:
+\begin{fleqn}
 \begin{align*}
 \rep{\bar{3}} & = \frac{1}{\sqrt{2}}\subcgt{3}{3}{\bar{3}_{s}}+\frac{1}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{6}\to\rep{7}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \subcgt{3}{\bar{3}}{1}
-\\
-\rep{3} & = \frac{1}{\sqrt{3}}\subcgt{3}{3}{3}+\sqrt{\frac{2}{3}}\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = -\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}}+\sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{3} & = \frac{1}{\sqrt{3}}\subcgt{3}{3}{3}+\sqrt{\frac{2}{3}}\subcgt{3}{\bar{3}}{3}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}}+\sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{6}\to\rep{8}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \subcgt{3}{\bar{3}}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = -\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
-\\
-\rep{3} & = i \sqrt{\frac{2}{3}}\subcgt{3}{3}{3}-\frac{i}{\sqrt{3}}\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{i}{\sqrt{3}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = i \sqrt{\frac{2}{3}}\subcgt{3}{3}{3}-\frac{i}{\sqrt{3}}\subcgt{3}{\bar{3}}{3}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{i}{\sqrt{3}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{7}\to\rep{6}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{7}\to\rep{6}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \sqrt{\frac{2}{7}}\subcgt{3}{1}{3}+\frac{1}{\sqrt{7}}\subcgt{3}{3}{3}+\frac{2}{\sqrt{7}}\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = -\frac{1}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{2}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}}+\sqrt{\frac{2}{7}}\subcgt{3}{\bar{3}}{\bar{3}}
+\rep{3} & = \sqrt{\frac{2}{7}}\subcgt{3}{1}{3}+\frac{1}{\sqrt{7}}\subcgt{3}{3}{3} \\ 
+ & +\frac{2}{\sqrt{7}}\subcgt{3}{\bar{3}}{3}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{1}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{2}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\sqrt{\frac{2}{7}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{7}\to\rep{7}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \subcgt{3}{\bar{3}}{1}
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = -\frac{1}{\sqrt{3}}\subcgt{3}{1}{3}+\sqrt{\frac{2}{3}}\subcgt{3}{3}{3}
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = -\frac{1}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}-\sqrt{\frac{2}{3}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{7}\to\rep{8}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \subcgt{3}{\bar{3}}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = -e^{2 i \alpha }\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -2 i \sqrt{\frac{2}{21}} e^{i \alpha }\subcgt{3}{1}{3}-\frac{2 i e^{i \alpha }}{\sqrt{21}}\subcgt{3}{3}{3}+i \sqrt{\frac{3}{7}} e^{i \alpha }\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = -i \sqrt{\frac{6}{7}} e^{i \alpha }\subcgt{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{2}{21}} e^{i \alpha }\subcgt{3}{3}{\bar{3}_{a}}-\frac{i e^{i \alpha }}{\sqrt{21}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -e^{2 i \alpha }\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -2 i \sqrt{\frac{2}{21}} e^{i \alpha }\subcgt{3}{1}{3}-\frac{2 i e^{i \alpha }}{\sqrt{21}}\subcgt{3}{3}{3} \\ 
+ & +i \sqrt{\frac{3}{7}} e^{i \alpha }\subcgt{3}{\bar{3}}{3}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -i \sqrt{\frac{6}{7}} e^{i \alpha }\subcgt{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{2}{21}} e^{i \alpha }\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{i e^{i \alpha }}{\sqrt{21}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{8}\to\rep{3}+\rep{6}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{8}\to\rep{3}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{3}{3} \\ 
- & +\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{\bar{3}}{3}
+\rep{3} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{3}{3}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{\bar{3}}{3}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{8}\to\rep{6}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{2}\subcgt{3}{1^{\prime}}{3}-\frac{1}{2}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{i}{2}\subcgt{3}{3}{3} \\ 
- & +\frac{i}{2}\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = \frac{i}{2}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i}{2}\subcgt{3}{3}{\bar{3}_{a}}-\frac{i}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{3}}
+\rep{3} & = \frac{1}{2}\subcgt{3}{1^{\prime}}{3}-\frac{1}{2}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & -\frac{i}{2}\subcgt{3}{3}{3}+\frac{i}{2}\subcgt{3}{\bar{3}}{3}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{i}{2}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i}{2}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{i}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{8}\to\rep{7}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \subcgt{3}{\bar{3}}{1}
-\\
-\rep{3} & = -\frac{1}{2} i \sqrt{\frac{7}{6}} e^{i \alpha }\subcgt{3}{1^{\prime}}{3}+\frac{1}{2} i \sqrt{\frac{7}{6}} e^{-i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{1}{2 \sqrt{6}}\subcgt{3}{3}{3} \\ 
- & -\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{\bar{3}}{3}
-\\
-\rep{\bar{3}} & = \frac{\sqrt{3}}{2}\subcgt{3}{3}{\bar{3}_{s}}+\frac{1}{2 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{3} & = -\frac{1}{2} i \sqrt{\frac{7}{6}} e^{i \alpha }\subcgt{3}{1^{\prime}}{3}+\frac{1}{2} i \sqrt{\frac{7}{6}} e^{-i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{1}{2 \sqrt{6}}\subcgt{3}{3}{3}-\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{\bar{3}}{3}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{\sqrt{3}}{2}\subcgt{3}{3}{\bar{3}_{s}}+\frac{1}{2 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{3}{8}\to\rep{8}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \subcgt{3}{\bar{3}}{1^{\prime}}
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{1}^{\prime}} & = -\omega ^2\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}
-\\
-\rep{3} & = \frac{\omega ^2}{\sqrt{3}}\subcgt{3}{1^{\prime}}{3}-\frac{1}{\sqrt{3}}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{i \omega }{\sqrt{3}}\subcgt{3}{3}{3}
-\\
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{\omega ^2}{\sqrt{3}}\subcgt{3}{1^{\prime}}{3}-\frac{1}{\sqrt{3}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & -\frac{i \omega }{\sqrt{3}}\subcgt{3}{3}{3}
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = -i \sqrt{\frac{2}{3}} \omega\subcgt{3}{3}{\bar{3}_{a}}+\frac{i \omega }{\sqrt{3}}\subcgt{3}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{6}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{8}\right)_s+\left(\rep{7}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{6}{6}\to\rep{1}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{1}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{6}\to\rep{6}_{s}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{3}+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+\rep{3} & = \sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
+ & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
  & -\sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
  & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{6}\to\rep{6}_{s}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{3}-i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+\rep{3} & = i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
+ & -i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
  & -i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
  & -i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{6}\to\rep{8}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \frac{e^{-i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{1}^{\prime}} & = \frac{e^{i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
-\rep{3} & = -\frac{2}{\sqrt{7}}\subcgt{3}{3}{3}-\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{2}{\sqrt{7}}\subcgt{3}{3}{3} \\ 
+ & -\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
  & -\sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
  & -\frac{2}{\sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{6}\to\rep{7}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1}-\subcgt{\bar{3}}{3}{1}\right)
-\\
-\rep{3} & = -\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)-\frac{i}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = \frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\begin{align*}
+\rep{3} & = -\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -\frac{i}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{6}\to\rep{8}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \frac{1}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}-\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
-\rep{\bar{1}^{\prime}} & = -\frac{1}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
-\rep{3} & = \frac{i}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)-i \sqrt{\frac{2}{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = i \sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{i}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -\frac{1}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{i}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -i \sqrt{\frac{2}{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = i \sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{i}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{7}\to\rep{3}+\rep{\bar{3}}+\rep{6}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
 \begin{itemize}
 \item $\tsprodx{6}{7}\to\rep{3}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{3}{1}{3}+\sqrt{\frac{2}{7}}\subcgt{3}{3}{3}+\frac{1}{\sqrt{14}}\subcgt{3}{\bar{3}}{3} \\ 
- & +\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{3}{3}-\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+\sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{3}{1}{3}+\sqrt{\frac{2}{7}}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{\sqrt{14}}\subcgt{3}{\bar{3}}{3}+\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{3}{3} \\ 
+ & -\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+\sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{\bar{3}}$:
+\begin{fleqn}
 \begin{align*}
-\rep{\bar{3}} & = \frac{1}{\sqrt{14}}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{1}{\sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & -\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{1}{\bar{3}}-\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{3}{\bar{3}}-\sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{\bar{3}} & = \frac{1}{\sqrt{14}}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{1}{\sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}}-\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
+ & -\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{3}{\bar{3}}-\sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{6}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{i}{\sqrt{7}}\subcgt{3}{1}{3}-i \sqrt{\frac{2}{7}}\subcgt{3}{3}{3}-i \sqrt{\frac{2}{7}}\subcgt{3}{\bar{3}}{3} \\ 
- & +i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -i \sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{i}{\sqrt{7}}\subcgt{\bar{3}}{1}{\bar{3}}+i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
- & +i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{3} & = \frac{i}{\sqrt{7}}\subcgt{3}{1}{3}-i \sqrt{\frac{2}{7}}\subcgt{3}{3}{3} \\ 
+ & -i \sqrt{\frac{2}{7}}\subcgt{3}{\bar{3}}{3}+i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -i \sqrt{\frac{2}{7}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{i}{\sqrt{7}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
+ & +i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{3}{\bar{3}}+i \sqrt{\frac{2}{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{7}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{1}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}+\frac{1}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = \frac{1}{\sqrt{6}}\subcgt{3}{1}{3}-\frac{1}{\sqrt{6}}\subcgt{3}{3}{3}+\frac{1}{6} \left(\sqrt{3}+\sqrt{6}\right)\subcgt{3}{\bar{3}}{3} \\ 
- & -\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{3}{3}+\frac{1}{6} \left(\sqrt{3}-\sqrt{6}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{1}{6} \left(\sqrt{3}-\sqrt{6}\right)\subcgt{3}{3}{\bar{3}_{s}}-\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
- & +\frac{1}{6} \left(\sqrt{3}+\sqrt{6}\right)\subcgt{\bar{3}}{3}{\bar{3}}-\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{3} & = \frac{1}{\sqrt{6}}\subcgt{3}{1}{3}-\frac{1}{\sqrt{6}}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{6} \left(\sqrt{3}+\sqrt{6}\right)\subcgt{3}{\bar{3}}{3}-\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{3}{3} \\ 
+ & +\frac{1}{6} \left(\sqrt{3}-\sqrt{6}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{1}{6} \left(\sqrt{3}-\sqrt{6}\right)\subcgt{3}{3}{\bar{3}_{s}}-\frac{1}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{1}{\bar{3}}+\frac{1}{6} \left(\sqrt{3}+\sqrt{6}\right)\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+ & -\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{7}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}-\frac{i}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = \frac{i}{\sqrt{6}}\subcgt{3}{1}{3}+\frac{i}{\sqrt{6}}\subcgt{3}{3}{3}-\frac{i \left(\sqrt{2}-1\right)}{2 \sqrt{3}}\subcgt{3}{\bar{3}}{3} \\ 
- & -\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{3}{3}+\frac{1}{6} i \left(\sqrt{3}+\sqrt{6}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\frac{1}{6} i \left(\sqrt{3}+\sqrt{6}\right)\subcgt{3}{3}{\bar{3}_{s}}+\frac{i}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}-\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
- & +\frac{i \left(\sqrt{2}-1\right)}{2 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{3} & = \frac{i}{\sqrt{6}}\subcgt{3}{1}{3}+\frac{i}{\sqrt{6}}\subcgt{3}{3}{3} \\ 
+ & -\frac{i \left(\sqrt{2}-1\right)}{2 \sqrt{3}}\subcgt{3}{\bar{3}}{3}-\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{3}{3} \\ 
+ & +\frac{1}{6} i \left(\sqrt{3}+\sqrt{6}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{1}{6} i \left(\sqrt{3}+\sqrt{6}\right)\subcgt{3}{3}{\bar{3}_{s}}+\frac{i}{\sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & -\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{1}{\bar{3}}+\frac{i \left(\sqrt{2}-1\right)}{2 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+ & -\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{8}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = -\frac{i \omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{3}{\bar{3}}{1^{\prime}}-\frac{i \omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = \frac{i \omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = \frac{2}{\sqrt{21}}\subcgt{3}{1}{3}+\frac{1}{\sqrt{21}}\subcgt{3}{3}{3}-\frac{2+\sqrt{2}}{2 \sqrt{21}}\subcgt{3}{\bar{3}}{3} \\ 
- & +\frac{1}{42} \left(2 \sqrt{21}-3 \sqrt{42}\right)\subcgt{\bar{3}}{3}{3}-\frac{4+\sqrt{2}}{2 \sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}-\sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{4+\sqrt{2}}{2 \sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{42} \left(2 \sqrt{21}-3 \sqrt{42}\right)\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{1}{\bar{3}}-\frac{2+\sqrt{2}}{2 \sqrt{21}}\subcgt{\bar{3}}{3}{\bar{3}}+\frac{1}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{i \omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{2}{\sqrt{21}}\subcgt{3}{1}{3}+\frac{1}{\sqrt{21}}\subcgt{3}{3}{3} \\ 
+ & -\frac{2+\sqrt{2}}{2 \sqrt{21}}\subcgt{3}{\bar{3}}{3}+\frac{1}{42} \left(2 \sqrt{21}-3 \sqrt{42}\right)\subcgt{\bar{3}}{3}{3} \\ 
+ & -\frac{4+\sqrt{2}}{2 \sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}-\sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{4+\sqrt{2}}{2 \sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{1}{42} \left(2 \sqrt{21}-3 \sqrt{42}\right)\subcgt{3}{\bar{3}}{\bar{3}}+\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
+ & -\frac{2+\sqrt{2}}{2 \sqrt{21}}\subcgt{\bar{3}}{3}{\bar{3}}+\frac{1}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{7}\to\rep{8}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = -\frac{\omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{1^{\prime}}+\frac{\omega ^2 e^{i \alpha -2 i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = \frac{\omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\frac{\omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -\frac{2 i}{\sqrt{21}}\subcgt{3}{1}{3}+\frac{i}{\sqrt{21}}\subcgt{3}{3}{3}+\frac{i \left(\sqrt{2}-2\right)}{2 \sqrt{21}}\subcgt{3}{\bar{3}}{3} \\ 
- & -\frac{1}{42} i \left(2 \sqrt{21}+3 \sqrt{42}\right)\subcgt{\bar{3}}{3}{3}+\frac{i \left(\sqrt{2}-4\right)}{2 \sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i \left(\sqrt{2}-4\right)}{2 \sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}}-i \sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{42} i \left(2 \sqrt{21}+3 \sqrt{42}\right)\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{2 i}{\sqrt{21}}\subcgt{\bar{3}}{1}{\bar{3}}-\frac{1}{42} i \left(\sqrt{42}-2 \sqrt{21}\right)\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{\omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\frac{\omega  e^{2 i \beta -i \alpha }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{2 i}{\sqrt{21}}\subcgt{3}{1}{3}+\frac{i}{\sqrt{21}}\subcgt{3}{3}{3} \\ 
+ & +\frac{i \left(\sqrt{2}-2\right)}{2 \sqrt{21}}\subcgt{3}{\bar{3}}{3}-\frac{1}{42} i \left(2 \sqrt{21}+3 \sqrt{42}\right)\subcgt{\bar{3}}{3}{3} \\ 
+ & +\frac{i \left(\sqrt{2}-4\right)}{2 \sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i \left(\sqrt{2}-4\right)}{2 \sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}}-i \sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{1}{42} i \left(2 \sqrt{21}+3 \sqrt{42}\right)\subcgt{3}{\bar{3}}{\bar{3}}+\frac{2 i}{\sqrt{21}}\subcgt{\bar{3}}{1}{\bar{3}} \\ 
+ & -\frac{1}{42} i \left(\sqrt{42}-2 \sqrt{21}\right)\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
 \begin{itemize}
 \item $\tsprodx{6}{8}\to\rep{3}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}-\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{i}{2 \sqrt{2}}\subcgt{3}{3}{3} \\ 
- & -\frac{i}{2 \sqrt{2}}\subcgt{3}{\bar{3}}{3}-\frac{i}{2}\subcgt{\bar{3}}{3}{3}+\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
+\rep{3} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}-\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{i}{2 \sqrt{2}}\subcgt{3}{3}{3}-\frac{i}{2 \sqrt{2}}\subcgt{3}{\bar{3}}{3} \\ 
+ & -\frac{i}{2}\subcgt{\bar{3}}{3}{3}+\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
  & +\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{\bar{3}}$:
+\begin{fleqn}
 \begin{align*}
-\rep{\bar{3}} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{3}{\bar{3}_{s}}+\frac{1}{2 \sqrt{2}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{1}{2}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & -\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}+\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+\rep{\bar{3}} & = \frac{1}{2 \sqrt{2}}\subcgt{3}{3}{\bar{3}_{s}}+\frac{1}{2 \sqrt{2}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{1}{2}\subcgt{3}{\bar{3}}{\bar{3}}-\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & +\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
  & +\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{6}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = -\frac{e^{i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}-\frac{e^{-i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{3}{3}{3} \\ 
- & +\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{3}{\bar{3}}{3}+\sqrt{\frac{3}{7}}\subcgt{\bar{3}}{3}{3}+\sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{s}}+\sqrt{\frac{3}{7}}\subcgt{3}{\bar{3}}{\bar{3}}-\frac{e^{i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
- & -\frac{e^{-i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{\bar{3}}{3}{\bar{3}}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{3} & = -\frac{e^{i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}-\frac{e^{-i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{3}{3}{3}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{3}{\bar{3}}{3} \\ 
+ & +\sqrt{\frac{3}{7}}\subcgt{\bar{3}}{3}{3}+\sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \sqrt{\frac{3}{14}}\subcgt{3}{3}{\bar{3}_{s}}+\sqrt{\frac{3}{7}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & -\frac{e^{i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{e^{-i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & +\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{\bar{3}}{3}{\bar{3}}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{6}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = -\frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{i}{2 \sqrt{2}}\subcgt{3}{3}{3} \\ 
- & +\frac{i}{2 \sqrt{2}}\subcgt{3}{\bar{3}}{3}+\frac{i}{\sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{2}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
- & -\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{3} & = -\frac{1}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{1}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{i}{2 \sqrt{2}}\subcgt{3}{3}{3}+\frac{i}{2 \sqrt{2}}\subcgt{3}{\bar{3}}{3} \\ 
+ & +\frac{i}{\sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{2}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & -\frac{1}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+ & -\frac{i}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{7}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{1}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}+\frac{1}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = \frac{1}{4} i \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{3}{1^{\prime}}{3}-\frac{1}{4} i \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{\sqrt{2}-3}{4 \sqrt{3}}\subcgt{3}{3}{3} \\ 
- & -\frac{1+\sqrt{2}}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3}+\frac{1}{2 \sqrt{6}}\subcgt{\bar{3}}{3}{3}-\frac{1+2 \sqrt{2}}{4 \sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{1}{4} i \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{3}{1^{\prime}}{3}-\frac{1}{4} i \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +\frac{\sqrt{2}-3}{4 \sqrt{3}}\subcgt{3}{3}{3}-\frac{1+\sqrt{2}}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3} \\ 
+ & +\frac{1}{2 \sqrt{6}}\subcgt{\bar{3}}{3}{3}-\frac{1+2 \sqrt{2}}{4 \sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
  & +\frac{\sqrt{3}}{4}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{1+2 \sqrt{2}}{4 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}+\frac{\sqrt{3}}{4}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{2 \sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{1}{4} i \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{1}{4} i \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1+\sqrt{2}}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{1+2 \sqrt{2}}{4 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}+\frac{\sqrt{3}}{4}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{1}{2 \sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{1}{4} i \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & -\frac{1}{4} i \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1+\sqrt{2}}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
  & +\frac{\sqrt{2}-3}{4 \sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{7}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}-\frac{i}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = -\frac{1}{4} \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{3}{1^{\prime}}{3}+\frac{1}{4} \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{i \left(3+\sqrt{2}\right)}{4 \sqrt{3}}\subcgt{3}{3}{3} \\ 
- & +\frac{i \left(\sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3}+\frac{i}{2 \sqrt{6}}\subcgt{\bar{3}}{3}{3}+\frac{1}{12} i \left(2 \sqrt{6}-\sqrt{3}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{1}{4} \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{3}{1^{\prime}}{3}+\frac{1}{4} \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & -\frac{i \left(3+\sqrt{2}\right)}{4 \sqrt{3}}\subcgt{3}{3}{3}+\frac{i \left(\sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3} \\ 
+ & +\frac{i}{2 \sqrt{6}}\subcgt{\bar{3}}{3}{3}+\frac{1}{12} i \left(2 \sqrt{6}-\sqrt{3}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
  & +\frac{i \sqrt{3}}{4}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i \left(2 \sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i \sqrt{3}}{4}\subcgt{3}{3}{\bar{3}_{a}}-\frac{i}{2 \sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{1}{4} \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{1}{4} \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{i \left(\sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i \left(2 \sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{i \sqrt{3}}{4}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{i}{2 \sqrt{6}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{1}{4} \sqrt{\frac{7}{3}} \omega  e^{2 i \beta -i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & -\frac{1}{4} \sqrt{\frac{7}{3}} \omega ^2 e^{i \alpha -2 i \beta }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{i \left(\sqrt{2}-1\right)}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
  & +\frac{i \left(3+\sqrt{2}\right)}{4 \sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{8}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = -\frac{i e^{-i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{1^{\prime}}-\frac{i e^{-i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = \frac{i e^{i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{i e^{i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = \frac{i e^{i \beta }}{\sqrt{6}}\subcgt{3}{1^{\prime}}{3}-\frac{i e^{-i \beta }}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
- & +\sqrt{\frac{2}{21} \left(3-\sqrt{2}\right)}\subcgt{3}{\bar{3}}{3}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{\bar{3}}{3}{3}+\sqrt{\frac{1}{21} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \sqrt{\frac{1}{21} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{i e^{i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
- & -\frac{i e^{-i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+\sqrt{\frac{2}{21} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{3}{\bar{3}}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{i e^{i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{i e^{i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{i e^{i \beta }}{\sqrt{6}}\subcgt{3}{1^{\prime}}{3}-\frac{i e^{-i \beta }}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & -\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{3}{3}{3}+\sqrt{\frac{2}{21} \left(3-\sqrt{2}\right)}\subcgt{3}{\bar{3}}{3} \\ 
+ & -\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{\bar{3}}{3}{3}+\sqrt{\frac{1}{21} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \sqrt{\frac{1}{21} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{i e^{i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{i e^{-i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & +\sqrt{\frac{2}{21} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{3}{\bar{3}}-\sqrt{\frac{1}{42} \left(5+3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{6}{8}\to\rep{8}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \frac{\omega  e^{i \beta -i \alpha }}{\sqrt{2}}\subcgt{3}{\bar{3}}{1^{\prime}}-\frac{\omega  e^{i \beta -i \alpha }}{\sqrt{2}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = -\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{6}}\subcgt{3}{1^{\prime}}{3}+\frac{\omega  e^{i \beta -i \alpha }}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3}+i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
- & +i \sqrt{\frac{2}{21} \left(3+\sqrt{2}\right)}\subcgt{3}{\bar{3}}{3}-i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{\bar{3}}{3}{3}-i \sqrt{\frac{1}{21} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = i \sqrt{\frac{1}{21} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
- & -\frac{\omega  e^{i \beta -i \alpha }}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-i \sqrt{\frac{2}{21} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{3}{\bar{3}}-i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{6}}\subcgt{3}{1^{\prime}}{3}+\frac{\omega  e^{i \beta -i \alpha }}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
+ & +i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{3}{3}{3}+i \sqrt{\frac{2}{21} \left(3+\sqrt{2}\right)}\subcgt{3}{\bar{3}}{3} \\ 
+ & -i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{\bar{3}}{3}{3}-i \sqrt{\frac{1}{21} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = i \sqrt{\frac{1}{21} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}}+i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{\omega ^2 e^{i \alpha -i \beta }}{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{\omega  e^{i \beta -i \alpha }}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & -i \sqrt{\frac{2}{21} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{3}{\bar{3}}-i \sqrt{\frac{1}{42} \left(5-3 \sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{7}{7}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{7}{7}\to\rep{1}_{s}$:
+\begin{fleqn}
 \begin{align*}
-\rep{1} & = \frac{1}{\sqrt{7}}\subcgt{1}{1}{1}+\sqrt{\frac{3}{7}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
+\rep{1} & = \frac{1}{\sqrt{7}}\subcgt{1}{1}{1} \\ 
+ & +\sqrt{\frac{3}{7}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{6}_{s}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right)+\frac{1}{14} \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{3}{3}{3} \\ 
- & -\frac{1}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{1}{14} \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right)+\frac{1}{14} \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{1}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)+\frac{1}{14} \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{3} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right) \\ 
+ & +\frac{1}{14} \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{3}{3}{3} \\ 
+ & -\frac{1}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{1}{14} \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & +\frac{1}{14} \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & +\frac{1}{14} \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{6}_{s}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{i}{\sqrt{7}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right)+\frac{i \left(\sqrt{2}-2\right)}{2 \sqrt{7}}\subcgt{3}{3}{3} \\ 
- & +\frac{i}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)-\frac{1}{14} i \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right)+\frac{1}{14} i \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{i}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)-\frac{1}{14} i \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{3} & = \frac{i}{\sqrt{7}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right) \\ 
+ & +\frac{i \left(\sqrt{2}-2\right)}{2 \sqrt{7}}\subcgt{3}{3}{3} \\ 
+ & +\frac{i}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -\frac{1}{14} i \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & +\frac{1}{14} i \left(2 \sqrt{7}+\sqrt{14}\right)\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{i}{\sqrt{7}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & -\frac{1}{14} i \left(\sqrt{14}-2 \sqrt{7}\right)\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{7}_{s}$:
+\begin{fleqn}
 \begin{align*}
-\rep{1} & = \sqrt{\frac{6}{7}}\subcgt{1}{1}{1}-\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
-\\
-\rep{3} & = -\frac{1}{\sqrt{42}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right)-\frac{2}{\sqrt{21}}\subcgt{3}{3}{3} \\ 
- & -\frac{2}{\sqrt{21}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)-2 \sqrt{\frac{2}{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\frac{1}{\sqrt{42}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right)-2 \sqrt{\frac{2}{21}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{2}{\sqrt{21}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)-\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{1} & = \sqrt{\frac{6}{7}}\subcgt{1}{1}{1} \\ 
+ & -\frac{1}{\sqrt{14}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
 \end{align*}
+\begin{align*}
+\rep{3} & = -\frac{1}{\sqrt{42}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right) \\ 
+ & -\frac{2}{\sqrt{21}}\subcgt{3}{3}{3} \\ 
+ & -\frac{2}{\sqrt{21}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -2 \sqrt{\frac{2}{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{1}{\sqrt{42}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & -2 \sqrt{\frac{2}{21}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{2}{\sqrt{21}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & -\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{8}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \frac{i e^{-i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
-\rep{\bar{1}^{\prime}} & = -\frac{i e^{i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
-\rep{3} & = -\frac{2}{\sqrt{21}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right)+2 \sqrt{\frac{2}{21}}\subcgt{3}{3}{3} \\ 
- & +\frac{1}{\sqrt{42}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)-\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = -\frac{2}{\sqrt{21}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right)-\frac{2}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & +\frac{1}{\sqrt{42}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)+2 \sqrt{\frac{2}{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -\frac{i e^{i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{2}{\sqrt{21}}\left(\subcgt{1}{3}{3}+\subcgt{3}{1}{3}\right) \\ 
+ & +2 \sqrt{\frac{2}{21}}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{\sqrt{42}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -\frac{2}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{2}{\sqrt{21}}\left(\subcgt{1}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & -\frac{2}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +\frac{1}{\sqrt{42}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & +2 \sqrt{\frac{2}{21}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{3}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{3} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{3}{3}-\subcgt{3}{1}{3}\right) \\ 
- & +\sqrt{\frac{2}{7}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)+\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+ & +\sqrt{\frac{2}{7}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{1}{\sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{\bar{3}}_{a}$:
+\begin{fleqn}
 \begin{align*}
-\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right)+\frac{1}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & +\frac{1}{\sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
  & -\sqrt{\frac{2}{7}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{7}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1}-\subcgt{\bar{3}}{3}{1}\right)
-\\
-\rep{3} & = \frac{i}{\sqrt{6}}\left(\subcgt{1}{3}{3}-\subcgt{3}{1}{3}\right)-i \sqrt{\frac{2}{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{6}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right)+i \sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}}
 \end{align*}
+\begin{align*}
+\rep{3} & = \frac{i}{\sqrt{6}}\left(\subcgt{1}{3}{3}-\subcgt{3}{1}{3}\right) \\ 
+ & -i \sqrt{\frac{2}{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{6}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & +i \sqrt{\frac{2}{3}}\subcgt{3}{3}{\bar{3}_{a}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{7}\to\rep{8}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = \frac{e^{i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}-\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{\bar{1}^{\prime}} & = -\frac{e^{-i \alpha }}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = \frac{2 i}{\sqrt{21}}\left(\subcgt{1}{3}{3}-\subcgt{3}{1}{3}\right) \\ 
- & -i \sqrt{\frac{3}{14}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)+\frac{2 i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{2 i}{\sqrt{21}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right)-\frac{2 i}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -i \sqrt{\frac{3}{14}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{2 i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{2 i}{\sqrt{21}}\left(\subcgt{1}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1}{\bar{3}}\right) \\ 
+ & -\frac{2 i}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
  & -i \sqrt{\frac{3}{14}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{7}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}+\rep{8}^{(3)}$}
 \begin{itemize}
 \item $\tsprodx{7}{8}\to\rep{3}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{1}{3}{3}-\frac{i e^{i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{i e^{-i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -\frac{3}{2 \sqrt{14}}\subcgt{3}{3}{3}+\frac{1}{2 \sqrt{14}}\subcgt{3}{\bar{3}}{3}+\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{3}{3} \\ 
+\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{1}{3}{3}-\frac{i e^{i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3} \\ 
+ & +\frac{i e^{-i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{3}{2 \sqrt{14}}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{2 \sqrt{14}}\subcgt{3}{\bar{3}}{3}+\frac{1}{\sqrt{14}}\subcgt{\bar{3}}{3}{3} \\ 
  & +\frac{3}{2 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}-\frac{1}{2 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{\bar{3}}$:
+\begin{fleqn}
 \begin{align*}
-\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{3}{2 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{1}{2 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
- & +\frac{1}{\sqrt{14}}\subcgt{3}{\bar{3}}{\bar{3}}-\frac{i e^{i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}+\frac{i e^{-i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{3}{2 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{2 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{\sqrt{14}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & -\frac{i e^{i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}+\frac{i e^{-i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
  & +\frac{1}{2 \sqrt{14}}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{3}{2 \sqrt{14}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{6}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{1}{3}{3}+\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}-\frac{i \omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -\frac{2+\sqrt{2}}{4 \sqrt{7}}\subcgt{3}{3}{3}-\frac{3 \sqrt{2}-2}{4 \sqrt{7}}\subcgt{3}{\bar{3}}{3}+\frac{1}{2 \sqrt{7}}\subcgt{\bar{3}}{3}{3} \\ 
+\rep{3} & = \frac{1}{\sqrt{7}}\subcgt{1}{3}{3}+\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3} \\ 
+ & -\frac{i \omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{2+\sqrt{2}}{4 \sqrt{7}}\subcgt{3}{3}{3} \\ 
+ & -\frac{3 \sqrt{2}-2}{4 \sqrt{7}}\subcgt{3}{\bar{3}}{3}+\frac{1}{2 \sqrt{7}}\subcgt{\bar{3}}{3}{3} \\ 
  & -\frac{4+\sqrt{2}}{4 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}-\frac{3}{2 \sqrt{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{4+\sqrt{2}}{4 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{3}{2 \sqrt{14}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
- & +\frac{1}{2 \sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{i \omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{1}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{4+\sqrt{2}}{4 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{3}{2 \sqrt{14}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{1}{2 \sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{i \omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{i \omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
  & -\frac{3 \sqrt{2}-2}{4 \sqrt{7}}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{2+\sqrt{2}}{4 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{6}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{3} & = \frac{i}{\sqrt{7}}\subcgt{1}{3}{3}-\frac{\omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3}+\frac{\omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -\frac{i \left(\sqrt{2}-2\right)}{4 \sqrt{7}}\subcgt{3}{3}{3}-\frac{i \left(2+3 \sqrt{2}\right)}{4 \sqrt{7}}\subcgt{3}{\bar{3}}{3}-\frac{i}{2 \sqrt{7}}\subcgt{\bar{3}}{3}{3} \\ 
+\rep{3} & = \frac{i}{\sqrt{7}}\subcgt{1}{3}{3}-\frac{\omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{3}{1^{\prime}}{3} \\ 
+ & +\frac{\omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{i \left(\sqrt{2}-2\right)}{4 \sqrt{7}}\subcgt{3}{3}{3} \\ 
+ & -\frac{i \left(2+3 \sqrt{2}\right)}{4 \sqrt{7}}\subcgt{3}{\bar{3}}{3}-\frac{i}{2 \sqrt{7}}\subcgt{\bar{3}}{3}{3} \\ 
  & +\frac{i \left(\sqrt{2}-4\right)}{4 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+\frac{3 i}{2 \sqrt{14}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i \left(\sqrt{2}-4\right)}{4 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{3 i}{2 \sqrt{14}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
- & +\frac{i}{2 \sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{\omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{\omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{7}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i \left(\sqrt{2}-4\right)}{4 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{3 i}{2 \sqrt{14}}\subcgt{3}{3}{\bar{3}_{a}}+\frac{i}{2 \sqrt{7}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{\omega  e^{2 i \beta -i \alpha }}{2 \sqrt{2}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{\omega ^2 e^{i \alpha -2 i \beta }}{2 \sqrt{2}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
  & +\frac{i \left(2+3 \sqrt{2}\right)}{4 \sqrt{7}}\subcgt{\bar{3}}{3}{\bar{3}}+\frac{i \left(\sqrt{2}-2\right)}{4 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{7}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{1}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}+\frac{1}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = \frac{1}{\sqrt{6}}\subcgt{1}{3}{3}+\frac{1}{4} i \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{3}{1^{\prime}}{3}-\frac{1}{4} i \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -\frac{1}{4 \sqrt{3}}\subcgt{3}{3}{3}-\frac{1}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3}-\frac{1}{\sqrt{3}}\subcgt{\bar{3}}{3}{3} \\ 
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{1}{\sqrt{6}}\subcgt{1}{3}{3}+\frac{1}{4} i \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{3}{1^{\prime}}{3} \\ 
+ & -\frac{1}{4} i \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{1}{4 \sqrt{3}}\subcgt{3}{3}{3} \\ 
+ & -\frac{1}{4 \sqrt{3}}\subcgt{3}{\bar{3}}{3}-\frac{1}{\sqrt{3}}\subcgt{\bar{3}}{3}{3} \\ 
  & +\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{1}{\sqrt{6}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}}-\frac{1}{\sqrt{3}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{1}{4} i \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{1}{4} i \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{1}{\sqrt{6}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{\sqrt{3}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{1}{4} i \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & -\frac{1}{4} i \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{1}{4 \sqrt{3}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
  & -\frac{1}{4 \sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{7}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\subcgt{3}{\bar{3}}{1}-\frac{i}{\sqrt{2}}\subcgt{\bar{3}}{3}{1}
-\\
-\rep{3} & = \frac{i}{\sqrt{6}}\subcgt{1}{3}{3}+\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{3}{1^{\prime}}{3}-\frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & +\frac{i \sqrt{3}}{4}\subcgt{3}{3}{3}+\frac{i \sqrt{3}}{4}\subcgt{3}{\bar{3}}{3}+\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{i}{\sqrt{6}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{a}}-\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
- & +\frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-\frac{i \sqrt{3}}{4}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i \sqrt{3}}{4}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
-\item $\tsprodx{7}{8}\to\rep{8}^{(1)}$:
 \begin{align*}
-\rep{1^{\prime}} & = \frac{3 \sqrt{3}-4 i}{\sqrt{91}}\subcgt{1}{1^{\prime}}{1^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{1^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = \frac{3 \sqrt{3}+4 i}{\sqrt{91}}\subcgt{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -\sqrt{\frac{3}{91}}\subcgt{1}{3}{3}+2 \sqrt{\frac{2}{91}} \omega ^2\subcgt{3}{1^{\prime}}{3}+2 \sqrt{\frac{2}{91}} \omega\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & +2 \sqrt{\frac{6}{91}}\subcgt{3}{3}{3}-2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{3}+2 \sqrt{\frac{3}{91}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
+\rep{3} & = \frac{i}{\sqrt{6}}\subcgt{1}{3}{3}+\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{3}{1^{\prime}}{3} \\ 
+ & -\frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{3}{\bar{1}^{\prime}}{3}+\frac{i \sqrt{3}}{4}\subcgt{3}{3}{3} \\ 
+ & +\frac{i \sqrt{3}}{4}\subcgt{3}{\bar{3}}{3}+\frac{i}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{i}{\sqrt{6}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha }\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}+\frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha }\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+ & -\frac{i \sqrt{3}}{4}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{i \sqrt{3}}{4}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
+\item $\tsprodx{7}{8}\to\rep{8}^{(1)}$:
+\begin{fleqn}
+\begin{align*}
+\rep{1^{\prime}} & = \frac{3 \sqrt{3}-4 i}{\sqrt{91}}\subcgt{1}{1^{\prime}}{1^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{1^{\prime}} \\ 
+ & -2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{1^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{3 \sqrt{3}+4 i}{\sqrt{91}}\subcgt{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}-2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}} \\ 
+ & -2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -\sqrt{\frac{3}{91}}\subcgt{1}{3}{3}+2 \sqrt{\frac{2}{91}} \omega ^2\subcgt{3}{1^{\prime}}{3} \\ 
+ & +2 \sqrt{\frac{2}{91}} \omega\subcgt{3}{\bar{1}^{\prime}}{3}+2 \sqrt{\frac{6}{91}}\subcgt{3}{3}{3} \\ 
+ & -2 \sqrt{\frac{6}{91}}\subcgt{3}{\bar{3}}{3}+2 \sqrt{\frac{3}{91}}\subcgt{\bar{3}}{\bar{3}}{3_{s}} \\ 
  & -2 \sqrt{\frac{3}{91}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\sqrt{\frac{3}{91}}\subcgt{1}{\bar{3}}{\bar{3}}+2 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{s}}-2 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
- & +2 \sqrt{\frac{2}{91}} \omega ^2\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}+2 \sqrt{\frac{2}{91}} \omega\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\sqrt{\frac{3}{91}}\subcgt{1}{\bar{3}}{\bar{3}}+2 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -2 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{a}}+2 \sqrt{\frac{2}{91}} \omega ^2\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & +2 \sqrt{\frac{2}{91}} \omega\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}-2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{3}{\bar{3}} \\ 
  & +2 \sqrt{\frac{6}{91}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{8}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{1^{\prime}} & = -4 \sqrt{\frac{3}{91}} \omega ^2\subcgt{1}{1^{\prime}}{1^{\prime}}-\frac{\sqrt{3}-13 i}{2 \sqrt{182}}\subcgt{3}{\bar{3}}{1^{\prime}}-\frac{\sqrt{3}-13 i}{2 \sqrt{182}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = -4 \sqrt{\frac{3}{91}} \omega\subcgt{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}-\frac{\sqrt{3}+13 i}{2 \sqrt{182}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\frac{\sqrt{3}+13 i}{2 \sqrt{182}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -\frac{2}{\sqrt{273}}\subcgt{1}{3}{3}+\frac{i \left(5 \sqrt{3}+21 i\right)}{6 \sqrt{182}}\subcgt{3}{1^{\prime}}{3}-\frac{i \left(5 \sqrt{3}-21 i\right)}{6 \sqrt{182}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -\frac{5}{\sqrt{546}}\subcgt{3}{3}{3}-4 \sqrt{\frac{2}{273}}\subcgt{3}{\bar{3}}{3}+\sqrt{\frac{13}{42}}\subcgt{\bar{3}}{3}{3} \\ 
+\rep{1^{\prime}} & = -4 \sqrt{\frac{3}{91}} \omega ^2\subcgt{1}{1^{\prime}}{1^{\prime}}-\frac{\sqrt{3}-13 i}{2 \sqrt{182}}\subcgt{3}{\bar{3}}{1^{\prime}} \\ 
+ & -\frac{\sqrt{3}-13 i}{2 \sqrt{182}}\subcgt{\bar{3}}{3}{1^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -4 \sqrt{\frac{3}{91}} \omega\subcgt{1}{\bar{1}^{\prime}}{\bar{1}^{\prime}}-\frac{\sqrt{3}+13 i}{2 \sqrt{182}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}} \\ 
+ & -\frac{\sqrt{3}+13 i}{2 \sqrt{182}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{2}{\sqrt{273}}\subcgt{1}{3}{3}+\frac{i \left(5 \sqrt{3}+21 i\right)}{6 \sqrt{182}}\subcgt{3}{1^{\prime}}{3} \\ 
+ & -\frac{i \left(5 \sqrt{3}-21 i\right)}{6 \sqrt{182}}\subcgt{3}{\bar{1}^{\prime}}{3}-\frac{5}{\sqrt{546}}\subcgt{3}{3}{3} \\ 
+ & -4 \sqrt{\frac{2}{273}}\subcgt{3}{\bar{3}}{3}+\sqrt{\frac{13}{42}}\subcgt{\bar{3}}{3}{3} \\ 
  & +\frac{4}{\sqrt{273}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}+3 \sqrt{\frac{3}{91}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{2}{\sqrt{273}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{4}{\sqrt{273}}\subcgt{3}{3}{\bar{3}_{s}}+3 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
- & +\sqrt{\frac{13}{42}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{i \left(5 \sqrt{3}+21 i\right)}{6 \sqrt{182}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{i \left(5 \sqrt{3}-21 i\right)}{6 \sqrt{182}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{2}{\sqrt{273}}\subcgt{1}{\bar{3}}{\bar{3}}+\frac{4}{\sqrt{273}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +3 \sqrt{\frac{3}{91}}\subcgt{3}{3}{\bar{3}_{a}}+\sqrt{\frac{13}{42}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
+ & +\frac{i \left(5 \sqrt{3}+21 i\right)}{6 \sqrt{182}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{i \left(5 \sqrt{3}-21 i\right)}{6 \sqrt{182}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}} \\ 
  & -4 \sqrt{\frac{2}{273}}\subcgt{\bar{3}}{3}{\bar{3}}-\frac{5}{\sqrt{546}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{7}{8}\to\rep{8}^{(3)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = -\frac{e^{-i \alpha } \omega ^2}{\sqrt{2}}\subcgt{3}{\bar{3}}{1^{\prime}}+\frac{e^{-i \alpha } \omega ^2}{\sqrt{2}}\subcgt{\bar{3}}{3}{1^{\prime}}
-\\
-\rep{\bar{1}^{\prime}} & = \frac{e^{i \alpha } \omega }{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\frac{e^{i \alpha } \omega }{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
-\\
-\rep{3} & = -\frac{2 i}{\sqrt{21}}\subcgt{1}{3}{3}-\frac{e^{i \alpha } \omega }{\sqrt{6}}\subcgt{3}{1^{\prime}}{3}+\frac{e^{-i \alpha } \omega ^2}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3} \\ 
- & -i \sqrt{\frac{3}{14}}\subcgt{3}{3}{3}-i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{3}{3}+\frac{i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = \frac{2 i}{\sqrt{21}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{a}}+i \sqrt{\frac{3}{14}}\subcgt{3}{\bar{3}}{\bar{3}} \\ 
- & +\frac{e^{i \alpha } \omega }{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}-\frac{e^{-i \alpha } \omega ^2}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{e^{i \alpha } \omega }{\sqrt{2}}\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\frac{e^{i \alpha } \omega }{\sqrt{2}}\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}
+\end{align*}
+\begin{align*}
+\rep{3} & = -\frac{2 i}{\sqrt{21}}\subcgt{1}{3}{3}-\frac{e^{i \alpha } \omega }{\sqrt{6}}\subcgt{3}{1^{\prime}}{3} \\ 
+ & +\frac{e^{-i \alpha } \omega ^2}{\sqrt{6}}\subcgt{3}{\bar{1}^{\prime}}{3}-i \sqrt{\frac{3}{14}}\subcgt{3}{3}{3} \\ 
+ & -i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{3}{3}+\frac{i}{\sqrt{21}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{2 i}{\sqrt{21}}\subcgt{1}{\bar{3}}{\bar{3}}-\frac{i}{\sqrt{21}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +i \sqrt{\frac{3}{14}}\subcgt{3}{\bar{3}}{\bar{3}}+\frac{e^{i \alpha } \omega }{\sqrt{6}}\subcgt{\bar{3}}{1^{\prime}}{\bar{3}} \\ 
+ & -\frac{e^{-i \alpha } \omega ^2}{\sqrt{6}}\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}+i \sqrt{\frac{3}{14}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{8}{8}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}^{(1)}+\rep{8}^{(2)}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{8}{8}\to\rep{1}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{1}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{1}^{\prime}}{1}+\subcgt{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
  & +\frac{\sqrt{\frac{3}{2}}}{2}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{6}_{s}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{3} & = \frac{i e^{i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & -\frac{i e^{-i \beta }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right)+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
- & -\frac{1}{2} \sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{1}{2} \sqrt{\frac{1}{7} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{i e^{i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{i e^{-i \beta }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{1}{2} \sqrt{\frac{1}{7} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{1}{2} \sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)+\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+ & -\frac{i e^{-i \beta }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
+ & -\frac{1}{2} \sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{1}{2} \sqrt{\frac{1}{7} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{i e^{i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{i e^{-i \beta }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{1}{2} \sqrt{\frac{1}{7} \left(3-\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{2} \sqrt{\frac{1}{14} \left(5+3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & +\sqrt{\frac{1}{14} \left(3-\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{6}_{s}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{3} & = -\frac{\omega ^2 e^{i \alpha -i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & +\frac{\omega  e^{i \beta -i \alpha }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right)+i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
- & +\frac{1}{2} i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{1}{2} i \sqrt{\frac{1}{7} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{\omega ^2 e^{i \alpha -i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{\omega  e^{i \beta -i \alpha }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)-\frac{1}{2} i \sqrt{\frac{1}{7} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{1}{2} i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)-i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+ & +\frac{\omega  e^{i \beta -i \alpha }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & +i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{2} i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{1}{2} i \sqrt{\frac{1}{7} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{\omega ^2 e^{i \alpha -i \beta }}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{\omega  e^{i \beta -i \alpha }}{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{1}{2} i \sqrt{\frac{1}{7} \left(3+\sqrt{2}\right)}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{1}{2} i \sqrt{\frac{1}{14} \left(5-3 \sqrt{2}\right)}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & -i \sqrt{\frac{1}{14} \left(3+\sqrt{2}\right)}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{7}_{s}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{\sqrt{\frac{3}{2}}}{2}\left(\subcgt{1^{\prime}}{\bar{1}^{\prime}}{1}+\subcgt{\bar{1}^{\prime}}{1^{\prime}}{1}\right) \\ 
  & -\frac{1}{2 \sqrt{2}}\left(\subcgt{3}{\bar{3}}{1}+\subcgt{\bar{3}}{3}{1}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = \frac{i \omega }{2 \sqrt{3}}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & -\frac{i \omega ^2}{2 \sqrt{3}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right)-\frac{1}{\sqrt{3}}\subcgt{3}{3}{3} \\ 
- & +\frac{1}{2 \sqrt{3}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
+ & -\frac{i \omega ^2}{2 \sqrt{3}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & -\frac{1}{\sqrt{3}}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{2 \sqrt{3}}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{1}{\sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = \frac{i \omega }{2 \sqrt{3}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{i \omega ^2}{2 \sqrt{3}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & +\frac{1}{2 \sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)-\frac{1}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+ & -\frac{i \omega ^2}{2 \sqrt{3}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{1}{\sqrt{6}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +\frac{1}{2 \sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & -\frac{1}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{8}_{s}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
-\rep{1^{\prime}} & = -\frac{\omega ^2}{\sqrt{3}}\subcgt{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}}-\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
-\rep{\bar{1}^{\prime}} & = -\frac{\omega }{\sqrt{3}}\subcgt{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}}+\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
+\rep{1^{\prime}} & = -\frac{\omega ^2}{\sqrt{3}}\subcgt{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}} \\ 
+ & -\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = -\frac{\omega }{\sqrt{3}}\subcgt{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}} \\ 
+ & +\frac{i}{\sqrt{3}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\end{align*}
+\begin{align*}
 \rep{3} & = \frac{i}{3}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & -\frac{i}{3}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right)+\frac{1}{3}\subcgt{3}{3}{3} \\ 
- & +\frac{1}{3}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{\sqrt{2}}{3}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{i}{3}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{i}{3}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{\sqrt{2}}{3}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & +\frac{1}{3}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)+\frac{1}{3}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+ & -\frac{i}{3}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & +\frac{1}{3}\subcgt{3}{3}{3} \\ 
+ & +\frac{1}{3}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{\sqrt{2}}{3}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
 \end{align*}
-\item $\tsprodx{8}{8}\to\rep{8}_{s}^{(2)}$:
 \begin{align*}
-\rep{1^{\prime}} & = \sqrt{\frac{2}{3}} e^{-i \alpha }\subcgt{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}}-\frac{i e^{-i \alpha } \omega }{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
-\rep{\bar{1}^{\prime}} & = \sqrt{\frac{2}{3}} e^{i \alpha }\subcgt{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}}+\frac{i e^{i \alpha } \omega ^2}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
-\rep{3} & = \frac{i e^{i \alpha } \omega ^2}{3 \sqrt{2}}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & -\frac{i e^{-i \alpha } \omega }{3 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right)-\frac{2 \sqrt{\frac{2}{7}}}{3}\subcgt{3}{3}{3} \\ 
- & -\frac{2 \sqrt{\frac{2}{7}}}{3}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right)+\frac{5}{3 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
-\\
-\rep{\bar{3}} & = \frac{i e^{i \alpha } \omega ^2}{3 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{i e^{-i \alpha } \omega }{3 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{5}{3 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
- & -\frac{2 \sqrt{\frac{2}{7}}}{3}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right)-\frac{2 \sqrt{\frac{2}{7}}}{3}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\rep{\bar{3}} & = \frac{i}{3}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{i}{3}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{\sqrt{2}}{3}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & +\frac{1}{3}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & +\frac{1}{3}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
 \end{align*}
+\end{fleqn}
+\item $\tsprodx{8}{8}\to\rep{8}_{s}^{(2)}$:
+\begin{fleqn}
+\begin{align*}
+\rep{1^{\prime}} & = \sqrt{\frac{2}{3}} e^{-i \alpha }\subcgt{\bar{1}^{\prime}}{\bar{1}^{\prime}}{1^{\prime}} \\ 
+ & -\frac{i e^{-i \alpha } \omega }{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}+\subcgt{\bar{3}}{3}{1^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \sqrt{\frac{2}{3}} e^{i \alpha }\subcgt{1^{\prime}}{1^{\prime}}{\bar{1}^{\prime}} \\ 
+ & +\frac{i e^{i \alpha } \omega ^2}{\sqrt{6}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}+\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{i e^{i \alpha } \omega ^2}{3 \sqrt{2}}\left(\subcgt{1^{\prime}}{3}{3}+\subcgt{3}{1^{\prime}}{3}\right) \\ 
+ & -\frac{i e^{-i \alpha } \omega }{3 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}+\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & -\frac{2 \sqrt{\frac{2}{7}}}{3}\subcgt{3}{3}{3} \\ 
+ & -\frac{2 \sqrt{\frac{2}{7}}}{3}\left(\subcgt{3}{\bar{3}}{3}+\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{5}{3 \sqrt{7}}\subcgt{\bar{3}}{\bar{3}}{3_{s}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = \frac{i e^{i \alpha } \omega ^2}{3 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{i e^{-i \alpha } \omega }{3 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{5}{3 \sqrt{7}}\subcgt{3}{3}{\bar{3}_{s}} \\ 
+ & -\frac{2 \sqrt{\frac{2}{7}}}{3}\left(\subcgt{3}{\bar{3}}{\bar{3}}+\subcgt{\bar{3}}{3}{\bar{3}}\right) \\ 
+ & -\frac{2 \sqrt{\frac{2}{7}}}{3}\subcgt{\bar{3}}{\bar{3}}{\bar{3}}
+\end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{3}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{3} & = \frac{1}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{3}{3}-\subcgt{3}{1^{\prime}}{3}\right) \\ 
  & -\frac{\omega }{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}-\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
- & +\frac{i \omega ^2}{2 \sqrt{2}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)-\frac{i \omega ^2}{2}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+ & +\frac{i \omega ^2}{2 \sqrt{2}}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -\frac{i \omega ^2}{2}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{\bar{3}}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{\bar{3}} & = \frac{1}{2 \sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{\omega }{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)-\frac{i \omega ^2}{2}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{\omega }{2 \sqrt{2}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & -\frac{i \omega ^2}{2}\subcgt{3}{3}{\bar{3}_{a}} \\ 
  & -\frac{i \omega ^2}{2 \sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{7}_{a}^{(1)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\left(\subcgt{1^{\prime}}{\bar{1}^{\prime}}{1}-\subcgt{\bar{1}^{\prime}}{1^{\prime}}{1}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = \frac{\omega }{4}\left(\subcgt{1^{\prime}}{3}{3}-\subcgt{3}{1^{\prime}}{3}\right) \\ 
  & +\frac{\omega ^2}{4}\left(\subcgt{\bar{1}^{\prime}}{3}{3}-\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
- & +\frac{\sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)+\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
+ & +\frac{\sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & +\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = \frac{\omega }{4}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & +\frac{\omega ^2}{4}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & +\frac{\omega ^2}{4}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{\sqrt{\frac{3}{2}}}{2}\subcgt{3}{3}{\bar{3}_{a}} \\ 
  & -\frac{\sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{7}_{a}^{(2)}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1} & = \frac{i}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1}-\subcgt{\bar{3}}{3}{1}\right)
-\\
+\end{align*}
+\begin{align*}
 \rep{3} & = -\frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha } \omega\left(\subcgt{1^{\prime}}{3}{3}-\subcgt{3}{1^{\prime}}{3}\right) \\ 
  & +\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha } \omega ^2\left(\subcgt{\bar{1}^{\prime}}{3}{3}-\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
- & +\frac{i \sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right)-\frac{i}{2 \sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
+ & +\frac{i \sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{3}-\subcgt{\bar{3}}{3}{3}\right) \\ 
+ & -\frac{i}{2 \sqrt{6}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
 \rep{\bar{3}} & = \frac{1}{4} \sqrt{\frac{7}{3}} e^{i \alpha } \omega\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & -\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha } \omega ^2\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{i}{2 \sqrt{6}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
+ & -\frac{1}{4} \sqrt{\frac{7}{3}} e^{-i \alpha } \omega ^2\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{i}{2 \sqrt{6}}\subcgt{3}{3}{\bar{3}_{a}} \\ 
  & +\frac{i \sqrt{3}}{4}\left(\subcgt{3}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{3}{\bar{3}}\right)
 \end{align*}
+\end{fleqn}
 \item $\tsprodx{8}{8}\to\rep{8}_{a}$:
+\begin{fleqn}
 \begin{align*}
 \rep{1^{\prime}} & = -\frac{\omega }{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{1^{\prime}}-\subcgt{\bar{3}}{3}{1^{\prime}}\right)
-\\
-\rep{\bar{1}^{\prime}} & = \frac{\omega ^2}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
-\\
-\rep{3} & = \frac{\omega ^2}{\sqrt{6}}\left(\subcgt{1^{\prime}}{3}{3}-\subcgt{3}{1^{\prime}}{3}\right) \\ 
- & -\frac{\omega }{\sqrt{6}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}-\subcgt{3}{\bar{1}^{\prime}}{3}\right)-\frac{i}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
-\\
-\rep{\bar{3}} & = -\frac{\omega ^2}{\sqrt{6}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
- & +\frac{\omega }{\sqrt{6}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right)+\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}
 \end{align*}
+\begin{align*}
+\rep{\bar{1}^{\prime}} & = \frac{\omega ^2}{\sqrt{2}}\left(\subcgt{3}{\bar{3}}{\bar{1}^{\prime}}-\subcgt{\bar{3}}{3}{\bar{1}^{\prime}}\right)
+\end{align*}
+\begin{align*}
+\rep{3} & = \frac{\omega ^2}{\sqrt{6}}\left(\subcgt{1^{\prime}}{3}{3}-\subcgt{3}{1^{\prime}}{3}\right) \\ 
+ & -\frac{\omega }{\sqrt{6}}\left(\subcgt{\bar{1}^{\prime}}{3}{3}-\subcgt{3}{\bar{1}^{\prime}}{3}\right) \\ 
+ & -\frac{i}{\sqrt{3}}\subcgt{\bar{3}}{\bar{3}}{3_{a}}
+\end{align*}
+\begin{align*}
+\rep{\bar{3}} & = -\frac{\omega ^2}{\sqrt{6}}\left(\subcgt{1^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{1^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{\omega }{\sqrt{6}}\left(\subcgt{\bar{1}^{\prime}}{\bar{3}}{\bar{3}}-\subcgt{\bar{3}}{\bar{1}^{\prime}}{\bar{3}}\right) \\ 
+ & +\frac{i}{\sqrt{3}}\subcgt{3}{3}{\bar{3}_{a}}
+\end{align*}
+\end{fleqn}
 \end{itemize}
 \end{document}
