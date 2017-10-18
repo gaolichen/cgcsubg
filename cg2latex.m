@@ -182,6 +182,8 @@ IsNegative[val_]:=Module[{str},
 
 b7Tolatex={b7-> Subscript[b,7],d7-> Subscript[
 
+
+
 \!\(\*OverscriptBox[\(b\), \(_\)]\), 7]};
 
 ClearAll[CGTermList2TeX];
@@ -200,7 +202,7 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 		val = Together[ZToExp[Simplify[coefs[[i]]]]];
 
 		If[Length[cgterms[[i]]]>=4, val = val /Sqrt[2];terminc = 2, terminc = 1];
-		If[terms + terminc > 3, 
+		If[terms + terminc > 2, 
 			(* new line if more than 4 terms. *)
 			exp=exp<> " \\\\ \n & "; terms = terminc, 
 			terms = terms + terminc
@@ -228,22 +230,24 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 (* Save the for r1*r2\[Rule]r3 *)
 SaveCG[os_, embed_,r1_, r2_,r3_]:=Module[{i,j, align = True,subreps,terms, coefs,pos},
 	(*If[Length[cg]>1,MyWriteLine[os, "\\begin{eqnarray*}"]; align = True, MyWriteLine[os, "\\["]];*)
-	MyWriteLine[os, "\\begin{align*}"];
+	MyWriteLine[os, "\\bfl"];
 	(*Print["r1=",r1,",r2=",r2,",r3=",r3];*)
 	terms=embed[r1,r2,GetRepWithSym[r3],KeyCGTerms];
 	coefs=embed[r1,r2,r3,KeyCGCoefficient];
 	subreps=embed[GetRepName[r3]];
 	For[i=1,i<= Length[subreps],i++,
+		MyWriteLine[os, "\\begin{align*}"];
 		pos={};
 		For[j=1,j<= Length[terms],j++,
 			If[GetRepName[terms[[j,1]]]==subreps[[i]],AppendTo[pos,j]];
 		];
 
 		MyWriteLine[os,CGTermList2TeX[embed,coefs[[pos]],terms[[pos]],r1,r2, align]];
-		If[align && i < Length[subreps], MyWriteLine[os, "\\\\"]]
+		(*If[align && i < Length[subreps], MyWriteLine[os, "\\\\"]];*)
+		MyWriteLine[os, "\\end{align*}"];
 	];
-	MyWriteLine[os, "\\end{align*}"];
-	(*If[Length[cg]>1,MyWriteLine[os, "\\end{eqnarray*}"], MyWriteLine[os, "\\]"]];*)
+
+	MyWriteLine[os, "\\efl"];
 ];
 
 (* Save all CG for r1 times r2 to the stream os. *)
@@ -278,6 +282,7 @@ WriteHeader[os_]:=Module[{},
 	MyWriteLine[os, "\\usepackage[T1]{fontenc}"];
 	MyWriteLine[os, "\\usepackage[latin9]{inputenc}"];
 	MyWriteLine[os, "\\usepackage{amsmath}"];
+	MyWriteLine[os, "\\usepackage{nccmath}"];
 	MyWriteLine[os];
 
 	MyWriteLine[os, "\\makeatletter"];
@@ -288,6 +293,9 @@ WriteHeader[os_]:=Module[{},
 	(*MyWriteLine[os, "\\newcommand{\\" <> $ContractionTag <> "}[3]{\\big\\{ {#1}\\otimes{#2}\\big\\}^{}_{#3}}"];*)
 	MyWriteLine[os, "\\newcommand{\\tsprodx}[2]{\\repx{#1}{x}\\otimes\\repx{#2}{y}}"];
 	MyWriteLine[os, "\\newcommand{\\" <> $ContractionTag <> "}[3]{\\big\\{ \\tsprodx{#1}{#2}\\big\\}^{}_{#3}}"];
+
+	MyWriteLine[os, "\\newcommand{\\bfl}{\\begin{fleqn}[25pt]}"];
+	MyWriteLine[os, "\\newcommand{\\efl}{\\end{fleqn}}"];
 	
 	MyWriteLine[os, "\\makeatother"];
 	MyWriteLine[os, "\\usepackage{babel}"];
