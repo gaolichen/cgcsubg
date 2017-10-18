@@ -11,19 +11,21 @@
 \newcommand{\tsprod}[2]{\rep{#1}\otimes\rep{#2}}
 \newcommand{\tsprodx}[2]{\repx{#1}{x}\otimes\repx{#2}{y}}
 \newcommand{\subcgs}[3]{\big\{ \tsprodx{#1}{#2}\big\}^{}_{#3}}
+\newcommand{\bfl}{\begin{fleqn}[25pt]}
+\newcommand{\efl}{\end{fleqn}}
 \makeatother
 \usepackage{babel}
 \begin{document}
 \paragraph*{\cgEqFontsize $\tsprod{3}{3}\to\rep{6}_s+\rep{\bar{3}}_a$}
 \begin{itemize}
 \item $\tsprodx{3}{3}\to\rep{\bar{3}}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{3}\to\rep{6}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -33,18 +35,18 @@
 \begin{align*}
 \rep{3}_{1} & = \frac{i}{b_7}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{\bar{3}}\to\rep{1}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{\bar{3}}\to\rep{1}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{\bar{3}}\to\rep{8}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
@@ -54,19 +56,19 @@
 \begin{align*}
 \rep{3}_{2} & = i\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{6}\to\rep{\bar{3}}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{6}\to\rep{\bar{3}}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\subcgs{3_{2}}{1_{0}}{3_{2}}-\frac{i}{\sqrt{3} b_7^2}\subcgs{3_{2}}{2}{3_{2}} \\ 
  & +\frac{i}{\sqrt{2} b_7}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{6}\to\rep{7}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -77,9 +79,9 @@
 \rep{3}_{2} & = \frac{\sqrt{\frac{7}{2}}}{3 b_7}\subcgs{3_{2}}{1_{0}}{3_{2}}+\frac{2}{3 b_7^5}\subcgs{3_{2}}{2}{3_{2}} \\ 
  & -\frac{1}{\sqrt{6} b_7^2}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{6}\to\rep{8}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
@@ -90,12 +92,12 @@
 \rep{3}_{2} & = \frac{2}{3 b_7}\subcgs{3_{2}}{1_{0}}{3_{2}}-\frac{1}{3} i \sqrt{2} b_7\subcgs{3_{2}}{2}{3_{2}} \\ 
  & +\frac{i}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{7}\to\rep{6}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{7}\to\rep{6}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -106,9 +108,9 @@
 \rep{3}_{1} & = \sqrt{\frac{2}{7}} b_7\subcgs{3_{2}}{1_{1}}{3_{1}}-\frac{2}{\sqrt{7} b_7^3}\subcgs{3_{2}}{3_{1}}{3_{1}} \\ 
  & -\frac{1}{\sqrt{7} b_7}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{7}\to\rep{7}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -119,9 +121,9 @@
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{3} b_7}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{2}{3}}}{b_7^2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{7}\to\rep{8}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{2}{\sqrt{7}}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{7}}}{b_7^2}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
@@ -132,19 +134,19 @@
 \begin{align*}
 \rep{3}_{2} & = \frac{\sqrt{\frac{2}{3}}}{b_7}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{3} b_7^2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{3}{8}\to\rep{3}+\rep{6}+\rep{7}+\rep{8}$}
 \begin{itemize}
 \item $\tsprodx{3}{8}\to\rep{3}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{2}\subcgs{3_{2}}{2}{3_{2}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & -\frac{1}{2} i \sqrt{\frac{3}{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{8}\to\rep{6}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -155,9 +157,9 @@
 \rep{3}_{1} & = -\frac{b_7}{\sqrt{2}}\subcgs{3_{2}}{2}{3_{1}}-\frac{b_7}{2}\subcgs{3_{2}}{3_{1}}{3_{1}} \\ 
  & +\frac{i b_7}{2}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{8}\to\rep{7}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -169,9 +171,9 @@
 \rep{3}_{2} & = \frac{b_7^2}{2}\subcgs{3_{2}}{2}{3_{2}}+\frac{i \left(5 \sqrt{7}+i\right)}{8 \sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & +\frac{1}{2} \sqrt{\frac{7}{6}} b_7^2\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{3}{8}\to\rep{8}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{2}\subcgs{3_{2}}{3_{1}}{2}+\frac{i \sqrt{3}}{2}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
@@ -183,19 +185,19 @@
 \rep{3}_{2} & = -\frac{i}{\sqrt{2}}\subcgs{3_{2}}{2}{3_{2}}-\frac{i b_7}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & -\frac{b_7^2}{\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{6}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{8}\right)_s+\left(\rep{7}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{6}{6}\to\rep{1}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \frac{1}{\sqrt{6}}\subcgs{1_{0}}{1_{0}}{1_{0}}+\frac{1}{\sqrt{3}}\subcgs{2}{2}{1_{0}} \\ 
  & +\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{6}\to\rep{6}_{s}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \frac{\sqrt{3}}{2}\subcgs{1_{0}}{1_{0}}{1_{0}}-\frac{1}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
@@ -207,9 +209,9 @@
  & -2 \sqrt{\frac{2}{21}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right) \\ 
  & +\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{6}\to\rep{6}_{s}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = -\frac{1}{2 \sqrt{3}}\subcgs{1_{0}}{1_{0}}{1_{0}}+\sqrt{\frac{2}{3}}\subcgs{2}{2}{1_{0}} \\ 
  & -\frac{1}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}
@@ -223,9 +225,9 @@
  & +\sqrt{\frac{2}{21}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right) \\ 
  & +\frac{3}{\sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{6}\to\rep{8}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{6}}\left(\subcgs{1_{0}}{2}{2}+\subcgs{2}{1_{0}}{2}\right) \\ 
  & +2 \sqrt{\frac{2}{21}}\subcgs{2}{2}{2}-\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{1}}{2}
@@ -238,9 +240,9 @@
 \begin{align*}
 \rep{3}_{2} & = -\frac{1}{\sqrt{2}}\left(\subcgs{2}{3_{1}}{3_{2}}+\subcgs{3_{1}}{2}{3_{2}}\right)
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{6}\to\rep{7}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{2}{2}{1_{1}}
 \end{align*}
@@ -252,9 +254,9 @@
 \rep{3}_{2} & = \frac{1}{\sqrt{3}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right) \\ 
  & -\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{6}\to\rep{8}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{2}}\left(\subcgs{1_{0}}{2}{2}-\subcgs{2}{1_{0}}{2}\right)
 \end{align*}
@@ -266,28 +268,28 @@
 \rep{3}_{2} & = -\frac{1}{\sqrt{6}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right) \\ 
  & -\sqrt{\frac{2}{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{7}\to\rep{3}+\rep{\bar{3}}+\rep{6}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
 \begin{itemize}
 \item $\tsprodx{6}{7}\to\rep{3}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{b_7^2}{\sqrt{7}}\subcgs{2}{3_{1}}{3_{2}} \\ 
  & +\frac{2 b_7^4}{\sqrt{21}}\subcgs{2}{3_{2}}{3_{2}}+\frac{1}{\sqrt{7} b_7}\subcgs{3_{1}}{1_{1}}{3_{2}} \\ 
  & +\sqrt{\frac{2}{7}} b_7^3\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{b_7}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{\bar{3}}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{7} b_7^2}\subcgs{2}{3_{1}}{3_{2}} \\ 
  & +\frac{2}{\sqrt{21} b_7^4}\subcgs{2}{3_{2}}{3_{2}}+\frac{b_7}{\sqrt{7}}\subcgs{3_{1}}{1_{1}}{3_{2}} \\ 
  & +\frac{\sqrt{\frac{2}{7}}}{b_7^3}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{14} b_7}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{6}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
@@ -299,9 +301,9 @@
 \rep{3}_{1} & = -\frac{1}{\sqrt{3}}\subcgs{1_{0}}{3_{1}}{3_{1}}-\sqrt{\frac{2}{21}}\subcgs{2}{3_{1}}{3_{1}} \\ 
  & -\sqrt{\frac{2}{7}}\subcgs{2}{3_{2}}{3_{1}}-\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{7}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{1_{0}}{1_{1}}{1_{1}}
 \end{align*}
@@ -315,9 +317,9 @@
  & +\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}} \\ 
  & -\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{7}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
@@ -331,9 +333,9 @@
  & -\frac{1}{6 \sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}+\frac{1}{\sqrt{3}}\subcgs{3_{1}}{1_{1}}{3_{2}} \\ 
  & -\frac{1}{2 \sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{8}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{2}}\subcgs{2}{1_{1}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
@@ -346,9 +348,9 @@
  & -\frac{1}{3 \sqrt{14}}\subcgs{2}{3_{2}}{3_{2}}+\frac{1}{\sqrt{21}}\subcgs{3_{1}}{1_{1}}{3_{2}} \\ 
  & +\sqrt{\frac{2}{21}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{42}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{7}\to\rep{8}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{14}}\subcgs{2}{1_{1}}{2}+\sqrt{\frac{6}{7}}\subcgs{3_{1}}{3_{1}}{2} \\ 
  & +\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{2}
@@ -361,28 +363,28 @@
 \rep{3}_{2} & = -\frac{1}{\sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}-\frac{1}{\sqrt{3}}\subcgs{3_{1}}{1_{1}}{3_{2}} \\ 
  & -\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{6}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
 \begin{itemize}
 \item $\tsprodx{6}{8}\to\rep{3}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{1}{2 b_7^2}\subcgs{2}{3_{1}}{3_{2}} \\ 
  & +\frac{i}{2 \sqrt{3} b_7^2}\subcgs{2}{3_{2}}{3_{2}}-\frac{1}{2 b_7}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & +\frac{1}{2 \sqrt{2} b_7}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{i}{2 \sqrt{2} b_7}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{\bar{3}}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{b_7^2}{2}\subcgs{2}{3_{1}}{3_{2}} \\ 
  & -\frac{i b_7^2}{2 \sqrt{3}}\subcgs{2}{3_{2}}{3_{2}}-\frac{b_7}{2}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & +\frac{b_7}{2 \sqrt{2}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{i b_7}{2 \sqrt{2}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{6}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{2}{2}{1_{0}}
 \end{align*}
@@ -395,9 +397,9 @@
  & -\frac{1}{2 \sqrt{7}}\subcgs{3_{1}}{2}{3_{1}}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{3_{1}} \\ 
  & -\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{6}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
@@ -410,9 +412,9 @@
  & -\frac{1}{\sqrt{2}}\subcgs{2}{3_{2}}{3_{1}}-\frac{\sqrt{\frac{3}{7}}}{2}\subcgs{3_{1}}{2}{3_{1}} \\ 
  & +\frac{3}{2 \sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{2 \sqrt{2}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{7}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{2}{2}{1_{1}}
 \end{align*}
@@ -426,9 +428,9 @@
  & -\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{2}}{3_{2}}+\frac{\sqrt{3}}{4}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & +\frac{5}{4 \sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{7}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
@@ -442,9 +444,9 @@
  & +\frac{5}{6 \sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & -\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{8}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{2}\subcgs{1_{0}}{2}{2}-\frac{2}{\sqrt{7}}\subcgs{2}{2}{2} \\ 
  & +\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{2}+\frac{1}{2 \sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
@@ -458,9 +460,9 @@
 \rep{3}_{2} & = -\frac{1}{2}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{1}{2 \sqrt{3}}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & -\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{6}{8}\to\rep{8}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = -\frac{1}{2}\subcgs{1_{0}}{2}{2}-\frac{1}{\sqrt{7}}\subcgs{2}{2}{2} \\ 
  & -\frac{3 \sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{2}+\frac{1}{2 \sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
@@ -475,19 +477,19 @@
  & -\frac{\sqrt{\frac{7}{2}}}{3}\subcgs{2}{3_{2}}{3_{2}}-\frac{1}{2 \sqrt{3}}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & -\frac{1}{2 \sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{7}{7}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{7}{7}\to\rep{1}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \frac{1}{\sqrt{7}}\subcgs{1_{1}}{1_{1}}{1_{0}}+\sqrt{\frac{3}{7}}\subcgs{3_{1}}{3_{1}}{1_{0}} \\ 
  & +\sqrt{\frac{3}{7}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{6}_{s}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \frac{\sqrt{3}}{2}\subcgs{1_{1}}{1_{1}}{1_{0}}-\frac{1}{2}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -500,9 +502,9 @@
  & +\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{2}}{3_{1}} \\ 
  & -\sqrt{\frac{2}{7}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{14}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{6}_{s}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = -\frac{\sqrt{\frac{3}{7}}}{2}\subcgs{1_{1}}{1_{1}}{1_{0}}+\frac{2}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{1_{0}} \\ 
  & -\frac{3}{2 \sqrt{7}}\subcgs{3_{2}}{3_{2}}{1_{0}}
@@ -514,9 +516,9 @@
 \rep{3}_{1} & = -\frac{1}{2}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}+\subcgs{3_{2}}{1_{1}}{3_{1}}\right) \\ 
  & +\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{7}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}+\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -528,9 +530,9 @@
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}+\subcgs{3_{1}}{1_{1}}{3_{2}}\right) \\ 
  & +\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{8}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{2}+\frac{1}{\sqrt{14}}\subcgs{3_{2}}{3_{1}}{2} \\ 
  & +\sqrt{\frac{6}{7}}\subcgs{3_{2}}{3_{2}}{2}
@@ -544,25 +546,25 @@
 \rep{3}_{2} & = -\frac{1}{\sqrt{3}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}+\subcgs{3_{1}}{1_{1}}{3_{2}}\right) \\ 
  & +\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{3}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{7}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right) \\ 
  & +\frac{b_7}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{b_7}{\sqrt{7}}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & +\frac{b_7}{\sqrt{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\sqrt{\frac{2}{7}} b_7^2\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{\bar{3}}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{7}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right) \\ 
  & +\frac{1}{\sqrt{7} b_7}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{7} b_7}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & +\frac{1}{\sqrt{7} b_7}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{2}{7}}}{b_7^2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{7}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -574,9 +576,9 @@
 \rep{3}_{2} & = \frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right) \\ 
  & +\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{7}\to\rep{8}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
@@ -589,30 +591,30 @@
  & +2 \sqrt{\frac{2}{21}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\sqrt{\frac{3}{14}}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & -\sqrt{\frac{3}{14}}\subcgs{3_{2}}{3_{1}}{3_{2}}+\sqrt{\frac{2}{21}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{7}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}+\rep{8}^{(3)}$}
 \begin{itemize}
 \item $\tsprodx{7}{8}\to\rep{3}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{7}}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{7} b_7^4}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & +\frac{1}{2 \sqrt{7} b_7^3}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{1}{2 b_7^3}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & +\frac{\sqrt{\frac{3}{7}}}{2 b_7^2}\subcgs{3_{2}}{2}{3_{2}}-\frac{\sqrt{7}+35 i}{56 \sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & -\frac{1}{2 \sqrt{2} b_7^2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{\bar{3}}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{\sqrt{7}}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{b_7^4}{\sqrt{7}}\subcgs{3_{1}}{2}{3_{2}} \\ 
  & +\frac{b_7^3}{2 \sqrt{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{b_7^3}{2}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & +\frac{1}{2} \sqrt{\frac{3}{7}} b_7^2\subcgs{3_{2}}{2}{3_{2}}-\frac{\sqrt{7}-35 i}{56 \sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & -\frac{b_7^2}{2 \sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{6}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
@@ -625,9 +627,9 @@
  & -\frac{1}{2 \sqrt{7}}\subcgs{3_{2}}{2}{3_{1}}-\frac{3}{2 \sqrt{14}}\subcgs{3_{2}}{3_{1}}{3_{1}} \\ 
  & -\frac{1}{2 \sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{6}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -640,9 +642,9 @@
  & -\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{3_{1}}-\frac{1}{2}\subcgs{3_{2}}{2}{3_{1}} \\ 
  & +\frac{1}{2 \sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{1}{2 \sqrt{14}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{7}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
@@ -656,9 +658,9 @@
  & -\frac{1}{2 \sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\frac{\sqrt{7}}{4}\subcgs{3_{2}}{2}{3_{2}} \\ 
  & -\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{4 \sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{7}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -673,9 +675,9 @@
  & +\frac{1}{4}\subcgs{3_{2}}{2}{3_{2}}+\frac{1}{4 \sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & -\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{8}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{3}{4 \sqrt{2}}\subcgs{1_{1}}{2}{2}-\frac{5}{8}\subcgs{3_{2}}{3_{1}}{2} \\ 
  & -\frac{\sqrt{21}}{8}\subcgs{3_{2}}{3_{2}}{2}
@@ -691,9 +693,9 @@
  & -\frac{1}{4 \sqrt{14}}\subcgs{3_{2}}{2}{3_{2}}+\frac{23}{8 \sqrt{21}}\subcgs{3_{2}}{3_{1}}{3_{2}} \\ 
  & +\frac{1}{8 \sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{8}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{4 \sqrt{7}}\subcgs{1_{1}}{2}{2}+\sqrt{\frac{6}{7}}\subcgs{3_{1}}{3_{1}}{2} \\ 
  & -\frac{3}{4 \sqrt{14}}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{3_{2}}{2}
@@ -707,9 +709,9 @@
 \rep{3}_{2} & = \frac{\sqrt{3}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{1}{4}\subcgs{3_{2}}{2}{3_{2}} \\ 
  & +\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{21}{2}}}{4}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{7}{8}\to\rep{8}^{(3)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{3}{4 \sqrt{2}}\subcgs{1_{1}}{2}{2}+\frac{2}{\sqrt{7}}\subcgs{3_{1}}{3_{2}}{2} \\ 
  & +\frac{3}{8}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{7}}}{8}\subcgs{3_{2}}{3_{2}}{2}
@@ -724,19 +726,19 @@
  & -\frac{1}{2 \sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{2}}}{4}\subcgs{3_{2}}{2}{3_{2}} \\ 
  & +\frac{\sqrt{\frac{7}{3}}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{1}{8 \sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \paragraph*{\cgEqFontsize $\tsprod{8}{8}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}^{(1)}+\rep{8}^{(2)}\right)_s+\left(\rep{3}+\rep{\bar{3}}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}\right)_a$}
 \begin{itemize}
 \item $\tsprodx{8}{8}\to\rep{1}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \frac{1}{2}\subcgs{2}{2}{1_{0}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{1}}{1_{0}} \\ 
  & +\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{6}_{s}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = \sqrt{\frac{3}{5}}\subcgs{2}{2}{1_{0}}-\sqrt{\frac{2}{5}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
@@ -751,9 +753,9 @@
  & -\frac{1}{2 \sqrt{35}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{5}}\subcgs{3_{1}}{3_{2}}{3_{1}} \\ 
  & +\frac{1}{\sqrt{5}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{5}}}{2}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{6}_{s}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{0} & = -\frac{\sqrt{\frac{3}{5}}}{2}\subcgs{2}{2}{1_{0}}+\frac{\sqrt{\frac{5}{2}}}{2}\subcgs{3_{1}}{3_{1}}{1_{0}} \\ 
  & -\frac{3}{2 \sqrt{10}}\subcgs{3_{2}}{3_{2}}{1_{0}}
@@ -769,9 +771,9 @@
  & -\frac{9}{4 \sqrt{35}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{3}{4 \sqrt{5}}\subcgs{3_{1}}{3_{2}}{3_{1}} \\ 
  & +\frac{3}{4 \sqrt{5}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{7}{5}}}{4}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{7}_{s}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}+\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -785,9 +787,9 @@
  & +\frac{1}{2 \sqrt{2}}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right) \\ 
  & -\frac{1}{2 \sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\frac{1}{2 \sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{8}_{s}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \sqrt{\frac{2}{5}}\subcgs{2}{2}{2}-\sqrt{\frac{3}{10}}\subcgs{3_{1}}{3_{1}}{2} \\ 
  & -\sqrt{\frac{3}{10}}\subcgs{3_{2}}{3_{2}}{2}
@@ -800,9 +802,9 @@
 \rep{3}_{2} & = -\frac{1}{\sqrt{5}}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right) \\ 
  & -\sqrt{\frac{3}{10}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\sqrt{\frac{3}{10}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{8}_{s}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = -\frac{3}{2 \sqrt{35}}\subcgs{2}{2}{2}+\frac{3 \sqrt{\frac{3}{35}}}{4}\subcgs{3_{1}}{3_{1}}{2} \\ 
  & +\frac{\sqrt{5}}{4}\subcgs{3_{1}}{3_{2}}{2}+\frac{\sqrt{5}}{4}\subcgs{3_{2}}{3_{1}}{2} \\ 
@@ -818,27 +820,27 @@
  & -\frac{\sqrt{\frac{7}{10}}}{2}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right) \\ 
  & +\frac{\sqrt{\frac{7}{15}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{15}}}{2}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{3}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{4}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right) \\ 
  & +\frac{i \sqrt{3}}{4}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right) \\ 
  & -\frac{1}{2 b_7^3}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{i}{4 b_7}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & -\frac{i}{4 b_7}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{2 \sqrt{2} b_7^2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{\bar{3}}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{3}_{2} & = \frac{1}{4}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right) \\ 
  & -\frac{i \sqrt{3}}{4}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right) \\ 
  & -\frac{b_7^3}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{i b_7}{4}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & +\frac{i b_7}{4}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{b_7^2}{2 \sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{7}_{a}^{(1)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \subcgs{2}{2}{1_{1}}
 \end{align*}
@@ -853,9 +855,9 @@
  & +\frac{\sqrt{3}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{21}}{8}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & -\frac{\sqrt{21}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{7}_{a}^{(2)}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{1}_{1} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
@@ -870,9 +872,9 @@
  & -\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{3}}{8}\subcgs{3_{1}}{3_{2}}{3_{2}} \\ 
  & -\frac{\sqrt{3}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{3}}}{2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \item $\tsprodx{8}{8}\to\rep{8}_{a}$:
-\begin{fleqn}
+\bfl
 \begin{align*}
 \rep{2} & = \frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
@@ -884,6 +886,6 @@
 \rep{3}_{2} & = -\frac{1}{\sqrt{3}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right) \\ 
  & -\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\end{fleqn}
+\efl
 \end{itemize}
 \end{document}
