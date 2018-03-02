@@ -1,12 +1,11 @@
-%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{amsmath}
-
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
 \usepackage{nccmath}
 \newcommand{\cgEqFontsize}{\large}
 \newcommand{\rep}[1]{\mathbf{#1}}
@@ -17,700 +16,3692 @@
 \newcommand{\bfl}{\begin{fleqn}[25pt]}
 \newcommand{\efl}{\end{fleqn}}
 \usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-15
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
 
-\makeatother
+\begin_body
 
-\usepackage{babel}
-\begin{document}
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
 
-\paragraph*{\cgEqFontsize $\tsprod{3}{3}\to\rep{6}_{s}+\rep{\bar{3}}_{a}$}
-\begin{itemize}
-\item $\tsprodx{3}{3}\to\rep{\bar{3}}_{a}$: \bfl 
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{3}{3}\to\rep{6}_{s}+\rep{\bar{3}}_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{3}\to\rep{\bar{3}}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{3}\to\rep{6}_{s}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{3}\to\rep{6}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{2}}{3_{2}}{1_{0}},\quad\rep{2}=-\frac{i}{b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{2},\quad\rep{3}_{1}=\frac{i}{b_{7}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{3}{\bar{3}}\to\rep{1}+\rep{8}$}
-\begin{itemize}
-\item $\tsprodx{3}{\bar{3}}\to\rep{1}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{3}{\bar{3}}\to\rep{1}+\rep{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{\bar{3}}\to\rep{1}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{\bar{3}}\to\rep{8}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{\bar{3}}\to\rep{8}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\subcgs{3_{2}}{3_{2}}{2},\quad\rep{3}_{1}=\subcgs{3_{2}}{3_{2}}{3_{1}},\quad\rep{3}_{2}=i\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{3}{6}\to\rep{\bar{3}}+\rep{7}+\rep{8}$}
-\begin{itemize}
-\item $\tsprodx{3}{6}\to\rep{\bar{3}}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{3}{6}\to\rep{\bar{3}}+\rep{7}+\rep{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{6}\to\rep{\bar{3}}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\subcgs{3_{2}}{1_{0}}{3_{2}}-\frac{i}{\sqrt{3}b_{7}^{2}}\subcgs{3_{2}}{2}{3_{2}}+\frac{i}{\sqrt{2}b_{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{6}\to\rep{7}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{6}\to\rep{7}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{3}b_{7}^{3}}\subcgs{3_{2}}{2}{3_{1}}+\frac{\sqrt{\frac{2}{3}}}{b_{7}^{4}}\subcgs{3_{2}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{\sqrt{\frac{7}{2}}}{3b_{7}}\subcgs{3_{2}}{1_{0}}{3_{2}}+\frac{2}{3b_{7}^{5}}\subcgs{3_{2}}{2}{3_{2}}-\frac{1}{\sqrt{6}b_{7}^{2}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{6}\to\rep{8}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{6}\to\rep{8}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\sqrt{\frac{2}{3}}b_{7}\subcgs{3_{2}}{2}{3_{1}}+\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{2}{3b_{7}}\subcgs{3_{2}}{1_{0}}{3_{2}}-\frac{1}{3}i\sqrt{2}b_{7}\subcgs{3_{2}}{2}{3_{2}}+\frac{i}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{3}{7}\to\rep{6}+\rep{7}+\rep{8}$}
-\begin{itemize}
-\item $\tsprodx{3}{7}\to\rep{6}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{3}{7}\to\rep{6}+\rep{7}+\rep{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{7}\to\rep{6}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{\sqrt{\frac{3}{7}}}{b_{7}^{2}}\subcgs{3_{2}}{3_{1}}{2}+\frac{2}{\sqrt{7}b_{7}^{4}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\sqrt{\frac{2}{7}}b_{7}\subcgs{3_{2}}{1_{1}}{3_{1}}-\frac{2}{\sqrt{7}b_{7}^{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{7}b_{7}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{7}\to\rep{7}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{7}\to\rep{7}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{3}}\subcgs{3_{2}}{1_{1}}{3_{1}}-\frac{1}{\sqrt{3}b_{7}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{3}b_{7}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{3}b_{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{2}{3}}}{b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{7}\to\rep{8}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{7}\to\rep{8}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{2}{\sqrt{7}}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{7}}}{b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{2\sqrt{\frac{2}{21}}}{b_{7}^{4}}\subcgs{3_{2}}{1_{1}}{3_{1}}+\frac{\sqrt{\frac{2}{21}}}{b_{7}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{13\sqrt{7}+7i}{28\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{\sqrt{\frac{2}{3}}}{b_{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{3}b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{3}{8}\to\rep{3}+\rep{6}+\rep{7}+\rep{8}$}
-\begin{itemize}
-\item $\tsprodx{3}{8}\to\rep{3}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{3}{8}\to\rep{3}+\rep{6}+\rep{7}+\rep{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{8}\to\rep{3}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{2}\subcgs{3_{2}}{2}{3_{2}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{2}i\sqrt{\frac{3}{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{8}\to\rep{6}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{8}\to\rep{6}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{2}\sqrt{3}b_{7}^{2}\subcgs{3_{2}}{3_{1}}{2}-\frac{1}{2}ib_{7}^{2}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{b_{7}}{\sqrt{2}}\subcgs{3_{2}}{2}{3_{1}}-\frac{b_{7}}{2}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{ib_{7}}{2}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{8}\to\rep{7}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{8}\to\rep{7}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{b_{7}^{4}}{\sqrt{3}}\subcgs{3_{2}}{2}{3_{1}}-\frac{b_{7}^{3}}{2\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{1}{2}\sqrt{\frac{7}{3}}b_{7}^{3}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{b_{7}^{2}}{2}\subcgs{3_{2}}{2}{3_{2}}+\frac{i\left(5\sqrt{7}+i\right)}{8\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{1}{2}\sqrt{\frac{7}{6}}b_{7}^{2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{3}{8}\to\rep{8}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{3}{8}\to\rep{8}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{2}\subcgs{3_{2}}{3_{1}}{2}+\frac{i\sqrt{3}}{2}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{6}}\subcgs{3_{2}}{2}{3_{1}}-\sqrt{\frac{2}{3}}b_{7}^{3}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{ib_{7}}{\sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{i}{\sqrt{2}}\subcgs{3_{2}}{2}{3_{2}}-\frac{ib_{7}}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{b_{7}^{2}}{\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{6}{6}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{8}\right)_{s}+\left(\rep{7}+\rep{8}\right)_{a}$}
-\begin{itemize}
-\item $\tsprodx{6}{6}\to\rep{1}_{s}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{6}{6}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{8}\right)_{s}+\left(\rep{7}+\rep{8}\right)_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{1}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\frac{1}{\sqrt{6}}\subcgs{1_{0}}{1_{0}}{1_{0}}+\frac{1}{\sqrt{3}}\subcgs{2}{2}{1_{0}}+\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{6}\to\rep{6}_{s}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{6}_{s}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\frac{\sqrt{3}}{2}\subcgs{1_{0}}{1_{0}}{1_{0}}-\frac{1}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\sqrt{\frac{3}{7}}\subcgs{2}{2}{2}-\frac{2}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2\sqrt{3}}\left(\subcgs{1_{0}}{3_{1}}{3_{1}}+\subcgs{3_{1}}{1_{0}}{3_{1}}\right)\\
  & -2\sqrt{\frac{2}{21}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)+\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{6}\to\rep{6}_{s}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{6}_{s}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =-\frac{1}{2\sqrt{3}}\subcgs{1_{0}}{1_{0}}{1_{0}}+\sqrt{\frac{2}{3}}\subcgs{2}{2}{1_{0}}-\frac{1}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{3}}\left(\subcgs{1_{0}}{2}{2}+\subcgs{2}{1_{0}}{2}\right)-\frac{2}{\sqrt{21}}\subcgs{2}{2}{2}+\frac{1}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2\sqrt{3}}\left(\subcgs{1_{0}}{3_{1}}{3_{1}}+\subcgs{3_{1}}{1_{0}}{3_{1}}\right)\\
  & +\sqrt{\frac{2}{21}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)+\frac{3}{\sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{6}\to\rep{8}_{s}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{8}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{6}}\left(\subcgs{1_{0}}{2}{2}+\subcgs{2}{1_{0}}{2}\right)+2\sqrt{\frac{2}{21}}\subcgs{2}{2}{2}-\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{3}}\left(\subcgs{1_{0}}{3_{1}}{3_{1}}+\subcgs{3_{1}}{1_{0}}{3_{1}}\right)\\
  & -\frac{1}{\sqrt{42}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)+\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{2}}\left(\subcgs{2}{3_{1}}{3_{2}}+\subcgs{3_{1}}{2}{3_{2}}\right)
 \end{align*}
-\efl 
-\item $\tsprodx{6}{6}\to\rep{7}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{7}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{2}{2}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{\sqrt{\frac{7}{2}}}{3}\left(\subcgs{1_{0}}{3_{1}}{3_{1}}-\subcgs{3_{1}}{1_{0}}{3_{1}}\right)+\frac{1}{3}\left(\subcgs{2}{3_{1}}{3_{1}}-\subcgs{3_{1}}{2}{3_{1}}\right)
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{3}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)-\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{6}\to\rep{8}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{6}\to\rep{8}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{2}}\left(\subcgs{1_{0}}{2}{2}-\subcgs{2}{1_{0}}{2}\right)
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{3}\left(\subcgs{1_{0}}{3_{1}}{3_{1}}-\subcgs{3_{1}}{1_{0}}{3_{1}}\right)+\frac{\sqrt{\frac{7}{2}}}{3}\left(\subcgs{2}{3_{1}}{3_{1}}-\subcgs{3_{1}}{2}{3_{1}}\right)
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{6}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)-\sqrt{\frac{2}{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{6}{7}\to\rep{3}+\rep{\bar{3}}+\rep{6}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
-\begin{itemize}
-\item $\tsprodx{6}{7}\to\rep{3}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{6}{7}\to\rep{3}+\rep{\bar{3}}+\rep{6}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{3}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{b_{7}^{2}}{\sqrt{7}}\subcgs{2}{3_{1}}{3_{2}}+\frac{2b_{7}^{4}}{\sqrt{21}}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{1}{\sqrt{7}b_{7}}\subcgs{3_{1}}{1_{1}}{3_{2}}+\sqrt{\frac{2}{7}}b_{7}^{3}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{b_{7}}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{\bar{3}}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{\bar{3}}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{7}b_{7}^{2}}\subcgs{2}{3_{1}}{3_{2}}+\frac{2}{\sqrt{21}b_{7}^{4}}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{b_{7}}{\sqrt{7}}\subcgs{3_{1}}{1_{1}}{3_{2}}+\frac{\sqrt{\frac{2}{7}}}{b_{7}^{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{14}b_{7}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{6}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{6}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\sqrt{\frac{3}{7}}\subcgs{2}{1_{1}}{2}+\frac{1}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{2}-\sqrt{\frac{3}{7}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{3}}\subcgs{1_{0}}{3_{1}}{3_{1}}-\sqrt{\frac{2}{21}}\subcgs{2}{3_{1}}{3_{1}}-\sqrt{\frac{2}{7}}\subcgs{2}{3_{2}}{3_{1}}-\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{7}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{7}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{1_{0}}{1_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{6}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{2}{3_{2}}{3_{1}}\\
  & +\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{6}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{2}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{7}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{7}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{\sqrt{7}}{6}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{7}{6\sqrt{2}}\subcgs{2}{3_{1}}{3_{1}}-\frac{1}{2\sqrt{6}}\subcgs{2}{3_{2}}{3_{1}}\\
  & -\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{\sqrt{7}}{6}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{1}{2\sqrt{6}}\subcgs{2}{3_{1}}{3_{2}}-\frac{1}{6\sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{1}{\sqrt{3}}\subcgs{3_{1}}{1_{1}}{3_{2}}-\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{8}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{8}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{2}}\subcgs{2}{1_{1}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{6}}\subcgs{2}{3_{2}}{3_{1}}-\sqrt{\frac{2}{3}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{2}{3}\subcgs{1_{0}}{3_{2}}{3_{2}}-2\sqrt{\frac{2}{21}}\subcgs{2}{3_{1}}{3_{2}}-\frac{1}{3\sqrt{14}}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{1}{\sqrt{21}}\subcgs{3_{1}}{1_{1}}{3_{2}}+\sqrt{\frac{2}{21}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{42}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{7}\to\rep{8}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{7}\to\rep{8}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{14}}\subcgs{2}{1_{1}}{2}+\sqrt{\frac{6}{7}}\subcgs{3_{1}}{3_{1}}{2}+\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{2}{3}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{2\sqrt{\frac{2}{7}}}{3}\subcgs{2}{3_{1}}{3_{1}}-\sqrt{\frac{3}{14}}\subcgs{2}{3_{2}}{3_{1}}-\sqrt{\frac{3}{14}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}-\frac{1}{\sqrt{3}}\subcgs{3_{1}}{1_{1}}{3_{2}}-\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{6}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$}
-\begin{itemize}
-\item $\tsprodx{6}{8}\to\rep{3}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{6}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{3}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{1}{2b_{7}^{2}}\subcgs{2}{3_{1}}{3_{2}}+\frac{i}{2\sqrt{3}b_{7}^{2}}\subcgs{2}{3_{2}}{3_{2}}\\
  & -\frac{1}{2b_{7}}\subcgs{3_{1}}{2}{3_{2}}+\frac{1}{2\sqrt{2}b_{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{i}{2\sqrt{2}b_{7}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{\bar{3}}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{\bar{3}}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{b_{7}^{2}}{2}\subcgs{2}{3_{1}}{3_{2}}-\frac{ib_{7}^{2}}{2\sqrt{3}}\subcgs{2}{3_{2}}{3_{2}}\\
  & -\frac{b_{7}}{2}\subcgs{3_{1}}{2}{3_{2}}+\frac{b_{7}}{2\sqrt{2}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{ib_{7}}{2\sqrt{2}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{6}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{6}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{2}{2}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{1}{2\sqrt{2}}\subcgs{1_{0}}{2}{2}+\frac{1}{\sqrt{14}}\subcgs{2}{2}{2}+\frac{3\sqrt{\frac{3}{7}}}{4}\subcgs{3_{1}}{3_{1}}{2}+\frac{3}{4}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{2}\subcgs{1_{0}}{3_{1}}{3_{1}}-\sqrt{\frac{2}{7}}\subcgs{2}{3_{1}}{3_{1}}-\frac{1}{2\sqrt{7}}\subcgs{3_{1}}{2}{3_{1}}\\
  & +\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{6}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{6}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{1_{0}}{2}{2}+\sqrt{\frac{3}{14}}\subcgs{2}{2}{2}-\frac{5}{4\sqrt{7}}\subcgs{3_{1}}{3_{1}}{2}+\frac{\sqrt{3}}{4}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{2\sqrt{3}}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{1}{\sqrt{42}}\subcgs{2}{3_{1}}{3_{1}}-\frac{1}{\sqrt{2}}\subcgs{2}{3_{2}}{3_{1}}\\
  & -\frac{\sqrt{\frac{3}{7}}}{2}\subcgs{3_{1}}{2}{3_{1}}+\frac{3}{2\sqrt{14}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{2}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{7}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{7}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{2}{2}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{\sqrt{7}}{12}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{1}{6\sqrt{2}}\subcgs{2}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{2}{3_{2}}{3_{1}}\\
  & +\frac{1}{4}\subcgs{3_{1}}{2}{3_{1}}-\frac{7}{4\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{7}{12}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{1}{2\sqrt{6}}\subcgs{2}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{\sqrt{3}}{4}\subcgs{3_{1}}{2}{3_{2}}+\frac{5}{4\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{7}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{7}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{7}{12}\subcgs{1_{0}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{2}}}{6}\subcgs{2}{3_{1}}{3_{1}}-\frac{1}{2\sqrt{6}}\subcgs{2}{3_{2}}{3_{1}}\\
  & -\frac{\sqrt{7}}{4}\subcgs{3_{1}}{2}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{1}{4\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{7}}{12}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{2}{3_{1}}{3_{2}}+\frac{5}{6\sqrt{2}}\subcgs{2}{3_{2}}{3_{2}}\\
  & +\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{1}}{2}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{8}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{8}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{2}\subcgs{1_{0}}{2}{2}-\frac{2}{\sqrt{7}}\subcgs{2}{2}{2}+\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{2}+\frac{1}{2\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{6}\subcgs{1_{0}}{3_{1}}{3_{1}}-\frac{4\sqrt{\frac{2}{7}}}{3}\subcgs{2}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{7}}\subcgs{3_{1}}{2}{3_{1}}\\
  & -\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{2}\subcgs{1_{0}}{3_{2}}{3_{2}}-\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{2}{3_{2}}-\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{6}{8}\to\rep{8}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{6}{8}\to\rep{8}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{1}{2}\subcgs{1_{0}}{2}{2}-\frac{1}{\sqrt{7}}\subcgs{2}{2}{2}-\frac{3\sqrt{\frac{3}{14}}}{2}\subcgs{3_{1}}{3_{1}}{2}+\frac{1}{2\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{2}\subcgs{1_{0}}{3_{1}}{3_{1}}+\frac{1}{\sqrt{14}}\subcgs{2}{3_{1}}{3_{1}}+\frac{1}{\sqrt{6}}\subcgs{2}{3_{2}}{3_{1}}\\
  & -\frac{3}{2\sqrt{7}}\subcgs{3_{1}}{2}{3_{1}}-\frac{5}{2\sqrt{42}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{6}\subcgs{1_{0}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{6}}\subcgs{2}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{2}}}{3}\subcgs{2}{3_{2}}{3_{2}}\\
  & -\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{2}{3_{2}}-\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{7}{7}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}\right)_{s}+\left(\rep{3}+\rep{\bar{3}}+\rep{7}+\rep{8}\right)_{a}$}
-\begin{itemize}
-\item $\tsprodx{7}{7}\to\rep{1}_{s}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{7}{7}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}\right)_{s}+\left(\rep{3}+\rep{\bar{3}}+\rep{7}+\rep{8}\right)_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{1}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\frac{1}{\sqrt{7}}\subcgs{1_{1}}{1_{1}}{1_{0}}+\sqrt{\frac{3}{7}}\subcgs{3_{1}}{3_{1}}{1_{0}}+\sqrt{\frac{3}{7}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{6}_{s}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{6}_{s}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\frac{\sqrt{3}}{2}\subcgs{1_{1}}{1_{1}}{1_{0}}-\frac{1}{2}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\sqrt{\frac{3}{7}}\subcgs{3_{1}}{3_{2}}{2}-\sqrt{\frac{3}{7}}\subcgs{3_{2}}{3_{1}}{2}+\frac{1}{\sqrt{7}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2\sqrt{7}}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}+\subcgs{3_{2}}{1_{1}}{3_{1}}\right)+\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{1}}{3_{1}}\\
  & +\sqrt{\frac{2}{7}}\subcgs{3_{1}}{3_{2}}{3_{1}}-\sqrt{\frac{2}{7}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{14}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{6}_{s}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{6}_{s}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =-\frac{\sqrt{\frac{3}{7}}}{2}\subcgs{1_{1}}{1_{1}}{1_{0}}+\frac{2}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{1_{0}}-\frac{3}{2\sqrt{7}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\subcgs{3_{1}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}+\subcgs{3_{2}}{1_{1}}{3_{1}}\right)+\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{7}_{s}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{7}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}+\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}+\subcgs{3_{2}}{1_{1}}{3_{1}}\right)+\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}+\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{8}_{s}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{8}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{2}+\frac{1}{\sqrt{14}}\subcgs{3_{2}}{3_{1}}{2}+\sqrt{\frac{6}{7}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{21}}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}+\subcgs{3_{2}}{1_{1}}{3_{1}}\right)-2\sqrt{\frac{2}{21}}\subcgs{3_{1}}{3_{1}}{3_{1}}\\
  & +\sqrt{\frac{3}{14}}\subcgs{3_{1}}{3_{2}}{3_{1}}-\sqrt{\frac{3}{14}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\sqrt{\frac{2}{21}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{3}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}+\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{3}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{3}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{7}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+\frac{b_{7}}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}\\
  & -\frac{b_{7}}{\sqrt{7}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{b_{7}}{\sqrt{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\sqrt{\frac{2}{7}}b_{7}^{2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{\bar{3}}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{\bar{3}}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{7}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+\frac{1}{\sqrt{7}b_{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}\\
  & -\frac{1}{\sqrt{7}b_{7}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{\sqrt{7}b_{7}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{2}{7}}}{b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{7}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{7}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}-\subcgs{3_{2}}{1_{1}}{3_{1}}\right)+\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{1}}+\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{6}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+\frac{1}{\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{7}\to\rep{8}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{7}\to\rep{8}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{3}}\left(\subcgs{1_{1}}{3_{2}}{3_{1}}-\subcgs{3_{2}}{1_{1}}{3_{1}}\right)-\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}-\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{21}}\left(\subcgs{1_{1}}{3_{1}}{3_{2}}-\subcgs{3_{1}}{1_{1}}{3_{2}}\right)+2\sqrt{\frac{2}{21}}\subcgs{3_{1}}{3_{1}}{3_{2}}\\
  & +\sqrt{\frac{3}{14}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\sqrt{\frac{3}{14}}\subcgs{3_{2}}{3_{1}}{3_{2}}+\sqrt{\frac{2}{21}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{7}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}+\rep{8}^{(3)}$}
-\begin{itemize}
-\item $\tsprodx{7}{8}\to\rep{3}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{7}{8}\to\rep{3}+\rep{\bar{3}}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}^{(1)}+\rep{8}^{(2)}+\rep{8}^{(3)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{3}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{7}}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{7}b_{7}^{4}}\subcgs{3_{1}}{2}{3_{2}}+\frac{1}{2\sqrt{7}b_{7}^{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{2\sqrt{2}b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}\\
  & +\frac{1}{2b_{7}^{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{\sqrt{\frac{3}{7}}}{2b_{7}^{2}}\subcgs{3_{2}}{2}{3_{2}}-\frac{\sqrt{7}+35i}{56\sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{\bar{3}}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{\bar{3}}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{\sqrt{7}}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{b_{7}^{4}}{\sqrt{7}}\subcgs{3_{1}}{2}{3_{2}}+\frac{b_{7}^{3}}{2\sqrt{7}}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{b_{7}^{2}}{2\sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}\\
  & +\frac{b_{7}^{3}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{2}\sqrt{\frac{3}{7}}b_{7}^{2}\subcgs{3_{2}}{2}{3_{2}}-\frac{\sqrt{7}-35i}{56\sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{6}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{6}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{1}}{3_{1}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{\sqrt{\frac{3}{14}}}{2}\subcgs{1_{1}}{2}{2}+\frac{1}{\sqrt{7}}\subcgs{3_{1}}{3_{1}}{2}+\frac{3\sqrt{\frac{3}{7}}}{4}\subcgs{3_{2}}{3_{1}}{2}-\frac{3}{4}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2}\subcgs{1_{1}}{3_{2}}{3_{1}}+\sqrt{\frac{3}{7}}\subcgs{3_{1}}{2}{3_{1}}-\frac{1}{2\sqrt{7}}\subcgs{3_{2}}{2}{3_{1}}\\
  & -\frac{3}{2\sqrt{14}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{1}{2\sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{6}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{6}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{1_{1}}{2}{2}-\sqrt{\frac{3}{7}}\subcgs{3_{1}}{3_{2}}{2}+\frac{\sqrt{3}}{4}\subcgs{3_{2}}{3_{1}}{2}+\frac{1}{4\sqrt{7}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{2\sqrt{7}}\subcgs{1_{1}}{3_{2}}{3_{1}}+\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{1}{\sqrt{14}}\subcgs{3_{1}}{3_{2}}{3_{1}}\\
  & -\frac{1}{2}\subcgs{3_{2}}{2}{3_{1}}+\frac{1}{2\sqrt{2}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{14}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{7}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{7}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{1}}{3_{2}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{\sqrt{3}}{4}\subcgs{1_{1}}{3_{2}}{3_{1}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}\\
  & +\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{2}}{2}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{5}{4\sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{2}}\\
  & -\frac{\sqrt{7}}{4}\subcgs{3_{2}}{2}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{1}{4\sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{7}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{7}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{1_{1}}{3_{2}}{3_{1}}-\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}\\
  & +\frac{\sqrt{3}}{4}\subcgs{3_{2}}{2}{3_{1}}+\frac{5}{4\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{3}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{1}{\sqrt{3}}\subcgs{3_{1}}{2}{3_{2}}+\frac{1}{2\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}\\
  & +\frac{\sqrt{\frac{7}{6}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}+\frac{1}{4}\subcgs{3_{2}}{2}{3_{2}}+\frac{1}{4\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{8}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{8}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{3}{4\sqrt{2}}\subcgs{1_{1}}{2}{2}-\frac{5}{8}\subcgs{3_{2}}{3_{1}}{2}-\frac{\sqrt{21}}{8}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{1_{1}}{3_{2}}{3_{1}}+\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{7}{3}}}{2}\subcgs{3_{1}}{3_{2}}{3_{1}}\\
  & +\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{2}{3_{1}}+\frac{5}{8\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{3}}}{8}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{3\sqrt{\frac{3}{14}}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}+2\sqrt{\frac{2}{21}}\subcgs{3_{1}}{2}{3_{2}}+\frac{1}{2\sqrt{21}}\subcgs{3_{1}}{3_{1}}{3_{2}}\\
  & +\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\frac{1}{4\sqrt{14}}\subcgs{3_{2}}{2}{3_{2}}+\frac{23}{8\sqrt{21}}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{1}{8\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{8}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{8}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{4\sqrt{7}}\subcgs{1_{1}}{2}{2}+\sqrt{\frac{6}{7}}\subcgs{3_{1}}{3_{1}}{2}-\frac{3}{4\sqrt{14}}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{\sqrt{3}}{4}\subcgs{1_{1}}{3_{2}}{3_{1}}-\frac{2}{\sqrt{7}}\subcgs{3_{1}}{2}{3_{1}}-\frac{\sqrt{\frac{3}{7}}}{4}\subcgs{3_{2}}{2}{3_{1}}\\
  & -\frac{3\sqrt{\frac{3}{14}}}{4}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{\sqrt{3}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}-\frac{1}{4}\subcgs{3_{2}}{2}{3_{2}}+\frac{\sqrt{\frac{3}{2}}}{4}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{21}{2}}}{4}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{7}{8}\to\rep{8}^{(3)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{7}{8}\to\rep{8}^{(3)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{3}{4\sqrt{2}}\subcgs{1_{1}}{2}{2}+\frac{2}{\sqrt{7}}\subcgs{3_{1}}{3_{2}}{2}+\frac{3}{8}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{7}}}{8}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{3\sqrt{\frac{3}{14}}}{4}\subcgs{1_{1}}{3_{2}}{3_{1}}-\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{3_{1}}{3_{1}}+\frac{1}{2\sqrt{21}}\subcgs{3_{1}}{3_{2}}{3_{1}}\\
  & -\frac{5}{4\sqrt{6}}\subcgs{3_{2}}{2}{3_{1}}+\frac{5}{8\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{23}{8\sqrt{21}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{\sqrt{\frac{7}{6}}}{4}\subcgs{1_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{\frac{7}{3}}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}\\
  & +\frac{\sqrt{\frac{7}{2}}}{4}\subcgs{3_{2}}{2}{3_{2}}+\frac{\sqrt{\frac{7}{3}}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}+\frac{1}{8\sqrt{3}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\paragraph*{\cgEqFontsize $\tsprod{8}{8}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}^{(1)}+\rep{8}^{(2)}\right)_{s}+\left(\rep{3}+\rep{\bar{3}}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}\right)_{a}$}
-\begin{itemize}
-\item $\tsprodx{8}{8}\to\rep{1}_{s}$: \bfl 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cgEqFontsize
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tsprod{8}{8}\to\left(\rep{1}+\rep{6}^{(1)}+\rep{6}^{(2)}+\rep{7}+\rep{8}^{(1)}+\rep{8}^{(2)}\right)_{s}+\left(\rep{3}+\rep{\bar{3}}+\rep{7}^{(1)}+\rep{7}^{(2)}+\rep{8}\right)_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{1}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\frac{1}{2}\subcgs{2}{2}{1_{0}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}+\frac{\sqrt{\frac{3}{2}}}{2}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{6}_{s}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{6}_{s}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =\sqrt{\frac{3}{5}}\subcgs{2}{2}{1_{0}}-\sqrt{\frac{2}{5}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{\sqrt{\frac{15}{14}}}{2}\subcgs{2}{2}{2}-\frac{27}{4\sqrt{70}}\subcgs{3_{1}}{3_{1}}{2}+\frac{\sqrt{\frac{3}{10}}}{4}\subcgs{3_{1}}{3_{2}}{2}\\
  & +\frac{\sqrt{\frac{3}{10}}}{4}\subcgs{3_{2}}{3_{1}}{2}+\frac{\sqrt{\frac{7}{10}}}{4}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{3\sqrt{\frac{3}{70}}}{2}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)\\
  & -\frac{1}{2\sqrt{10}}\left(\subcgs{2}{3_{2}}{3_{1}}+\subcgs{3_{2}}{2}{3_{1}}\right)-\frac{1}{2\sqrt{35}}\subcgs{3_{1}}{3_{1}}{3_{1}}\\
  & -\frac{1}{\sqrt{5}}\subcgs{3_{1}}{3_{2}}{3_{1}}+\frac{1}{\sqrt{5}}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{5}}}{2}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{6}_{s}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{6}_{s}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{0} & =-\frac{\sqrt{\frac{3}{5}}}{2}\subcgs{2}{2}{1_{0}}+\frac{\sqrt{\frac{5}{2}}}{2}\subcgs{3_{1}}{3_{1}}{1_{0}}-\frac{3}{2\sqrt{10}}\subcgs{3_{2}}{3_{2}}{1_{0}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{\sqrt{\frac{15}{14}}}{2}\subcgs{2}{2}{2}+\frac{1}{4\sqrt{70}}\subcgs{3_{1}}{3_{1}}{2}-\frac{3\sqrt{\frac{3}{10}}}{4}\subcgs{3_{1}}{3_{2}}{2}\\
  & -\frac{3\sqrt{\frac{3}{10}}}{4}\subcgs{3_{2}}{3_{1}}{2}-\frac{3\sqrt{\frac{7}{10}}}{4}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\sqrt{\frac{6}{35}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)\\
  & -\frac{1}{\sqrt{10}}\left(\subcgs{2}{3_{2}}{3_{1}}+\subcgs{3_{2}}{2}{3_{1}}\right)-\frac{9}{4\sqrt{35}}\subcgs{3_{1}}{3_{1}}{3_{1}}\\
  & -\frac{3}{4\sqrt{5}}\subcgs{3_{1}}{3_{2}}{3_{1}}+\frac{3}{4\sqrt{5}}\subcgs{3_{2}}{3_{1}}{3_{1}}+\frac{\sqrt{\frac{7}{5}}}{4}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{7}_{s}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{7}_{s}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}+\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{6}}\left(\subcgs{2}{3_{2}}{3_{1}}+\subcgs{3_{2}}{2}{3_{1}}\right)-\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{1}}{3_{1}}{3_{1}}\\
  & +\frac{\sqrt{3}}{4}\subcgs{3_{1}}{3_{2}}{3_{1}}-\frac{\sqrt{3}}{4}\subcgs{3_{2}}{3_{1}}{3_{1}}-\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{\frac{7}{6}}}{2}\left(\subcgs{2}{3_{1}}{3_{2}}+\subcgs{3_{1}}{2}{3_{2}}\right)-\frac{1}{2\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{2}}\\
  & +\frac{1}{2\sqrt{2}}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right)-\frac{1}{2\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{8}_{s}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{8}_{s}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\sqrt{\frac{2}{5}}\subcgs{2}{2}{2}-\sqrt{\frac{3}{10}}\subcgs{3_{1}}{3_{1}}{2}-\sqrt{\frac{3}{10}}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{\sqrt{5}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)+\sqrt{\frac{3}{10}}\subcgs{3_{1}}{3_{1}}{3_{1}}-\sqrt{\frac{3}{10}}\subcgs{3_{2}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{5}}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right)-\sqrt{\frac{3}{10}}\subcgs{3_{1}}{3_{2}}{3_{2}}-\sqrt{\frac{3}{10}}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{8}_{s}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{8}_{s}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =-\frac{3}{2\sqrt{35}}\subcgs{2}{2}{2}+\frac{3\sqrt{\frac{3}{35}}}{4}\subcgs{3_{1}}{3_{1}}{2}+\frac{\sqrt{5}}{4}\subcgs{3_{1}}{3_{2}}{2}\\
  & +\frac{\sqrt{5}}{4}\subcgs{3_{2}}{3_{1}}{2}-\frac{\sqrt{\frac{21}{5}}}{4}\subcgs{3_{2}}{3_{2}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{3}{2\sqrt{70}}\left(\subcgs{2}{3_{1}}{3_{1}}+\subcgs{3_{1}}{2}{3_{1}}\right)+\frac{\sqrt{\frac{7}{15}}}{2}\subcgs{3_{2}}{3_{2}}{3_{1}}\\
  & -\frac{\sqrt{\frac{5}{6}}}{2}\left(\subcgs{2}{3_{2}}{3_{1}}+\subcgs{3_{2}}{2}{3_{1}}\right)+\frac{13}{2\sqrt{105}}\subcgs{3_{1}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{\frac{5}{6}}}{2}\left(\subcgs{2}{3_{1}}{3_{2}}+\subcgs{3_{1}}{2}{3_{2}}\right)+\frac{\sqrt{\frac{7}{15}}}{2}\subcgs{3_{2}}{3_{1}}{3_{2}}\\
  & -\frac{\sqrt{\frac{7}{10}}}{2}\left(\subcgs{2}{3_{2}}{3_{2}}+\subcgs{3_{2}}{2}{3_{2}}\right)+\frac{\sqrt{\frac{7}{15}}}{2}\subcgs{3_{1}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{3}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{3}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{4}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)+\frac{i\sqrt{3}}{4}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right)\\
  & -\frac{1}{2b_{7}^{3}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{i}{4b_{7}}\left(\subcgs{3_{1}}{3_{2}}{3_{2}}-\subcgs{3_{2}}{3_{1}}{3_{2}}\right)-\frac{1}{2\sqrt{2}b_{7}^{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{\bar{3}}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{\bar{3}}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =\frac{1}{4}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)-\frac{i\sqrt{3}}{4}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right)\\
  & -\frac{b_{7}^{3}}{2}\subcgs{3_{1}}{3_{1}}{3_{2}}-\frac{ib_{7}}{4}\left(\subcgs{3_{1}}{3_{2}}{3_{2}}-\subcgs{3_{2}}{3_{1}}{3_{2}}\right)-\frac{b_{7}^{2}}{2\sqrt{2}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{7}_{a}^{(1)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{7}_{a}^{(1)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\subcgs{2}{2}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{1}{8\sqrt{2}}\left(\subcgs{2}{3_{1}}{3_{1}}-\subcgs{3_{1}}{2}{3_{1}}\right)+\frac{\sqrt{21}}{8}\subcgs{3_{2}}{3_{1}}{3_{1}}\\
  & +\frac{\sqrt{\frac{21}{2}}}{8}\left(\subcgs{2}{3_{2}}{3_{1}}-\subcgs{3_{2}}{2}{3_{1}}\right)+\frac{\sqrt{21}}{8}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{\frac{3}{2}}}{8}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)+\frac{\sqrt{\frac{7}{2}}}{8}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right)\\
  & +\frac{\sqrt{3}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{21}}{8}\subcgs{3_{1}}{3_{2}}{3_{2}}-\frac{\sqrt{21}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{7}_{a}^{(2)}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{7}_{a}^{(2)}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{1}_{1} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{1_{1}}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{1_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =-\frac{3\sqrt{\frac{7}{2}}}{8}\left(\subcgs{2}{3_{1}}{3_{1}}-\subcgs{3_{1}}{2}{3_{1}}\right)-\frac{1}{8\sqrt{3}}\subcgs{3_{2}}{3_{1}}{3_{1}}\\
  & -\frac{1}{8\sqrt{6}}\left(\subcgs{2}{3_{2}}{3_{1}}-\subcgs{3_{2}}{2}{3_{1}}\right)-\frac{1}{8\sqrt{3}}\subcgs{3_{1}}{3_{2}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{\sqrt{\frac{7}{6}}}{8}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)-\frac{3}{8\sqrt{2}}\left(\subcgs{2}{3_{2}}{3_{2}}-\subcgs{3_{2}}{2}{3_{2}}\right)\\
  & -\frac{\sqrt{\frac{7}{3}}}{4}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{\sqrt{3}}{8}\subcgs{3_{1}}{3_{2}}{3_{2}}-\frac{\sqrt{3}}{8}\subcgs{3_{2}}{3_{1}}{3_{2}}-\frac{\sqrt{\frac{7}{3}}}{2}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\item $\tsprodx{8}{8}\to\rep{8}_{a}$: \bfl 
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tsprodx{8}{8}\to\rep{8}_{a}$
+\end_inset
+
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bfl
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
 \begin{align*}
 \rep{2} & =\frac{1}{\sqrt{2}}\subcgs{3_{1}}{3_{2}}{2}-\frac{1}{\sqrt{2}}\subcgs{3_{2}}{3_{1}}{2}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{1} & =\frac{1}{\sqrt{3}}\left(\subcgs{2}{3_{2}}{3_{1}}-\subcgs{3_{2}}{2}{3_{1}}\right)-\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{2}}{3_{1}}-\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{1}}{3_{1}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 \rep{3}_{2} & =-\frac{1}{\sqrt{3}}\left(\subcgs{2}{3_{1}}{3_{2}}-\subcgs{3_{1}}{2}{3_{2}}\right)-\frac{1}{\sqrt{6}}\subcgs{3_{1}}{3_{1}}{3_{2}}+\frac{1}{\sqrt{6}}\subcgs{3_{2}}{3_{2}}{3_{2}}
 \end{align*}
-\efl 
-\end{itemize}
 
-\end{document}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+efl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
