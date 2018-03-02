@@ -202,7 +202,7 @@ CGTermList2TeX[embed_,coefs_,cgterms_,r1_,r2_, align_]:=Module[
 		val = Together[ZToExp[Simplify[coefs[[i]]]]];
 
 		If[Length[cgterms[[i]]]>=4, val = val /Sqrt[2];terminc = 2, terminc = 1];
-		If[terms + terminc > 2, 
+		If[terms + terminc > 3, 
 			(* new line if more than 4 terms. *)
 			exp=exp<> " \\\\ \n & "; terms = terminc, 
 			terms = terms + terminc
